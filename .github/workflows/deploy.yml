@@ -76,10 +76,26 @@ jobs:
     environment: production
     
     steps:
+      - name: Checkout for compose file
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            docker/docker-compose.prod.yml
+
+      - name: Copy compose file to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: 22
+          source: "docker/docker-compose.prod.yml"
+          target: "/opt/insight/landing"
+          strip_components: 1
+
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         env:
-          FULL_IMAGE: ghcr.io/${{ github.repository }}:latest
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.actor }}
         with:
@@ -88,43 +104,13 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: 22
           script_stop: true
-          envs: FULL_IMAGE,GH_TOKEN,GH_USER
+          envs: GH_TOKEN,GH_USER
           script: |
             set -e
+            cd /opt/insight/landing
             
-            # Create deployment directory
-            mkdir -p /opt/insight/landing && cd /opt/insight/landing
-            
-            # Generate docker-compose.yml using echo to avoid heredoc indentation issues
-            echo 'services:
-              landing:
-                image: IMAGE_PLACEHOLDER
-                container_name: landing-site
-                restart: unless-stopped
-                ports:
-                  - "3100:3000"
-                environment:
-                  - NODE_ENV=production
-                  - NEXT_PUBLIC_SITE_URL=https://insight.ai.vn
-                networks:
-                  - insight-network
-                healthcheck:
-                  test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
-                  interval: 30s
-                  timeout: 10s
-                  retries: 3
-                  start_period: 40s
-                deploy:
-                  resources:
-                    limits:
-                      memory: 512M
-            
-            networks:
-              insight-network:
-                driver: bridge' > docker-compose.yml
-            
-            # Replace image placeholder
-            sed -i "s|IMAGE_PLACEHOLDER|${FULL_IMAGE}|g" docker-compose.yml
+            # Rename compose file
+            mv -f docker-compose.prod.yml docker-compose.yml
             
             # Login to GHCR
             echo "${GH_TOKEN}" | docker login ghcr.io -u "${GH_USER}" --password-stdin
