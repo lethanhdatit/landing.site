@@ -1,0 +1,585 @@
+{
+  "about": {
+    "meta": {
+      "title": "Về Chúng Tôi - {{company.name}}",
+      "description": "Tìm hiểu về {{company.name}} và sứ mệnh tạo ra ứng dụng thông minh cho cuộc sống hiện đại."
+    },
+    "hero": {
+      "title": "Về {{company.name}}",
+      "subtitle": "Chúng tôi là đội ngũ đam mê, cam kết xây dựng những ứng dụng sáng tạo giúp đơn giản hóa cuộc sống hàng ngày thông qua công nghệ thông minh."
+    },
+    "mission": {
+      "title": "Sứ Mệnh",
+      "content": "Tại {{company.name}}, chúng tôi tin rằng công nghệ nên làm cuộc sống dễ dàng hơn, không phức tạp hơn. Sứ mệnh của chúng tôi là tạo ra những ứng dụng đẹp, trực quan, tận dụng AI để giải quyết các vấn đề thực tế."
+    },
+    "values": {
+      "title": "Giá Trị",
+      "items": {
+        "passion": { "title": "Đam Mê", "description": "Chúng tôi yêu thích công việc và điều đó thể hiện trong từng chi tiết sản phẩm." },
+        "users": { "title": "Người Dùng Đầu Tiên", "description": "Mọi quyết định đều bắt đầu từ nhu cầu của người dùng." },
+        "innovation": { "title": "Đổi Mới", "description": "Chúng tôi không ngừng vượt qua giới hạn để cung cấp giải pháp tiên tiến." },
+        "quality": { "title": "Chất Lượng", "description": "Chúng tôi không bao giờ thỏa hiệp về chất lượng sản phẩm." }
+      }
+    },
+    "team": {
+      "title": "Đội Ngũ",
+      "content": "Chúng tôi là đội ngũ nhỏ nhưng mạnh mẽ tại {{address.countryVi}}, kết hợp hiểu biết địa phương với tầm nhìn toàn cầu để xây dựng ứng dụng phù hợp với người dùng khắp nơi."
+    }
+  },
+  "contact": {
+    "meta": { 
+      "title": "Liên Hệ - {{company.name}}", 
+      "description": "Liên hệ với đội ngũ {{company.name}}." 
+    },
+    "hero": { 
+      "title": "Liên Hệ", 
+      "subtitle": "Có câu hỏi, phản hồi, hoặc chỉ muốn chào? Chúng tôi rất vui được nghe từ bạn." 
+    },
+    "methods": {
+      "email": { 
+        "title": "Email", 
+        "description": "Gửi email cho chúng tôi và chúng tôi sẽ phản hồi trong vòng 24 giờ." 
+      },
+      "location": { 
+        "title": "Địa Điểm", 
+        "description": "Đội ngũ của chúng tôi có trụ sở tại {{address.fullVi}}." 
+      }
+    },
+    "support": { 
+      "title": "Hỗ Trợ", 
+      "description": "Đối với câu hỏi liên quan đến ứng dụng và hỗ trợ kỹ thuật, vui lòng gửi email đến {{email.support}}.", 
+      "hours": "Chúng tôi thường phản hồi trong vòng {{legal.supportResponseHours}} giờ vào các ngày làm việc." 
+    }
+  },
+  "metadata": {
+    "title": "{{company.name}} - Ứng Dụng Thông Minh Cho Cuộc Sống Hiện Đại",
+    "description": "Khám phá những ứng dụng sáng tạo giúp đơn giản hóa cuộc sống hàng ngày. Từ quản lý gia đình đến tài chính cá nhân, chúng tôi xây dựng công cụ có ý nghĩa.",
+    "keywords": "ứng dụng thông minh, quản lý gia đình, theo dõi thực phẩm, quản lý hộ gia đình, ứng dụng AI, {{address.countryVi}}"
+  },
+  "common": {
+    "learnMore": "Tìm Hiểu Thêm",
+    "getStarted": "Bắt Đầu Ngay",
+    "downloadApp": "Tải Ứng Dụng",
+    "viewAllProducts": "Xem Tất Cả Sản Phẩm",
+    "backToHome": "Về Trang Chủ",
+    "language": "Ngôn Ngữ",
+    "menu": "Menu",
+    "close": "Đóng",
+    "lastUpdated": "Cập nhật lần cuối",
+    "effectiveDate": "Ngày hiệu lực",
+    "tableOfContents": "Mục Lục",
+    "onThisPage": "Trên trang này",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "legalInfo": "Thông Tin Pháp Lý",
+    "legalInfoDescription": "Xem chính sách và điều khoản sử dụng sản phẩm này.",
+    "legalQuestions": "Có câu hỏi về chính sách của chúng tôi?",
+    "contactUs": "Liên Hệ Chúng Tôi",
+    "legal": { 
+      "privacy-policy": "Chính Sách Bảo Mật", 
+      "terms-of-service": "Điều Khoản Dịch Vụ", 
+      "permissions": "Quyền Ứng Dụng", 
+      "subscription-terms": "Điều Khoản Đăng Ký", 
+      "disclaimer": "Tuyên Bố Miễn Trừ" 
+    }
+  },
+  "nav": { 
+    "home": "Trang Chủ", 
+    "products": "Sản Phẩm", 
+    "about": "Về Chúng Tôi", 
+    "contact": "Liên Hệ", 
+    "legal": "Pháp Lý" 
+  },
+  "footer": {
+    "company": "Công Ty", 
+    "about": "Về Chúng Tôi", 
+    "contact": "Liên Hệ", 
+    "careers": "Tuyển Dụng", 
+    "products": "Sản Phẩm",
+    "legal": "Pháp Lý", 
+    "privacyPolicy": "Chính Sách Bảo Mật", 
+    "termsOfService": "Điều Khoản Dịch Vụ", 
+    "cookiePolicy": "Chính Sách Cookie",
+    "social": "Theo Dõi", 
+    "copyright": "© {year} {{company.name}}. Đã đăng ký bản quyền.", 
+    "madeWith": "Được tạo với ❤️ tại {{address.countryVi}}"
+  },
+  "home": {
+    "meta": { 
+      "title": "{{company.name}} - Ứng Dụng Thông Minh Cho Cuộc Sống Hiện Đại", 
+      "description": "Khám phá những ứng dụng sáng tạo giúp đơn giản hóa cuộc sống hàng ngày với giải pháp AI." 
+    },
+    "hero": { 
+      "title": "Ứng Dụng Thông Minh Cho Cuộc Sống Hiện Đại", 
+      "subtitle": "Chúng tôi xây dựng những ứng dụng sáng tạo giúp đơn giản hóa công việc hàng ngày và giúp bạn sống thông minh hơn.", 
+      "cta": "Khám Phá Ứng Dụng", 
+      "secondary": "Tìm Hiểu Thêm" 
+    },
+    "products": { 
+      "title": "Sản Phẩm", 
+      "subtitle": "Khám phá những ứng dụng được thiết kế để làm cuộc sống dễ dàng hơn", 
+      "learnMore": "Tìm hiểu thêm" 
+    },
+    "features": {
+      "title": "Tại Sao Chọn Chúng Tôi", 
+      "subtitle": "Xây dựng với tâm huyết, thiết kế cho bạn",
+      "items": {
+        "ai": { "title": "Tích Hợp AI", "description": "Tính năng thông minh được hỗ trợ bởi AI tiên tiến để nâng cao trải nghiệm." },
+        "privacy": { "title": "Bảo Mật Đầu Tiên", "description": "Dữ liệu của bạn thuộc về bạn. Chúng tôi ưu tiên bảo mật và minh bạch." },
+        "fast": { "title": "Nhanh Như Chớp", "description": "Hiệu suất được tối ưu hóa cho phản hồi tức thì và tương tác mượt mà." },
+        "multilingual": { "title": "Đa Ngôn Ngữ", "description": "Có sẵn bằng nhiều ngôn ngữ để phục vụ người dùng toàn cầu." }
+      }
+    },
+    "cta": { 
+      "title": "Sẵn Sàng Bắt Đầu?", 
+      "subtitle": "Tải ứng dụng ngay hôm nay và trải nghiệm cuộc sống thông minh hơn.", 
+      "button": "Khám Phá Ứng Dụng" 
+    }
+  },
+  "products": {
+    "wisenest": {
+      "name": "WiseNest", 
+      "tagline": "Quản Lý Thực Phẩm & Gia Đình Thông Minh",
+      "description": "Theo dõi kho thực phẩm, giảm lãng phí và khám phá công thức nấu ăn. WiseNest là người bạn đồng hành thông minh trong nhà bếp.",
+      "features": {
+        "title": "Tính Năng Mạnh Mẽ", 
+        "subtitle": "Mọi thứ bạn cần để quản lý gia đình thông minh",
+        "items": {
+          "expiry": { "title": "Theo Dõi Hạn Dùng", "description": "Nhận thông báo kịp thời trước khi thực phẩm hết hạn." },
+          "reduce": { "title": "Giảm Lãng Phí", "description": "Theo dõi mẫu tiêu thụ và nhận thông tin chi tiết để giảm thiểu lãng phí." },
+          "share": { "title": "Chia Sẻ Gia Đình", "description": "Chia sẻ kho thực phẩm và danh sách mua sắm với gia đình." },
+          "privacy": { "title": "Bảo Vệ Quyền Riêng Tư", "description": "Dữ liệu được mã hóa và bảo mật." },
+          "smart": { "title": "Gợi Ý Thông Minh", "description": "Gợi ý công thức nấu ăn bằng AI dựa trên nguyên liệu có sẵn." },
+          "premium": { "title": "Trải Nghiệm Premium", "description": "Mở khóa theo dõi không giới hạn và các tính năng nâng cao." }
+        }
+      },
+      "cta": { 
+        "title": "Bắt Đầu Quản Lý Thông Minh Hơn", 
+        "subtitle": "Tải WiseNest và thay đổi cách bạn quản lý gia đình." 
+      }
+    }
+  },
+  "legal": {
+    "privacy-policy": {
+      "meta": { 
+        "description": "Tìm hiểu cách {{company.name}} thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi sử dụng WiseNest." 
+      },
+      "lastUpdated": "Cập nhật lần cuối", 
+      "date": "Tháng 1, 2026",
+      "sections": {
+        "introduction": { 
+          "title": "1. Giới Thiệu", 
+          "content": "Quyền riêng tư của bạn rất quan trọng với chúng tôi. Chính Sách Bảo Mật này giải thích cách {{company.name}} (\"Công ty\", \"chúng tôi\") thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn khi sử dụng ứng dụng WiseNest.\n\nBằng cách sử dụng WiseNest, bạn đồng ý với việc thu thập và sử dụng thông tin theo chính sách này. Chính sách này tuân thủ {{legal.dataProtectionLawVi}} và các tiêu chuẩn quốc tế như GDPR khi áp dụng." 
+        },
+        "dataController": { 
+          "title": "2. Đơn Vị Kiểm Soát Dữ Liệu", 
+          "content": "{{company.name}} là đơn vị kiểm soát dữ liệu chịu trách nhiệm về dữ liệu cá nhân của bạn.\n\nLiên hệ: {{email.privacy}}\nĐịa chỉ: {{address.fullVi}}" 
+        },
+        "informationWeCollect": { 
+          "title": "3. Thông Tin Chúng Tôi Thu Thập", 
+          "content": "Chúng tôi thu thập các loại thông tin sau:", 
+          "items": [
+            "Thông Tin Tài Khoản: Email, tên hiển thị, ảnh đại diện (tùy chọn), và dữ liệu xác thực từ nhà cung cấp đăng nhập xã hội (Google, Apple, Facebook).", 
+            "Dữ Liệu Sử Dụng: Thông tin thiết bị, thống kê sử dụng, báo cáo lỗi, và vị trí chung (quốc gia/khu vực). Chúng tôi KHÔNG thu thập vị trí GPS chính xác.", 
+            "Nội Dung Người Dùng: Thực phẩm, ngày hết hạn, danh sách mua sắm, sở thích công thức, và danh mục tùy chỉnh.", 
+            "Thông Tin Thanh Toán: Trạng thái đăng ký và ID giao dịch. Chi tiết thanh toán được xử lý bởi Apple/Google.", 
+            "Liên Lạc: Email hỗ trợ và tệp đính kèm bạn cung cấp."
+          ] 
+        },
+        "howWeUse": { 
+          "title": "4. Cách Chúng Tôi Sử Dụng Thông Tin", 
+          "content": "Chúng tôi sử dụng thông tin thu thập để:", 
+          "items": [
+            "Cung Cấp Dịch Vụ: Theo dõi kho, thông báo hết hạn, gợi ý công thức.", 
+            "Đồng Bộ và Sao Lưu: Đồng bộ dữ liệu cho người dùng Premium.", 
+            "Thông Báo: Gửi cảnh báo hết hạn và thông báo dịch vụ.", 
+            "Cá Nhân Hóa: Tạo gợi ý công thức bằng AI.", 
+            "Cải Thiện: Phân tích mẫu sử dụng và phát triển tính năng mới.", 
+            "Tuân Thủ Pháp Luật: Tuân thủ các luật và quy định hiện hành."
+          ] 
+        },
+        "legalBasis": { 
+          "title": "5. Cơ Sở Pháp Lý Xử Lý", 
+          "content": "Chúng tôi xử lý dữ liệu dựa trên:", 
+          "items": [
+            "Thực Hiện Hợp Đồng: Xử lý cần thiết để cung cấp dịch vụ yêu cầu.", 
+            "Lợi Ích Hợp Pháp: Cải thiện dịch vụ, ngăn chặn gian lận, đảm bảo bảo mật.", 
+            "Đồng Ý: Cho các tính năng tùy chọn như thông tin tiếp thị.", 
+            "Nghĩa Vụ Pháp Lý: Tuân thủ các luật hiện hành."
+          ] 
+        },
+        "dataStorage": { 
+          "title": "6. Lưu Trữ và Bảo Mật Dữ Liệu", 
+          "content": "Dữ liệu của bạn được lưu trữ an toàn:\n\n• Lưu Trữ Đám Mây: Firebase (Google Cloud Platform) tại Mỹ và Singapore.\n• Mã Hóa: TLS 1.3 khi truyền, AES-256 khi lưu trữ.\n• Kiểm Soát Truy Cập: Chỉ nhân viên được ủy quyền mới có thể truy cập.\n• Kiểm Tra Bảo Mật: Đánh giá bảo mật và kiểm tra lỗ hổng thường xuyên.\n\nKhông có phương thức truyền tải nào an toàn 100%. Chúng tôi không thể đảm bảo bảo mật tuyệt đối." 
+        },
+        "dataRetention": { 
+          "title": "7. Lưu Giữ Dữ Liệu", 
+          "content": "Chúng tôi lưu giữ dữ liệu như sau:", 
+          "items": [
+            "Tài Khoản Hoạt Động: Dữ liệu được lưu giữ khi tài khoản hoạt động.", 
+            "Xóa Tài Khoản: Dữ liệu cá nhân xóa trong {{legal.dataRetentionDays}} ngày kể từ yêu cầu.", 
+            "Sao Lưu: Bản sao lưu giữ đến {{legal.backupRetentionDays}} ngày để khôi phục thảm họa.", 
+            "Yêu Cầu Pháp Lý: Một số dữ liệu có thể lưu lâu hơn nếu pháp luật yêu cầu.", 
+            "Dữ Liệu Ẩn Danh: Có thể được lưu giữ vô thời hạn cho phân tích thống kê."
+          ] 
+        },
+        "sharing": { 
+          "title": "8. Chia Sẻ Dữ Liệu", 
+          "content": "Chúng tôi KHÔNG bán thông tin cá nhân của bạn. Chúng tôi có thể chia sẻ với:", 
+          "items": [
+            "Nhà Cung Cấp Dịch Vụ: Firebase, RevenueCat, Sentry (ràng buộc bởi thỏa thuận bảo mật).", 
+            "Đối Tác Phân Tích: Google Analytics (dữ liệu ẩn danh).", 
+            "Yêu Cầu Pháp Lý: Khi pháp luật hoặc tòa án yêu cầu.", 
+            "Chuyển Giao Kinh Doanh: Trong trường hợp sáp nhập hoặc mua lại.", 
+            "Với Sự Đồng Ý: Khi bạn đồng ý rõ ràng."
+          ] 
+        },
+        "internationalTransfer": { 
+          "title": "9. Chuyển Dữ Liệu Quốc Tế", 
+          "content": "Dữ liệu của bạn có thể được chuyển đến các quốc gia ngoài {{address.countryVi}} (Mỹ, Singapore). Chúng tôi đảm bảo các biện pháp bảo vệ phù hợp thông qua Điều Khoản Hợp Đồng Tiêu Chuẩn và thỏa thuận xử lý dữ liệu." 
+        },
+        "yourRights": { 
+          "title": "10. Quyền Của Bạn", 
+          "content": "Bạn có các quyền sau:", 
+          "items": [
+            "Quyền Truy Cập: Yêu cầu bản sao dữ liệu cá nhân.", 
+            "Quyền Chỉnh Sửa: Yêu cầu sửa dữ liệu không chính xác.", 
+            "Quyền Xóa: Yêu cầu xóa dữ liệu.", 
+            "Quyền Di Chuyển Dữ Liệu: Yêu cầu dữ liệu ở định dạng máy đọc được.", 
+            "Quyền Hạn Chế Xử Lý: Giới hạn cách chúng tôi sử dụng dữ liệu.", 
+            "Quyền Phản Đối: Phản đối xử lý cho một số mục đích.", 
+            "Quyền Rút Đồng Ý: Rút đồng ý bất cứ lúc nào.", 
+            "Quyền Khiếu Nại: Nộp khiếu nại với cơ quan bảo vệ dữ liệu."
+          ] 
+        },
+        "exercisingRights": { 
+          "title": "11. Thực Hiện Quyền", 
+          "content": "Liên hệ {{email.privacy}}. Chúng tôi phản hồi trong {{legal.privacyResponseDays}} ngày.\n\nBạn cũng có thể:\n• Xuất dữ liệu qua cài đặt Ứng dụng\n• Xóa tài khoản qua cài đặt Ứng dụng\n• Quản lý tùy chọn thông báo\n• Kiểm soát quyền qua cài đặt thiết bị" 
+        },
+        "children": { 
+          "title": "12. Quyền Riêng Tư Trẻ Em", 
+          "content": "WiseNest không dành cho trẻ em dưới {{legal.minimumAge}} tuổi. Chúng tôi không cố ý thu thập thông tin từ trẻ em. Liên hệ ngay nếu bạn tin rằng trẻ em đã cung cấp thông tin cá nhân." 
+        },
+        "thirdPartyLinks": { 
+          "title": "13. Liên Kết Bên Thứ Ba", 
+          "content": "Ứng dụng có thể chứa liên kết đến dịch vụ bên thứ ba. Chúng tôi không chịu trách nhiệm về chính sách bảo mật hoặc thực hành của họ." 
+        },
+        "cookies": { 
+          "title": "14. Cookie và Theo Dõi", 
+          "content": "Ứng dụng di động sử dụng:\n• Định Danh Thiết Bị: Cho phân tích\n• Lưu Trữ Cục Bộ: Tùy chọn và dữ liệu đệm\n• SDK Phân Tích: Firebase Analytics (ẩn danh)\n\nTrang web có thể sử dụng cookie cho chức năng và phân tích." 
+        },
+        "changes": { 
+          "title": "15. Thay Đổi Chính Sách", 
+          "content": "Chúng tôi có thể cập nhật chính sách này. Các thay đổi quan trọng sẽ được thông báo qua thông báo trong ứng dụng, email, hoặc thông báo trên trang web. Tiếp tục sử dụng đồng nghĩa với việc chấp nhận." 
+        },
+        "contact": { 
+          "title": "16. Liên Hệ", 
+          "content": "{{company.name}}\nEmail: {{email.privacy}}\nChung: {{email.general}}\nHỗ trợ: {{email.support}}\n\nChúng tôi phản hồi trong {{legal.generalResponseDays}} ngày làm việc." 
+        }
+      }
+    },
+    "terms-of-service": {
+      "meta": { 
+        "description": "Đọc Điều Khoản Dịch Vụ để sử dụng ứng dụng WiseNest của {{company.name}}." 
+      },
+      "lastUpdated": "Cập nhật lần cuối", 
+      "date": "Tháng 1, 2026",
+      "sections": {
+        "acceptance": { 
+          "title": "1. Chấp Nhận Điều Khoản", 
+          "content": "Bằng cách sử dụng WiseNest (\"Ứng dụng\"), bạn đồng ý với các Điều Khoản Dịch Vụ này, Chính Sách Bảo Mật, và các điều khoản bổ sung. Các Điều Khoản này tạo thành thỏa thuận ràng buộc pháp lý giữa bạn và {{company.name}}.\n\nNẾU KHÔNG ĐỒNG Ý, KHÔNG SỬ DỤNG ỨNG DỤNG.\n\nChúng tôi có thể sửa đổi các Điều Khoản này bất cứ lúc nào. Tiếp tục sử dụng đồng nghĩa với việc chấp nhận." 
+        },
+        "eligibility": { 
+          "title": "2. Điều Kiện Sử Dụng", 
+          "content": "Để sử dụng WiseNest, bạn phải:\n• Ít nhất {{legal.minimumAge}} tuổi (hoặc tuổi đồng ý kỹ thuật số tại khu vực của bạn)\n• Có năng lực pháp lý để ký kết thỏa thuận ràng buộc\n• Không bị cấm sử dụng Ứng dụng theo luật hiện hành" 
+        },
+        "description": { 
+          "title": "3. Mô Tả Dịch Vụ", 
+          "content": "WiseNest là ứng dụng quản lý kho thực phẩm và gia đình giúp người dùng:\n• Theo dõi thực phẩm và ngày hết hạn\n• Quản lý kho gia đình\n• Nhận thông báo hết hạn\n• Tạo danh sách mua sắm\n• Khám phá công thức nấu ăn\n\nỨng dụng dành cho sử dụng cá nhân, phi thương mại." 
+        },
+        "accounts": { 
+          "title": "4. Tài Khoản Người Dùng", 
+          "content": "Bằng cách tạo tài khoản, bạn đồng ý:", 
+          "items": [
+            "Cung cấp thông tin chính xác và đầy đủ", 
+            "Duy trì độ chính xác của thông tin", 
+            "Bảo mật thông tin đăng nhập", 
+            "Không chia sẻ thông tin đăng nhập", 
+            "Thông báo ngay về truy cập trái phép", 
+            "Chịu trách nhiệm về tất cả hoạt động tài khoản"
+          ] 
+        },
+        "subscriptions": { 
+          "title": "5. Đăng Ký và Thanh Toán", 
+          "content": "Các tính năng Premium có sẵn thông qua đăng ký trả phí:\n• Thanh toán qua Apple App Store hoặc Google Play Store\n• Tự động gia hạn trừ khi hủy 24 giờ trước ngày gia hạn\n• Giá có thể thay đổi với thông báo trước\n• Hoàn tiền được xử lý bởi cửa hàng ứng dụng" 
+        },
+        "freeTrial": { 
+          "title": "6. Dùng Thử Miễn Phí", 
+          "content": "Có thể cung cấp dùng thử miễn phí:\n• Điều kiện được xác định bởi Apple/Google\n• Đăng ký tự động bắt đầu nếu không hủy\n• Phần dùng thử không sử dụng mất khi mua đăng ký" 
+        },
+        "userContent": { 
+          "title": "7. Nội Dung Người Dùng", 
+          "content": "Bạn giữ quyền sở hữu nội dung bạn tạo (\"Nội Dung Người Dùng\").\n\nBạn cấp cho chúng tôi giấy phép hạn chế để:\n• Lưu trữ, xử lý và hiển thị nội dung để cung cấp dịch vụ\n• Tạo bản sao lưu\n• Phân tích dữ liệu ẩn danh để cải thiện\n\nBạn hoàn toàn chịu trách nhiệm về Nội Dung Người Dùng." 
+        },
+        "prohibited": { 
+          "title": "8. Hoạt Động Bị Cấm", 
+          "content": "Bạn đồng ý KHÔNG:", 
+          "items": [
+            "Sử dụng Ứng dụng cho mục đích bất hợp pháp hoặc gian lận", 
+            "Sao chép, sửa đổi, phân phối hoặc bán bất kỳ phần nào của Ứng dụng", 
+            "Đảo ngược kỹ thuật hoặc dịch ngược Ứng dụng", 
+            "Vô hiệu hóa các tính năng bảo mật", 
+            "Sử dụng hệ thống tự động mà không có sự cho phép", 
+            "Truyền mã độc hại", 
+            "Cố gắng truy cập trái phép", 
+            "Can thiệp vào chức năng Ứng dụng"
+          ] 
+        },
+        "intellectualProperty": { 
+          "title": "9. Sở Hữu Trí Tuệ", 
+          "content": "Ứng dụng, bao gồm thiết kế, mã, nội dung, logo và thương hiệu, thuộc sở hữu của {{company.name}} và được bảo vệ bởi luật sở hữu trí tuệ.\n\nBạn nhận được giấy phép hạn chế, không độc quyền, không thể chuyển nhượng, có thể thu hồi cho sử dụng cá nhân, phi thương mại." 
+        },
+        "disclaimers": { 
+          "title": "10. Tuyên Bố Từ Chối", 
+          "content": "ỨNG DỤNG ĐƯỢC CUNG CẤP \"NGUYÊN TRẠNG\" KHÔNG CÓ BẤT KỲ BẢO ĐẢM NÀO, BAO GỒM:\n• KHẢ NĂNG BÁN HÀNG HOẶC PHÙ HỢP CHO MỤC ĐÍCH CỤ THỂ\n• KHÔNG VI PHẠM\n• HOẠT ĐỘNG KHÔNG GIÁN ĐOẠN HOẶC KHÔNG LỖI\n• ĐỘ CHÍNH XÁC CỦA NỘI DUNG" 
+        },
+        "limitation": { 
+          "title": "11. Giới Hạn Trách Nhiệm", 
+          "content": "TRONG PHẠM VI TỐI ĐA ĐƯỢC PHÁP LUẬT CHO PHÉP, {{company.name}} KHÔNG CHỊU TRÁCH NHIỆM VỀ:\n• BẤT KỲ THIỆT HẠI GIÁN TIẾP, NGẪU NHIÊN, ĐẶC BIỆT, HẬU QUẢ\n• MẤT LỢI NHUẬN, DOANH THU, DỮ LIỆU HOẶC UY TÍN\n• BỆNH DO THỰC PHẨM HOẶC VẤN ĐỀ SỨC KHỎE\n• QUYẾT ĐỊNH DỰA TRÊN THÔNG TIN ỨNG DỤNG\n\nTỔNG TRÁCH NHIỆM KHÔNG VƯỢT QUÁ SỐ TIỀN ĐÃ TRẢ TRONG 12 THÁNG TRƯỚC, HOẶC ${{legal.liabilityCapUSD}} USD, TÙY MỨC NÀO LỚN HƠN." 
+        },
+        "indemnification": { 
+          "title": "12. Bồi Thường", 
+          "content": "Bạn đồng ý bồi thường {{company.name}} từ các khiếu nại phát sinh từ:\n• Việc sử dụng Ứng dụng của bạn\n• Vi phạm các Điều Khoản này\n• Vi phạm quyền của bên thứ ba" 
+        },
+        "termination": { 
+          "title": "13. Chấm Dứt", 
+          "content": "Chúng tôi có thể chấm dứt tài khoản của bạn vì vi phạm Điều Khoản hoặc theo quyết định của chúng tôi.\n\nBạn có thể chấm dứt qua cài đặt Ứng dụng.\n\nKhi chấm dứt, giấy phép của bạn kết thúc ngay lập tức." 
+        },
+        "governing": { 
+          "title": "14. Luật Điều Chỉnh", 
+          "content": "Các Điều Khoản này được điều chỉnh bởi luật pháp {{legal.governingLawVi}}.\n\nTranh chấp sẽ được giải quyết tại tòa án có thẩm quyền tại {{address.jurisdictionVi}}." 
+        },
+        "severability": { 
+          "title": "15. Khả Năng Tách Rời", 
+          "content": "Nếu bất kỳ điều khoản nào bị coi là vô hiệu, các điều khoản còn lại vẫn có hiệu lực." 
+        },
+        "contact": { 
+          "title": "16. Liên Hệ", 
+          "content": "{{company.name}}\nEmail: {{email.legal}}\nHỗ trợ: {{email.support}}" 
+        }
+      }
+    },
+    "permissions": {
+      "meta": { 
+        "description": "Tìm hiểu về các quyền thiết bị WiseNest yêu cầu và cách {{company.name}} sử dụng chúng." 
+      },
+      "lastUpdated": "Cập nhật lần cuối", 
+      "date": "Tháng 1, 2026",
+      "sections": {
+        "introduction": { 
+          "title": "1. Về Quyền Ứng Dụng", 
+          "content": "Trang này giải thích các quyền thiết bị mà WiseNest có thể yêu cầu, lý do cần thiết và cách chúng tôi sử dụng.\n\nChúng tôi tuân theo nguyên tắc quyền tối thiểu - chỉ yêu cầu quyền cần thiết cho các tính năng cụ thể. Bạn có thể cấp, từ chối hoặc thu hồi quyền bất cứ lúc nào qua cài đặt thiết bị." 
+        },
+        "camera": { 
+          "title": "2. Quyền Camera (Tùy Chọn)", 
+          "content": "Quyền camera cho phép:", 
+          "items": [
+            "Quét Mã Vạch: Quét mã vạch sản phẩm để nhập nhanh.", 
+            "Chụp Ảnh: Chụp ảnh thực phẩm để nhận dạng trực quan.", 
+            "Quét Hóa Đơn: Chụp hóa đơn để thêm sản phẩm đã mua (Premium)."
+          ] 
+        },
+        "cameraDetails": { 
+          "title": "Chi Tiết Camera", 
+          "content": "• Loại Truy Cập: Chỉ theo yêu cầu (khi bạn sử dụng tính năng quét)\n• Xử Lý Dữ Liệu: Ảnh xử lý cục bộ; dữ liệu mã vạch gửi đến máy chủ để lấy thông tin sản phẩm\n• Không Truy Cập Nền: Không bao giờ truy cập trong nền\n• Thay Thế: Có thể nhập thủ công mà không cần camera" 
+        },
+        "notifications": { 
+          "title": "3. Thông Báo (Tùy Chọn)", 
+          "content": "Quyền thông báo cho phép:", 
+          "items": [
+            "Cảnh Báo Hết Hạn: Thông báo khi thực phẩm sắp hết hạn.", 
+            "Nhắc Mua Sắm: Nhắc nhở về các mục trong danh sách mua sắm.", 
+            "Cập Nhật Gia Đình: Cập nhật khi thành viên gia đình sửa đổi mục chia sẻ.", 
+            "Cập Nhật Ứng Dụng: Thông báo tính năng quan trọng."
+          ] 
+        },
+        "notificationDetails": { 
+          "title": "Kiểm Soát Thông Báo", 
+          "content": "Bạn có quyền kiểm soát chi tiết:\n• Cài Đặt Danh Mục: Bật/tắt các loại cụ thể trong cài đặt Ứng dụng\n• Giờ Im Lặng: Đặt thời gian không làm phiền\n• Tần Suất: Điều chỉnh tần suất thông báo\n\nKhông có thông báo tiếp thị mà không có sự đồng ý." 
+        },
+        "storage": { 
+          "title": "4. Quyền Bộ Nhớ", 
+          "content": "Quyền bộ nhớ cần thiết cho:", 
+          "items": [
+            "Cơ Sở Dữ Liệu Cục Bộ: Lưu dữ liệu kho để truy cập ngoại tuyến.", 
+            "Bộ Nhớ Đệm Ảnh: Lưu ảnh để xem ngoại tuyến.", 
+            "Tùy Chọn Ứng Dụng: Lưu cài đặt và tùy chỉnh.", 
+            "Xuất/Nhập: Cho phép xuất hoặc nhập dữ liệu."
+          ] 
+        },
+        "storageDetails": { 
+          "title": "Chi Tiết Bộ Nhớ", 
+          "content": "• iOS: Bộ nhớ sandbox ứng dụng (không cần quyền rõ ràng)\n• Android: Bộ nhớ phạm vi trên Android 10+\n• Mã Hóa: Dữ liệu nhạy cảm được mã hóa khi lưu\n• Không Truy Cập: Chúng tôi không truy cập ảnh, tải xuống hoặc tệp khác của bạn" 
+        },
+        "network": { 
+          "title": "5. Truy Cập Internet (Bắt Buộc)", 
+          "content": "Kết nối internet cho phép:", 
+          "items": [
+            "Đồng Bộ Tài Khoản: Đồng bộ dữ liệu trên các thiết bị (Premium).", 
+            "Sao Lưu Đám Mây: Sao lưu dữ liệu tự động.", 
+            "Cơ Sở Dữ Liệu Sản Phẩm: Tra cứu thông tin sản phẩm.", 
+            "Gợi Ý Công Thức: Lấy gợi ý công thức bằng AI.", 
+            "Xác Thực: Xác minh danh tính khi đăng nhập."
+          ] 
+        },
+        "networkDetails": { 
+          "title": "Chi Tiết Mạng", 
+          "content": "• Hiệu Quả Dữ Liệu: Giảm thiểu qua đồng bộ hiệu quả\n• Chế Độ Ngoại Tuyến: Các tính năng cốt lõi hoạt động ngoại tuyến\n• Chỉ HTTPS: Tất cả giao tiếp được mã hóa" 
+        },
+        "optional": { 
+          "title": "6. Quyền Tùy Chọn vs Bắt Buộc", 
+          "content": "Quyền Bắt Buộc:\n• Bộ Nhớ: Để lưu dữ liệu kho\n• Internet: Cho xác thực và tính năng cốt lõi\n\nQuyền Tùy Chọn:\n• Camera: Cho quét mã vạch\n• Thông Báo: Cho cảnh báo hết hạn" 
+        },
+        "managing": { 
+          "title": "7. Quản Lý Quyền", 
+          "content": "iOS: Cài đặt > Quyền riêng tư & Bảo mật > [Quyền] > WiseNest\nHoặc: Cài đặt > WiseNest > Quyền\n\nAndroid: Cài đặt > Ứng dụng > WiseNest > Quyền\n\nThay đổi có hiệu lực ngay lập tức." 
+        },
+        "contact": { 
+          "title": "8. Câu Hỏi", 
+          "content": "Email: {{email.support}}\nQuyền riêng tư: {{email.privacy}}" 
+        }
+      }
+    },
+    "subscription-terms": {
+      "meta": { 
+        "description": "Xem điều khoản đăng ký cho WiseNest Premium của {{company.name}}." 
+      },
+      "lastUpdated": "Cập nhật lần cuối", 
+      "date": "Tháng 1, 2026",
+      "sections": {
+        "introduction": { 
+          "title": "1. Về WiseNest Premium", 
+          "content": "WiseNest Premium mở khóa các tính năng nâng cao:\n• Theo dõi không giới hạn\n• Đồng bộ đám mây trên các thiết bị\n• Thông báo hết hạn nâng cao\n• Gợi ý công thức bằng AI\n• Chia sẻ gia đình\n• Hỗ trợ ưu tiên\n• Trải nghiệm không quảng cáo" 
+        },
+        "plans": { 
+          "title": "2. Các Gói Đăng Ký", 
+          "content": "Chúng tôi cung cấp các tùy chọn linh hoạt:", 
+          "items": [
+            "Tuần: Tính phí mỗi 7 ngày", 
+            "Tháng: Tính phí mỗi 30 ngày", 
+            "3 Tháng: Tính phí mỗi 3 tháng (Tiết kiệm ~10%)", 
+            "6 Tháng: Tính phí mỗi 6 tháng (Tiết kiệm ~25%)", 
+            "Năm: Tính phí mỗi 12 tháng (Tiết kiệm ~60% - Giá Trị Tốt Nhất)"
+          ] 
+        },
+        "pricing": { 
+          "title": "3. Giá", 
+          "content": "• Giá hiển thị bằng đơn vị tiền tệ địa phương\n• Giá có thể thay đổi theo khu vực\n• Giá bao gồm thuế áp dụng\n• Giá hiện tại luôn hiển thị trước khi xác nhận mua" 
+        },
+        "billing": { 
+          "title": "4. Thanh Toán", 
+          "content": "Thanh toán được xử lý qua cửa hàng ứng dụng:", 
+          "items": [
+            "Apple App Store: Tính vào tài khoản Apple ID.", 
+            "Google Play Store: Tính vào tài khoản Google Play.", 
+            "Tự Động Gia Hạn: Gia hạn tự động trừ khi hủy 24 giờ trước khi kỳ kết thúc.", 
+            "Phí Gia Hạn: Tính trong 24 giờ trước khi kỳ kết thúc."
+          ] 
+        },
+        "freeTrials": { 
+          "title": "5. Dùng Thử Miễn Phí", 
+          "content": "Có thể cung cấp dùng thử miễn phí:\n• Truy cập đầy đủ Premium trong thời gian dùng thử\n• Đăng ký tự động bắt đầu nếu không hủy\n• Điều kiện được xác định bởi Apple/Google\n• Phần dùng thử không sử dụng mất khi mua" 
+        },
+        "cancellation": { 
+          "title": "6. Hủy", 
+          "content": "Hủy bất cứ lúc nào:\n\niOS: Cài đặt > Apple ID > Đăng ký > WiseNest > Hủy\nAndroid: Google Play Store > Menu > Đăng ký > WiseNest > Hủy\n\nSau khi hủy:\n• Quyền truy cập Premium tiếp tục đến khi kỳ kết thúc\n• Dữ liệu vẫn còn nguyên\n• Có thể đăng ký lại bất cứ lúc nào" 
+        },
+        "refunds": { 
+          "title": "7. Hoàn Tiền", 
+          "content": "Hoàn tiền được xử lý bởi cửa hàng ứng dụng:\n\niOS: reportaproblem.apple.com\nAndroid: Google Play Support\n\n{{company.name}} không thể xử lý hoàn tiền trực tiếp." 
+        },
+        "featureChanges": { 
+          "title": "8. Thay Đổi Tính Năng", 
+          "content": "Chúng tôi liên tục cải thiện:\n• Tính năng mới được thêm không tính phí thêm\n• Tính năng hiện có có thể được cải thiện\n• Thay đổi quan trọng được thông báo trước" 
+        },
+        "priceChanges": { 
+          "title": "9. Thay Đổi Giá", 
+          "content": "Giá có thể được điều chỉnh:\n• Thông báo trước 30 ngày trước khi tăng giá\n• Giá hiện tại tiếp tục đến kỳ gia hạn tiếp theo\n• Có thể hủy trước khi giá mới có hiệu lực" 
+        },
+        "termination": { 
+          "title": "10. Chấm Dứt", 
+          "content": "Premium có thể bị chấm dứt:\n• Bởi Bạn: Hủy như mô tả trong Mục 6\n• Bởi Chúng Tôi: Vì vi phạm Điều Khoản\n\nKhi chấm dứt, các tính năng Premium không còn khả dụng nhưng dữ liệu vẫn có thể truy cập." 
+        },
+        "contact": { 
+          "title": "11. Liên Hệ", 
+          "content": "Email: {{email.support}}\nThanh toán: {{email.billing}}" 
+        }
+      }
+    },
+    "disclaimer": {
+      "meta": { 
+        "description": "Tuyên bố miễn trừ quan trọng về việc sử dụng ứng dụng WiseNest của {{company.name}}." 
+      },
+      "lastUpdated": "Cập nhật lần cuối", 
+      "date": "Tháng 1, 2026",
+      "sections": {
+        "general": { 
+          "title": "1. Tuyên Bố Miễn Trừ Chung", 
+          "content": "VUI LÒNG ĐỌC KỸ.\n\nWiseNest được cung cấp chỉ cho mục đích thông tin chung và tiện lợi. Mặc dù {{company.name}} cố gắng đảm bảo độ chính xác và tin cậy, chúng tôi không đưa ra bất kỳ đại diện hoặc bảo đảm nào về tính đầy đủ, chính xác, tin cậy hoặc phù hợp của thông tin.\n\nBất kỳ sự tin tưởng nào bạn đặt vào thông tin đó hoàn toàn là rủi ro của riêng bạn." 
+        },
+        "noWarranty": { 
+          "title": "2. Không Bảo Hành", 
+          "content": "WiseNest được cung cấp \"NGUYÊN TRẠNG\" và \"CÓ SẴN\" mà không có bất kỳ bảo đảm nào, bao gồm:\n• KHẢ NĂNG BÁN HÀNG\n• PHÙ HỢP CHO MỤC ĐÍCH CỤ THỂ\n• KHÔNG VI PHẠM\n• ĐỘ CHÍNH XÁC HOẶC ĐẦY ĐỦ\n• DỊCH VỤ KHÔNG GIÁN ĐOẠN HOẶC KHÔNG LỖI" 
+        },
+        "foodSafety": { 
+          "title": "3. Tuyên Bố Miễn Trừ An Toàn Thực Phẩm", 
+          "content": "THÔNG BÁO QUAN TRỌNG: WiseNest chỉ là công cụ tiện lợi. Nó KHÔNG thay thế cho kiến thức an toàn thực phẩm đúng đắn hoặc hướng dẫn chuyên nghiệp.", 
+          "items": [
+            "Ngày Hết Hạn Là Ước Tính: Dựa trên đầu vào của bạn và hướng dẫn chung. Có thể không phản ánh an toàn thực phẩm thực tế.", 
+            "Nhiều Yếu Tố Ảnh Hưởng An Toàn: Nhiệt độ bảo quản, điều kiện xử lý, độ nguyên vẹn bao bì và chất lượng ban đầu.", 
+            "Luôn Kiểm Tra Thực Phẩm: Kiểm tra bằng mắt, kiểm tra mùi và đánh giá kết cấu trước khi tiêu thụ.", 
+            "Khi Nghi Ngờ, Hãy Vứt Bỏ: Không tiêu thụ nếu bạn có bất kỳ nghi ngờ nào.", 
+            "Không Chịu Trách Nhiệm Về Bệnh: Chúng tôi KHÔNG chịu trách nhiệm về bệnh do thực phẩm, phản ứng dị ứng hoặc vấn đề sức khỏe.", 
+            "Tham Khảo Cơ Quan Y Tế: Đối với hướng dẫn an toàn thực phẩm, tham khảo sở y tế địa phương."
+          ] 
+        },
+        "aiSuggestions": { 
+          "title": "4. Tuyên Bố Miễn Trừ Gợi Ý AI", 
+          "content": "Gợi ý do AI tạo ra có thể chứa lỗi:\n• Không Phải Tư Vấn Dinh Dưỡng: Không phải tư vấn chế độ ăn hoặc y tế chuyên nghiệp\n• Dị Ứng: Luôn xác minh thành phần cho chất gây dị ứng\n• Không Bảo Đảm: Kết quả phụ thuộc vào nguyên liệu và kỹ thuật\n\nTham khảo nhà cung cấp dịch vụ y tế cho tư vấn chế độ ăn." 
+        },
+        "thirdParty": { 
+          "title": "5. Nội Dung Bên Thứ Ba", 
+          "content": "Ứng dụng có thể chứa liên kết đến các trang bên thứ ba. Chúng tôi không kiểm soát và không chịu trách nhiệm về:\n• Nội dung hoặc độ chính xác của các trang bên thứ ba\n• Chính sách bảo mật của các trang bên thứ ba\n• Sản phẩm hoặc dịch vụ được cung cấp\n\nTruy cập các trang bên thứ ba là rủi ro của riêng bạn." 
+        },
+        "dataAccuracy": { 
+          "title": "6. Độ Chính Xác Dữ Liệu", 
+          "content": "Mặc dù chúng tôi cố gắng đảm bảo độ chính xác:\n• Thông Tin Sản Phẩm: Từ cơ sở dữ liệu bên thứ ba, có thể chứa lỗi\n• Đầu Vào Người Dùng: Độ chính xác phụ thuộc vào thông tin bạn nhập\n• Biến Thể Khu Vực: Công thức sản phẩm có thể khác nhau" 
+        },
+        "limitation": { 
+          "title": "7. Giới Hạn Trách Nhiệm", 
+          "content": "TRONG PHẠM VI TỐI ĐA ĐƯỢC PHÁP LUẬT CHO PHÉP, {{company.name}} KHÔNG CHỊU TRÁCH NHIỆM VỀ:\n• Bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, đặc biệt, hậu quả\n• Mất lợi nhuận, doanh thu, dữ liệu hoặc uy tín\n• Bệnh do thực phẩm hoặc vấn đề sức khỏe\n• Quyết định dựa trên thông tin Ứng dụng\n\nĐiều này áp dụng bất kể lý thuyết pháp lý." 
+        },
+        "indemnification": { 
+          "title": "8. Bồi Thường", 
+          "content": "Bạn đồng ý bồi thường {{company.name}} từ các khiếu nại phát sinh từ:\n• Việc sử dụng Ứng dụng của bạn\n• Vi phạm các Điều Khoản\n• Vi phạm quyền của bên thứ ba\n• Sự cố an toàn thực phẩm liên quan đến các mục được theo dõi" 
+        },
+        "jurisdictionalLimitations": { 
+          "title": "9. Giới Hạn Theo Khu Vực Pháp Lý", 
+          "content": "Một số khu vực pháp lý không cho phép giới hạn một số bảo đảm. Trong trường hợp đó, trách nhiệm của chúng tôi được giới hạn ở mức tối đa được pháp luật cho phép.\n\nQuyền người tiêu dùng theo luật hiện hành có thể không bị từ bỏ." 
+        },
+        "professionalAdvice": { 
+          "title": "10. Không Phải Tư Vấn Chuyên Nghiệp", 
+          "content": "Ứng dụng không cấu thành:\n• Tư vấn y tế, sức khỏe hoặc dinh dưỡng\n• Tư vấn tài chính hoặc pháp lý\n• Hướng dẫn an toàn thực phẩm chuyên nghiệp\n\nTìm kiếm tư vấn chuyên gia có trình độ khi cần." 
+        },
+        "changes": { 
+          "title": "11. Thay Đổi", 
+          "content": "Chúng tôi có thể sửa đổi Tuyên Bố Miễn Trừ này bất cứ lúc nào. Thay đổi có hiệu lực ngay khi đăng. Tiếp tục sử dụng đồng nghĩa với việc chấp nhận." 
+        },
+        "contact": { 
+          "title": "12. Liên Hệ", 
+          "content": "{{company.name}}\nEmail: {{email.legal}}\nHỗ trợ: {{email.support}}\n\nĐối với trường hợp khẩn cấp an toàn thực phẩm, liên hệ trung tâm kiểm soát ngộ độc địa phương hoặc dịch vụ cấp cứu." 
+        }
+      }
+    }
+  }
+}

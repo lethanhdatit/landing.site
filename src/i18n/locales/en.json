@@ -1,0 +1,585 @@
+{
+  "about": {
+    "meta": {
+      "title": "About Us - {{company.name}}",
+      "description": "Learn about {{company.name}} and our mission to create smart apps for modern life."
+    },
+    "hero": {
+      "title": "About {{company.name}}",
+      "subtitle": "We're a passionate team dedicated to building innovative apps that simplify everyday life through intelligent technology."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "At {{company.name}}, we believe technology should make life easier, not more complicated. Our mission is to create beautiful, intuitive applications that leverage AI to solve real-world problems."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "passion": { "title": "Passion", "description": "We love what we do and it shows in every detail of our products." },
+        "users": { "title": "User First", "description": "Every decision we make starts with our users' needs." },
+        "innovation": { "title": "Innovation", "description": "We constantly push boundaries to deliver cutting-edge solutions." },
+        "quality": { "title": "Quality", "description": "We never compromise on the quality of our products." }
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "content": "We're a small but mighty team based in {{address.country}}, combining local insights with global perspectives to build apps that resonate with users worldwide."
+    }
+  },
+  "contact": {
+    "meta": { 
+      "title": "Contact Us - {{company.name}}", 
+      "description": "Get in touch with the {{company.name}} team." 
+    },
+    "hero": { 
+      "title": "Contact Us", 
+      "subtitle": "Have questions, feedback, or just want to say hello? We'd love to hear from you." 
+    },
+    "methods": {
+      "email": { 
+        "title": "Email", 
+        "description": "Send us an email and we'll get back to you within 24 hours." 
+      },
+      "location": { 
+        "title": "Location", 
+        "description": "Our team is based in {{address.full}}." 
+      }
+    },
+    "support": { 
+      "title": "Support", 
+      "description": "For app-related questions and technical support, please email {{email.support}} with details about your issue.", 
+      "hours": "We typically respond within {{legal.supportResponseHours}} hours on business days." 
+    }
+  },
+  "metadata": {
+    "title": "{{company.name}} - {{company.tagline}}",
+    "description": "Discover innovative apps that simplify your daily life. From smart home management to personal finance, we build tools that matter.",
+    "keywords": "smart apps, home management, food tracking, household management, AI apps, {{address.country}}"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "downloadApp": "Download App",
+    "viewAllProducts": "View All Products",
+    "backToHome": "Back to Home",
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close",
+    "lastUpdated": "Last updated",
+    "effectiveDate": "Effective date",
+    "tableOfContents": "Table of Contents",
+    "onThisPage": "On this page",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "legalInfo": "Legal Information",
+    "legalInfoDescription": "Review our policies and terms for using this product.",
+    "legalQuestions": "Have questions about our policies?",
+    "contactUs": "Contact Us",
+    "legal": { 
+      "privacy-policy": "Privacy Policy", 
+      "terms-of-service": "Terms of Service", 
+      "permissions": "App Permissions", 
+      "subscription-terms": "Subscription Terms", 
+      "disclaimer": "Disclaimer" 
+    }
+  },
+  "nav": { 
+    "home": "Home", 
+    "products": "Products", 
+    "about": "About", 
+    "contact": "Contact", 
+    "legal": "Legal" 
+  },
+  "footer": {
+    "company": "Company", 
+    "about": "About Us", 
+    "contact": "Contact", 
+    "careers": "Careers", 
+    "products": "Products",
+    "legal": "Legal", 
+    "privacyPolicy": "Privacy Policy", 
+    "termsOfService": "Terms of Service", 
+    "cookiePolicy": "Cookie Policy",
+    "social": "Follow Us", 
+    "copyright": "© {year} {{company.name}}. All rights reserved.", 
+    "madeWith": "Made with ❤️ in {{address.country}}"
+  },
+  "home": {
+    "meta": { 
+      "title": "{{company.name}} - {{company.tagline}}", 
+      "description": "Discover innovative apps that simplify your daily life with AI-powered solutions." 
+    },
+    "hero": { 
+      "title": "{{company.tagline}}", 
+      "subtitle": "We build innovative applications that simplify your daily routines and help you live smarter.", 
+      "cta": "Explore Our Apps", 
+      "secondary": "Learn More" 
+    },
+    "products": { 
+      "title": "Our Products", 
+      "subtitle": "Discover apps designed to make your life easier", 
+      "learnMore": "Learn more" 
+    },
+    "features": {
+      "title": "Why Choose Us", 
+      "subtitle": "Built with care, designed for you",
+      "items": {
+        "ai": { "title": "AI-Powered", "description": "Smart features powered by cutting-edge AI to enhance your experience." },
+        "privacy": { "title": "Privacy First", "description": "Your data belongs to you. We prioritize security and transparency." },
+        "fast": { "title": "Lightning Fast", "description": "Optimized performance for instant responses and smooth interactions." },
+        "multilingual": { "title": "Multilingual", "description": "Available in multiple languages to serve users worldwide." }
+      }
+    },
+    "cta": { 
+      "title": "Ready to Get Started?", 
+      "subtitle": "Download our apps today and experience smarter living.", 
+      "button": "Explore Apps" 
+    }
+  },
+  "products": {
+    "wisenest": {
+      "name": "WiseNest", 
+      "tagline": "Smart Food & Home Management",
+      "description": "Track your food inventory, reduce waste, and discover recipes based on what you have. WiseNest is your smart kitchen companion.",
+      "features": {
+        "title": "Powerful Features", 
+        "subtitle": "Everything you need to manage your home smartly",
+        "items": {
+          "expiry": { "title": "Smart Expiry Tracking", "description": "Get timely notifications before your food expires." },
+          "reduce": { "title": "Reduce Food Waste", "description": "Track consumption patterns and get insights to minimize waste." },
+          "share": { "title": "Family Sharing", "description": "Share your inventory and shopping lists with family members." },
+          "privacy": { "title": "Privacy Protected", "description": "Your data is encrypted and secure." },
+          "smart": { "title": "Smart Suggestions", "description": "AI-powered recipe suggestions based on your ingredients." },
+          "premium": { "title": "Premium Experience", "description": "Unlock unlimited tracking and advanced features." }
+        }
+      },
+      "cta": { 
+        "title": "Start Managing Smarter Today", 
+        "subtitle": "Download WiseNest and transform how you manage your home." 
+      }
+    }
+  },
+  "legal": {
+    "privacy-policy": {
+      "meta": { 
+        "description": "Learn how {{company.name}} collects, uses, and protects your personal information when using WiseNest." 
+      },
+      "lastUpdated": "Last updated", 
+      "date": "January 2026",
+      "sections": {
+        "introduction": { 
+          "title": "1. Introduction", 
+          "content": "Your privacy is critically important to us. This Privacy Policy explains how {{company.name}} (\"Company\", \"we\", \"our\", or \"us\") collects, uses, discloses, and safeguards your information when you use WiseNest mobile application.\n\nBy using WiseNest, you agree to the collection and use of information in accordance with this policy. This policy complies with {{legal.dataProtectionLaw}} and international standards such as GDPR where applicable." 
+        },
+        "dataController": { 
+          "title": "2. Data Controller", 
+          "content": "{{company.name}} is the data controller responsible for your personal data.\n\nContact: {{email.privacy}}\nAddress: {{address.full}}" 
+        },
+        "informationWeCollect": { 
+          "title": "3. Information We Collect", 
+          "content": "We collect several types of information:", 
+          "items": [
+            "Account Information: Email, display name, profile picture (optional), and authentication data from social login providers (Google, Apple, Facebook).", 
+            "Usage Data: Device information, app usage statistics, crash reports, and general location (country/region). We do NOT collect precise GPS location.", 
+            "User Content: Food items, expiry dates, shopping lists, recipe preferences, and custom categories.", 
+            "Payment Information: Subscription status and transaction IDs. Actual payment details are processed by Apple/Google.", 
+            "Communications: Support emails and attachments you provide."
+          ] 
+        },
+        "howWeUse": { 
+          "title": "4. How We Use Your Information", 
+          "content": "We use collected information for:", 
+          "items": [
+            "Service Delivery: Provide inventory tracking, expiry notifications, and recipe suggestions.", 
+            "Sync and Backup: Synchronize data across devices for Premium users.", 
+            "Notifications: Send expiry alerts and service announcements.", 
+            "Personalization: Generate AI-powered recipe suggestions.", 
+            "Improvement: Analyze usage patterns and develop new features.", 
+            "Legal Compliance: Comply with applicable laws and regulations."
+          ] 
+        },
+        "legalBasis": { 
+          "title": "5. Legal Basis for Processing", 
+          "content": "We process your data based on:", 
+          "items": [
+            "Contract Performance: Processing necessary to provide requested services.", 
+            "Legitimate Interests: Improving services, preventing fraud, ensuring security.", 
+            "Consent: For optional features like marketing communications.", 
+            "Legal Obligation: Compliance with applicable laws."
+          ] 
+        },
+        "dataStorage": { 
+          "title": "6. Data Storage and Security", 
+          "content": "Your data is stored securely:\n\n• Cloud Storage: Firebase (Google Cloud Platform) servers in US and Singapore.\n• Encryption: TLS 1.3 in transit, AES-256 at rest.\n• Access Controls: Only authorized personnel can access user data.\n• Security Audits: Regular security assessments and vulnerability testing.\n\nNo method of transmission is 100% secure. We cannot guarantee absolute security." 
+        },
+        "dataRetention": { 
+          "title": "7. Data Retention", 
+          "content": "We retain data as follows:", 
+          "items": [
+            "Active Account: Data retained while your account is active.", 
+            "Account Deletion: Personal data deleted within {{legal.dataRetentionDays}} days of request.", 
+            "Backup Retention: Backups retained up to {{legal.backupRetentionDays}} days for disaster recovery.", 
+            "Legal Requirements: Some data retained longer if required by law.", 
+            "Anonymized Data: May be retained indefinitely for statistical analysis."
+          ] 
+        },
+        "sharing": { 
+          "title": "8. Data Sharing", 
+          "content": "We do NOT sell your personal information. We may share data with:", 
+          "items": [
+            "Service Providers: Firebase, RevenueCat, Sentry (bound by confidentiality agreements).", 
+            "Analytics Partners: Google Analytics (anonymized data).", 
+            "Legal Requirements: When required by law or court order.", 
+            "Business Transfers: In event of merger or acquisition.", 
+            "With Your Consent: When you explicitly consent."
+          ] 
+        },
+        "internationalTransfer": { 
+          "title": "9. International Data Transfers", 
+          "content": "Your data may be transferred to countries outside {{address.country}} (US, Singapore). We ensure appropriate safeguards through Standard Contractual Clauses and data processing agreements." 
+        },
+        "yourRights": { 
+          "title": "10. Your Rights", 
+          "content": "You have the following rights:", 
+          "items": [
+            "Right to Access: Request a copy of your personal data.", 
+            "Right to Rectification: Request correction of inaccurate data.", 
+            "Right to Erasure: Request deletion of your data.", 
+            "Right to Data Portability: Request data in machine-readable format.", 
+            "Right to Restrict Processing: Limit how we use your data.", 
+            "Right to Object: Object to processing for certain purposes.", 
+            "Right to Withdraw Consent: Withdraw consent at any time.", 
+            "Right to Lodge Complaint: File complaint with data protection authority."
+          ] 
+        },
+        "exercisingRights": { 
+          "title": "11. Exercising Your Rights", 
+          "content": "Contact {{email.privacy}}. We respond within {{legal.privacyResponseDays}} days.\n\nYou can also:\n• Export data through App settings\n• Delete account through App settings\n• Manage notification preferences\n• Control permissions via device settings" 
+        },
+        "children": { 
+          "title": "12. Children's Privacy", 
+          "content": "WiseNest is not intended for children under {{legal.minimumAge}} years. We do not knowingly collect information from children. Contact us immediately if you believe a child has provided personal information." 
+        },
+        "thirdPartyLinks": { 
+          "title": "13. Third-Party Links", 
+          "content": "Our App may contain links to third-party services. We are not responsible for their privacy policies or practices." 
+        },
+        "cookies": { 
+          "title": "14. Cookies and Tracking", 
+          "content": "Our mobile App uses:\n• Device Identifiers: For analytics\n• Local Storage: App preferences and cached data\n• Analytics SDKs: Firebase Analytics (anonymized)\n\nOur website may use cookies for functionality and analytics." 
+        },
+        "changes": { 
+          "title": "15. Changes to This Policy", 
+          "content": "We may update this policy. Material changes will be notified through in-app notification, email, or website notice. Continued use constitutes acceptance." 
+        },
+        "contact": { 
+          "title": "16. Contact Us", 
+          "content": "{{company.name}}\nEmail: {{email.privacy}}\nGeneral: {{email.general}}\nSupport: {{email.support}}\n\nWe respond within {{legal.generalResponseDays}} business days." 
+        }
+      }
+    },
+    "terms-of-service": {
+      "meta": { 
+        "description": "Read the Terms of Service for using WiseNest application by {{company.name}}." 
+      },
+      "lastUpdated": "Last updated", 
+      "date": "January 2026",
+      "sections": {
+        "acceptance": { 
+          "title": "1. Acceptance of Terms", 
+          "content": "By using WiseNest (\"the App\"), you agree to these Terms of Service, our Privacy Policy, and additional applicable terms. These Terms constitute a legally binding agreement between you and {{company.name}}.\n\nIF YOU DO NOT AGREE, DO NOT USE THE APP.\n\nWe may modify these Terms at any time. Continued use constitutes acceptance." 
+        },
+        "eligibility": { 
+          "title": "2. Eligibility", 
+          "content": "To use WiseNest, you must:\n• Be at least {{legal.minimumAge}} years old (or digital consent age in your jurisdiction)\n• Have legal capacity to enter binding agreements\n• Not be prohibited from using the App under applicable laws" 
+        },
+        "description": { 
+          "title": "3. Description of Service", 
+          "content": "WiseNest is a food and home inventory management app that helps users:\n• Track food items and expiry dates\n• Manage household inventory\n• Receive expiry notifications\n• Create shopping lists\n• Discover recipes\n\nThe App is for personal, non-commercial use." 
+        },
+        "accounts": { 
+          "title": "4. User Accounts", 
+          "content": "By creating an account, you agree to:", 
+          "items": [
+            "Provide accurate and complete information", 
+            "Maintain information accuracy", 
+            "Maintain security of your credentials", 
+            "Not share your credentials", 
+            "Notify us of unauthorized access", 
+            "Accept responsibility for all account activities"
+          ] 
+        },
+        "subscriptions": { 
+          "title": "5. Subscriptions and Payments", 
+          "content": "Premium features are available through paid subscriptions:\n• Billing through Apple App Store or Google Play Store\n• Auto-renewal unless cancelled 24 hours before renewal date\n• Prices may change with advance notice\n• Refunds handled by app stores per their policies" 
+        },
+        "freeTrial": { 
+          "title": "6. Free Trials", 
+          "content": "Free trials may be offered:\n• Eligibility determined by Apple/Google\n• Subscription begins automatically if not cancelled\n• Unused trial portions forfeited upon purchasing subscription" 
+        },
+        "userContent": { 
+          "title": "7. User Content", 
+          "content": "You retain ownership of content you create (\"User Content\").\n\nYou grant us a limited license to:\n• Store, process, and display your content for service delivery\n• Create backups\n• Analyze anonymized data for improvements\n\nYou are solely responsible for your User Content." 
+        },
+        "prohibited": { 
+          "title": "8. Prohibited Activities", 
+          "content": "You agree NOT to:", 
+          "items": [
+            "Use the App for illegal or fraudulent purposes", 
+            "Copy, modify, distribute, or sell any part of the App", 
+            "Reverse engineer or decompile the App", 
+            "Circumvent security features", 
+            "Use automated systems without permission", 
+            "Transmit malware or malicious code", 
+            "Attempt unauthorized access", 
+            "Interfere with App functionality"
+          ] 
+        },
+        "intellectualProperty": { 
+          "title": "9. Intellectual Property", 
+          "content": "The App, including design, code, content, logos, and trademarks, is owned by {{company.name}} and protected by intellectual property laws.\n\nYou receive a limited, non-exclusive, non-transferable, revocable license for personal, non-commercial use." 
+        },
+        "disclaimers": { 
+          "title": "10. Disclaimers", 
+          "content": "THE APP IS PROVIDED \"AS IS\" WITHOUT WARRANTIES OF ANY KIND, INCLUDING:\n• MERCHANTABILITY OR FITNESS FOR PARTICULAR PURPOSE\n• NON-INFRINGEMENT\n• UNINTERRUPTED OR ERROR-FREE OPERATION\n• ACCURACY OF CONTENT" 
+        },
+        "limitation": { 
+          "title": "11. Limitation of Liability", 
+          "content": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, {{company.name}} SHALL NOT BE LIABLE FOR:\n• ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES\n• LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL\n• FOOD-RELATED ILLNESS OR HEALTH ISSUES\n• DECISIONS BASED ON APP INFORMATION\n\nTOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT PAID IN THE 12 MONTHS PRECEDING THE CLAIM, OR ${{legal.liabilityCapUSD}} USD, WHICHEVER IS GREATER." 
+        },
+        "indemnification": { 
+          "title": "12. Indemnification", 
+          "content": "You agree to indemnify {{company.name}} from claims arising from:\n• Your use of the App\n• Your violation of these Terms\n• Your violation of third-party rights" 
+        },
+        "termination": { 
+          "title": "13. Termination", 
+          "content": "We may terminate your account for Terms violations or at our discretion.\n\nYou may terminate through App settings.\n\nUpon termination, your license ends immediately." 
+        },
+        "governing": { 
+          "title": "14. Governing Law", 
+          "content": "These Terms are governed by the laws of the {{legal.governingLaw}}.\n\nDisputes shall be resolved in the competent courts of {{address.jurisdiction}}." 
+        },
+        "severability": { 
+          "title": "15. Severability", 
+          "content": "If any provision is found invalid, the remaining provisions remain in effect." 
+        },
+        "contact": { 
+          "title": "16. Contact", 
+          "content": "{{company.name}}\nEmail: {{email.legal}}\nSupport: {{email.support}}" 
+        }
+      }
+    },
+    "permissions": {
+      "meta": { 
+        "description": "Understand the device permissions WiseNest requests and how {{company.name}} uses them." 
+      },
+      "lastUpdated": "Last updated", 
+      "date": "January 2026",
+      "sections": {
+        "introduction": { 
+          "title": "1. About App Permissions", 
+          "content": "This page explains the device permissions WiseNest may request, why they are needed, and how we use them.\n\nWe follow the principle of minimal permissions - we only request access necessary for specific features. You can grant, deny, or revoke permissions at any time through your device settings." 
+        },
+        "camera": { 
+          "title": "2. Camera Permission (Optional)", 
+          "content": "The camera permission enables:", 
+          "items": [
+            "Barcode Scanning: Scan product barcodes for quick item entry.", 
+            "Photo Capture: Take photos of food items for visual identification.", 
+            "Receipt Scanning: Capture receipts to add purchased items (Premium)."
+          ] 
+        },
+        "cameraDetails": { 
+          "title": "Camera Details", 
+          "content": "• Access Type: On-demand only (when you use scanning features)\n• Data Handling: Photos processed locally; barcode data sent to servers for product info\n• No Background Access: Never accessed in background\n• Alternatives: Manual entry available without camera" 
+        },
+        "notifications": { 
+          "title": "3. Notifications (Optional)", 
+          "content": "Notification permission allows:", 
+          "items": [
+            "Expiry Alerts: Notifications when food approaches expiry.", 
+            "Shopping Reminders: Reminders about shopping list items.", 
+            "Family Updates: Updates when family members modify shared items.", 
+            "App Updates: Important feature announcements."
+          ] 
+        },
+        "notificationDetails": { 
+          "title": "Notification Controls", 
+          "content": "You have granular control:\n• Category Settings: Enable/disable specific types in App settings\n• Quiet Hours: Set do-not-disturb periods\n• Frequency: Adjust notification frequency\n\nNo marketing notifications without consent." 
+        },
+        "storage": { 
+          "title": "4. Storage Permission", 
+          "content": "Storage access is required for:", 
+          "items": [
+            "Local Database: Store inventory data for offline access.", 
+            "Image Caching: Save photos for offline viewing.", 
+            "App Preferences: Store settings and customizations.", 
+            "Export/Import: Allow data export or import."
+          ] 
+        },
+        "storageDetails": { 
+          "title": "Storage Details", 
+          "content": "• iOS: App-sandboxed storage (no explicit permission needed)\n• Android: Scoped storage on Android 10+\n• Encryption: Sensitive data encrypted at rest\n• No Access: We don't access your photos, downloads, or other files" 
+        },
+        "network": { 
+          "title": "5. Internet Access (Required)", 
+          "content": "Internet connectivity enables:", 
+          "items": [
+            "Account Sync: Synchronize data across devices (Premium).", 
+            "Cloud Backup: Automatic data backup.", 
+            "Product Database: Look up product information.", 
+            "Recipe Suggestions: Fetch AI-generated recipes.", 
+            "Authentication: Verify identity when signing in."
+          ] 
+        },
+        "networkDetails": { 
+          "title": "Network Details", 
+          "content": "• Data Efficiency: Minimized through efficient syncing\n• Offline Mode: Core features work offline\n• HTTPS Only: All communications encrypted" 
+        },
+        "optional": { 
+          "title": "6. Optional vs Required", 
+          "content": "Required Permissions:\n• Storage: For storing inventory data\n• Internet: For authentication and core features\n\nOptional Permissions:\n• Camera: For barcode scanning\n• Notifications: For expiry alerts" 
+        },
+        "managing": { 
+          "title": "7. Managing Permissions", 
+          "content": "iOS: Settings > Privacy & Security > [Permission] > WiseNest\nOr: Settings > WiseNest > Permissions\n\nAndroid: Settings > Apps > WiseNest > Permissions\n\nChanges take effect immediately." 
+        },
+        "contact": { 
+          "title": "8. Questions", 
+          "content": "Email: {{email.support}}\nPrivacy inquiries: {{email.privacy}}" 
+        }
+      }
+    },
+    "subscription-terms": {
+      "meta": { 
+        "description": "Review the subscription terms for WiseNest Premium by {{company.name}}." 
+      },
+      "lastUpdated": "Last updated", 
+      "date": "January 2026",
+      "sections": {
+        "introduction": { 
+          "title": "1. About WiseNest Premium", 
+          "content": "WiseNest Premium unlocks advanced features:\n• Unlimited item tracking\n• Cloud sync across devices\n• Advanced expiry notifications\n• AI-powered recipe suggestions\n• Family sharing\n• Priority support\n• Ad-free experience" 
+        },
+        "plans": { 
+          "title": "2. Subscription Plans", 
+          "content": "We offer flexible options:", 
+          "items": [
+            "Weekly: Billed every 7 days", 
+            "Monthly: Billed every 30 days", 
+            "3 Months: Billed every 3 months (Save ~10%)", 
+            "6 Months: Billed every 6 months (Save ~25%)", 
+            "Annual: Billed every 12 months (Save ~60% - Best Value)"
+          ] 
+        },
+        "pricing": { 
+          "title": "3. Pricing", 
+          "content": "• Prices displayed in your local currency\n• Prices may vary by region\n• Prices include applicable taxes\n• Current prices shown before purchase confirmation" 
+        },
+        "billing": { 
+          "title": "4. Billing and Payment", 
+          "content": "Payments processed through app stores:", 
+          "items": [
+            "Apple App Store: Charged to your Apple ID account.", 
+            "Google Play Store: Charged to your Google Play account.", 
+            "Auto-Renewal: Renews automatically unless cancelled 24 hours before period ends.", 
+            "Renewal Charge: Charged within 24 hours prior to period end."
+          ] 
+        },
+        "freeTrials": { 
+          "title": "5. Free Trials", 
+          "content": "Free trials may be offered:\n• Full Premium access during trial\n• Subscription begins automatically if not cancelled\n• Eligibility determined by Apple/Google\n• Unused trial portions forfeited upon purchasing" 
+        },
+        "cancellation": { 
+          "title": "6. Cancellation", 
+          "content": "Cancel anytime:\n\niOS: Settings > Apple ID > Subscriptions > WiseNest > Cancel\nAndroid: Google Play Store > Menu > Subscriptions > WiseNest > Cancel\n\nAfter cancellation:\n• Premium access continues until period ends\n• Data remains intact\n• Re-subscribe anytime" 
+        },
+        "refunds": { 
+          "title": "7. Refunds", 
+          "content": "Refunds handled by app stores:\n\niOS: reportaproblem.apple.com\nAndroid: Google Play Support\n\n{{company.name}} cannot process refunds directly." 
+        },
+        "featureChanges": { 
+          "title": "8. Feature Changes", 
+          "content": "We continuously improve:\n• New features added at no additional cost\n• Existing features may be improved\n• Significant changes communicated in advance" 
+        },
+        "priceChanges": { 
+          "title": "9. Price Changes", 
+          "content": "Prices may be adjusted:\n• 30 days advance notice before increases\n• Current rate continues until next renewal\n• Cancel before new price takes effect" 
+        },
+        "termination": { 
+          "title": "10. Termination", 
+          "content": "Premium may be terminated:\n• By You: Cancel as described in Section 6\n• By Us: For Terms violations\n\nUpon termination, Premium features become unavailable but data remains accessible." 
+        },
+        "contact": { 
+          "title": "11. Contact", 
+          "content": "Email: {{email.support}}\nBilling: {{email.billing}}" 
+        }
+      }
+    },
+    "disclaimer": {
+      "meta": { 
+        "description": "Important disclaimers for using WiseNest application by {{company.name}}." 
+      },
+      "lastUpdated": "Last updated", 
+      "date": "January 2026",
+      "sections": {
+        "general": { 
+          "title": "1. General Disclaimer", 
+          "content": "PLEASE READ CAREFULLY.\n\nWiseNest is provided for general informational and convenience purposes only. While {{company.name}} strives for accuracy and reliability, we make no representations or warranties about completeness, accuracy, reliability, or suitability of information.\n\nAny reliance you place on such information is strictly at your own risk." 
+        },
+        "noWarranty": { 
+          "title": "2. No Warranty", 
+          "content": "WiseNest is provided \"AS IS\" and \"AS AVAILABLE\" without any warranties, including:\n• MERCHANTABILITY\n• FITNESS FOR PARTICULAR PURPOSE\n• NON-INFRINGEMENT\n• ACCURACY OR COMPLETENESS\n• UNINTERRUPTED OR ERROR-FREE SERVICE" 
+        },
+        "foodSafety": { 
+          "title": "3. Food Safety Disclaimer", 
+          "content": "CRITICAL NOTICE: WiseNest is a convenience tool only. It is NOT a substitute for proper food safety knowledge or professional guidance.", 
+          "items": [
+            "Expiry Dates Are Estimates: Based on your input and general guidelines. May not reflect actual food safety.", 
+            "Multiple Factors Affect Safety: Storage temperature, handling, packaging, and initial quality.", 
+            "Always Inspect Food: Visually inspect, check odors, and assess texture before consuming.", 
+            "When In Doubt, Throw It Out: Do not consume if you have any doubt.", 
+            "No Liability for Illness: We are NOT responsible for foodborne illness, allergic reactions, or health issues.", 
+            "Consult Authorities: For food safety guidance, consult your local health department."
+          ] 
+        },
+        "aiSuggestions": { 
+          "title": "4. AI Suggestions Disclaimer", 
+          "content": "AI-generated suggestions may contain errors:\n• Not Nutritional Advice: Not professional dietary or medical advice\n• Allergies: Always verify ingredients for allergens\n• No Guarantee: Results depend on ingredients and techniques\n\nConsult healthcare providers for dietary advice." 
+        },
+        "thirdParty": { 
+          "title": "5. Third-Party Content", 
+          "content": "The App may contain links to third-party sites. We have no control over and assume no responsibility for:\n• Content or accuracy of third-party sites\n• Privacy policies of third-party sites\n• Products or services offered\n\nAccess third-party sites at your own risk." 
+        },
+        "dataAccuracy": { 
+          "title": "6. Data Accuracy", 
+          "content": "While we strive for accuracy:\n• Product Information: From third-party databases, may contain errors\n• User Input: Accuracy depends on information you enter\n• Regional Variations: Product formulations may vary" 
+        },
+        "limitation": { 
+          "title": "7. Limitation of Liability", 
+          "content": "TO THE FULLEST EXTENT PERMITTED BY LAW, {{company.name}} SHALL NOT BE LIABLE FOR:\n• Any direct, indirect, incidental, special, consequential damages\n• Loss of profits, revenue, data, or goodwill\n• Food-related illness or health issues\n• Decisions based on App information\n\nThis applies regardless of legal theory." 
+        },
+        "indemnification": { 
+          "title": "8. Indemnification", 
+          "content": "You agree to indemnify {{company.name}} from claims arising from:\n• Your use of the App\n• Your violation of Terms\n• Your violation of third-party rights\n• Food safety incidents related to tracked items" 
+        },
+        "jurisdictionalLimitations": { 
+          "title": "9. Jurisdictional Limitations", 
+          "content": "Some jurisdictions don't allow limitation of certain warranties. In such cases, our liability is limited to the maximum extent permitted by law.\n\nConsumer rights under applicable law may not be waived." 
+        },
+        "professionalAdvice": { 
+          "title": "10. Not Professional Advice", 
+          "content": "The App does not constitute:\n• Medical, health, or nutritional advice\n• Financial or legal advice\n• Professional food safety guidance\n\nSeek qualified professional advice when needed." 
+        },
+        "changes": { 
+          "title": "11. Changes", 
+          "content": "We may modify this Disclaimer at any time. Changes effective immediately upon posting. Continued use constitutes acceptance." 
+        },
+        "contact": { 
+          "title": "12. Contact", 
+          "content": "{{company.name}}\nEmail: {{email.legal}}\nSupport: {{email.support}}\n\nFor food safety emergencies, contact your local poison control center or emergency services." 
+        }
+      }
+    }
+  }
+}
