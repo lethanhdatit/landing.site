@@ -95,9 +95,8 @@ jobs:
             # Create deployment directory
             mkdir -p /opt/insight/landing && cd /opt/insight/landing
             
-            # Generate docker-compose.yml
-            cat > docker-compose.yml << 'COMPOSE_EOF'
-            services:
+            # Generate docker-compose.yml using echo to avoid heredoc indentation issues
+            echo 'services:
               landing:
                 image: IMAGE_PLACEHOLDER
                 container_name: landing-site
@@ -122,8 +121,7 @@ jobs:
             
             networks:
               insight-network:
-                driver: bridge
-            COMPOSE_EOF
+                driver: bridge' > docker-compose.yml
             
             # Replace image placeholder
             sed -i "s|IMAGE_PLACEHOLDER|${FULL_IMAGE}|g" docker-compose.yml
