@@ -1,4 +1,4 @@
-# insight-landing
+# landing-site
 
 Landing site for Insight AI products at [insight.ai.vn](https://insight.ai.vn).
 
@@ -127,7 +127,7 @@ The site is automatically deployed via GitHub Actions when pushing to the `main`
 
 2. Start with PM2:
    ```bash
-   pm2 start npm --name "insight-landing" -- start
+   pm2 start npm --name "landing-site" -- start
    ```
 
 ## License

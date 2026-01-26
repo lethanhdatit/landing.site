@@ -100,7 +100,7 @@ jobs:
             services:
               landing:
                 image: IMAGE_PLACEHOLDER
-                container_name: insight-landing
+                container_name: landing-site
                 restart: unless-stopped
                 ports:
                   - "3100:3000"
@@ -132,7 +132,7 @@ jobs:
             echo "${GH_TOKEN}" | docker login ghcr.io -u "${GH_USER}" --password-stdin
             
             # Backup current image if exists
-            CURRENT=$(docker inspect --format='{{.Config.Image}}' insight-landing 2>/dev/null || echo "none")
+            CURRENT=$(docker inspect --format='{{.Config.Image}}' landing-site 2>/dev/null || echo "none")
             [ "$CURRENT" != "none" ] && docker tag "$CURRENT" ghcr.io/lethanhdatit/landing.site:backup 2>/dev/null || true
             
             # Pull and deploy with retry
