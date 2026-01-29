@@ -9,11 +9,41 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /**
- * Format date for display
+ * Supported locales map - centralized for consistency
+ * Maps app language codes to BCP 47 locale tags
+ */
+const LOCALE_MAP: Record<string, string> = {
+  vi: 'vi-VN',
+  en: 'en-US',
+  // Add more as needed
+  ja: 'ja-JP',
+  ko: 'ko-KR',
+  zh: 'zh-CN',
+  th: 'th-TH',
+  id: 'id-ID',
+  ms: 'ms-MY',
+  de: 'de-DE',
+  fr: 'fr-FR',
+  es: 'es-ES',
+};
+
+/**
+ * Get BCP 47 locale from language code
+ * @param language Short language code (e.g., 'vi', 'en')
+ * @returns Full BCP 47 locale (e.g., 'vi-VN', 'en-US')
+ */
+export function getLocale(language: string): string {
+  return LOCALE_MAP[language] || LOCALE_MAP['en'] || 'en-US';
+}
+
+/**
+ * Format date for display - uses dynamic locale mapping
  */
 export function formatDate(date: Date | string, locale: string = 'en'): string {
   const d = typeof date === 'string' ? new Date(date) : date;
-  return d.toLocaleDateString(locale === 'vi' ? 'vi-VN' : 'en-US', {
+  const resolvedLocale = getLocale(locale);
+  
+  return d.toLocaleDateString(resolvedLocale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
