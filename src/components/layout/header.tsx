@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { useState } from 'react';
@@ -29,11 +30,15 @@ export function Header() {
       <nav className="container-custom">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-2">
-            <span className="text-2xl">🧠</span>
-            <span className="font-display text-xl font-bold text-neutral-900 dark:text-white">
-              Insight AI<span className="text-brand-600"> VN</span>
-            </span>
+          <Link href={`/${locale}`} className="flex items-center">
+            <Image
+              src="/images/logo-trans.png"
+              alt="Insight AI VN"
+              width={160}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

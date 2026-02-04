@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { getActiveProducts } from '@/lib/products';
@@ -85,11 +86,14 @@ export function Footer() {
 
           {/* Brand */}
           <div>
-            <Link href={`/${locale}`} className="flex items-center gap-2">
-              <span className="text-2xl">🧠</span>
-              <span className="font-display text-xl font-bold text-neutral-900 dark:text-white">
-                Insight AI<span className="text-brand-600"> VN</span>
-              </span>
+            <Link href={`/${locale}`} className="flex items-center">
+              <Image
+                src="/images/logo-trans.png"
+                alt="Insight AI VN"
+                width={160}
+                height={40}
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
               {t('madeWith')}
