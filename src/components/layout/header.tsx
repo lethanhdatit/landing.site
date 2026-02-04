@@ -67,7 +67,17 @@ export function Header() {
                           className="flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-800"
                           onClick={() => setIsProductsOpen(false)}
                         >
-                          <span className="text-2xl">{product.icon}</span>
+                          {product.logo ? (
+                            <Image
+                              src={product.logo}
+                              alt={product.name}
+                              width={32}
+                              height={32}
+                              className="h-8 w-8 object-contain"
+                            />
+                          ) : (
+                            <span className="text-2xl">{product.icon}</span>
+                          )}
                           <div>
                             <div className="font-medium text-neutral-900 dark:text-white">
                               {product.name}
@@ -137,7 +147,17 @@ export function Header() {
                             setIsProductsOpen(false);
                           }}
                         >
-                          <span>{product.icon}</span>
+                          {product.logo ? (
+                            <Image
+                              src={product.logo}
+                              alt={product.name}
+                              width={24}
+                              height={24}
+                              className="h-6 w-6 object-contain"
+                            />
+                          ) : (
+                            <span>{product.icon}</span>
+                          )}
                           <span>{product.name}</span>
                         </Link>
                       ))}

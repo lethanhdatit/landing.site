@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Sparkles, Shield, Zap, Globe } from 'lucide-react';
 import { getActiveProducts } from '@/lib/products';
 import { locales, type Locale, setRequestLocale } from '@/i18n/config';
@@ -123,8 +124,18 @@ export default async function HomePage({ params }: Props) {
                 href={`/${locale}/${product.id}`}
                 className="group rounded-2xl border border-neutral-200 bg-white p-8 transition-all hover:border-brand-200 hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-950 dark:hover:border-brand-800"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl text-4xl">
-                  {product.icon}
+                <div className="flex h-16 w-16 items-center justify-center rounded-2xl">
+                  {product.logo ? (
+                    <Image
+                      src={product.logo}
+                      alt={product.name}
+                      width={64}
+                      height={64}
+                      className="h-16 w-16 object-contain"
+                    />
+                  ) : (
+                    <span className="text-4xl">{product.icon}</span>
+                  )}
                 </div>
                 <h3 className="mt-6 font-display text-xl font-semibold text-neutral-900 dark:text-white">
                   {product.name}

@@ -38,10 +38,28 @@ export async function generateMetadata({ params }: Props) {
   if (!product || !legalPages.includes(legal as LegalPageSlug)) return {};
   const t = await getTranslations({ locale, namespace: 'common' });
   const legalT = await getTranslations({ locale, namespace: 'legal' });
-  return {
+  
+  const metadata: Record<string, unknown> = {
     title: `${t(`legal.${legal}`)} - ${product.name}`,
     description: legalT(`${legal}.meta.description`),
   };
+  
+  // Use product-specific favicon if available
+  if (product.favicon) {
+    metadata.icons = {
+      icon: [
+        { url: `${product.favicon}/favicon.ico`, sizes: 'any' },
+        { url: `${product.favicon}/favicon-16x16.png`, sizes: '16x16', type: 'image/png' },
+        { url: `${product.favicon}/favicon-32x32.png`, sizes: '32x32', type: 'image/png' },
+        { url: `${product.favicon}/favicon-192x192.png`, sizes: '192x192', type: 'image/png' },
+      ],
+      apple: [
+        { url: `${product.favicon}/apple-touch-icon.png`, sizes: '180x180', type: 'image/png' },
+      ],
+    };
+  }
+  
+  return metadata;
 }
 
 export default async function LegalPage({ params }: Props) {

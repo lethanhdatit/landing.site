@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Download, Star, Shield, Zap, Clock, Users, Leaf } from 'lucide-react';
 import { getProduct, getActiveProducts } from '@/lib/products';
 import { locales, type Locale, setRequestLocale } from '@/i18n/config';
@@ -25,10 +26,28 @@ export async function generateMetadata({ params }: Props) {
   const product = getProduct(productId);
   if (!product) return {};
   const t = await getTranslations({ locale, namespace: 'products' });
-  return {
+  
+  const metadata: Record<string, unknown> = {
     title: `${product.name} - ${t(`${product.id}.tagline`)}`,
     description: t(`${product.id}.description`),
   };
+  
+  // Use product-specific favicon if available
+  if (product.favicon) {
+    metadata.icons = {
+      icon: [
+        { url: `${product.favicon}/favicon.ico`, sizes: 'any' },
+        { url: `${product.favicon}/favicon-16x16.png`, sizes: '16x16', type: 'image/png' },
+        { url: `${product.favicon}/favicon-32x32.png`, sizes: '32x32', type: 'image/png' },
+        { url: `${product.favicon}/favicon-192x192.png`, sizes: '192x192', type: 'image/png' },
+      ],
+      apple: [
+        { url: `${product.favicon}/apple-touch-icon.png`, sizes: '180x180', type: 'image/png' },
+      ],
+    };
+  }
+  
+  return metadata;
 }
 
 export default async function ProductPage({ params }: Props) {
@@ -55,8 +74,18 @@ export default async function ProductPage({ params }: Props) {
         <div className="container-custom">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <div className="flex items-center gap-3">
-                <span className="text-5xl">{product.icon}</span>
+              <div className="flex items-center gap-4">
+                {product.logo ? (
+                  <Image
+                    src={product.logo}
+                    alt={product.name}
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 object-contain"
+                  />
+                ) : (
+                  <span className="text-5xl">{product.icon}</span>
+                )}
                 <h1 className="font-display text-4xl font-bold tracking-tight text-neutral-900 dark:text-white sm:text-5xl">
                   {product.name}
                 </h1>
@@ -82,7 +111,19 @@ export default async function ProductPage({ params }: Props) {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-brand-100 to-brand-200 p-8 dark:from-brand-900/50 dark:to-brand-800/50">
-                <div className="flex h-full items-center justify-center text-9xl">{product.icon}</div>
+                <div className="flex h-full items-center justify-center">
+                  {product.logo ? (
+                    <Image
+                      src={product.logo}
+                      alt={product.name}
+                      width={320}
+                      height={320}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  ) : (
+                    <span className="text-9xl">{product.icon}</span>
+                  )}
+                </div>
               </div>
             </div>
           </div>

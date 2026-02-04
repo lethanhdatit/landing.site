@@ -18,6 +18,8 @@ export interface Product {
   tagline: string;
   description?: string;
   icon: string;
+  logo?: string; // Optional logo image path
+  favicon?: string; // Optional favicon directory path (e.g., '/favicons/wisenest')
   color: string;
   appStoreUrl?: string;
   playStoreUrl?: string;
@@ -32,6 +34,8 @@ const products: Record<ProductId, Product> = {
     name: 'WiseNest',
     tagline: 'Smart Food & Home Management',
     icon: '🏠',
+    logo: '/images/logo-wise-nest.png',
+    favicon: '/favicons/wisenest',
     color: '#22c55e',
     appStoreUrl: 'https://apps.apple.com/app/wisenest/id6758124371',
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.wisenest.app',
