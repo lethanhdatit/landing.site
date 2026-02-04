@@ -7,46 +7,20 @@ const nextConfig = {
   // Enable strict mode for better development experience
   reactStrictMode: true,
 
-  // Enable standalone output for Docker deployment
-  output: 'standalone',
+  // Static export for GitHub Pages
+  output: 'export',
+  
+  // Trailing slash for static hosting compatibility
+  trailingSlash: true,
 
-  // Optimize images
+  // Disable image optimization for static export (use unoptimized images)
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'insight.ai.vn',
-      },
-    ],
   },
 
-  // Headers for security
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
-          },
-        ],
-      },
-    ];
-  },
+  // Note: Custom headers are not supported in static export
+  // They should be configured via _headers file or hosting provider
 };
 
 module.exports = withNextIntl(nextConfig);

@@ -35,7 +35,8 @@ export function LanguageSwitcher() {
       newPath = '/' + newLocale + '/' + segments.join('/');
     }
 
-    router.push(newPath);
+    // Use replace instead of push to avoid back button returning to old locale
+    router.replace(newPath);
   };
 
   return (

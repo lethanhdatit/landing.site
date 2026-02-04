@@ -1,11 +1,11 @@
 # =============================================================================
-# Insight AI Landing Site - Production Deployment
+# Insight AI Landing Site - GitHub Pages Deployment
 # =============================================================================
 # Trigger: Push to master branch
-# Flow: Build → Push to GHCR → Deploy via SSH (Docker)
+# Flow: Build static site → Deploy to GitHub Pages
 # =============================================================================
 
-name: Deploy to Production
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -13,18 +13,25 @@ on:
       - master
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
   NODE_VERSION: '20'
 
 jobs:
-  build-and-push:
-    name: Build & Push Image
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     
     steps:
       - name: Checkout code
@@ -45,110 +52,36 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Login to GHCR
-        uses: docker/login-action@v3
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build static site
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://insight.ai.vn
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - name: Build & Push Image
-        uses: docker/build-push-action@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          context: .
-          file: ./docker/Dockerfile
-          push: true
-          tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
-          build-args: |
-            NEXT_PUBLIC_SITE_URL=${{ vars.SITE_URL || 'https://insight.ai.vn' }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          path: ./out
 
   deploy:
-    name: Deploy to Server
+    name: Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build-and-push
-    environment: production
+    needs: build
     
     steps:
-      - name: Checkout for compose file
-        uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            docker/docker-compose.prod.yml
-
-      - name: Copy compose file to server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          port: 22
-          source: "docker/docker-compose.prod.yml"
-          target: "/opt/insight/landing"
-          strip_components: 1
-
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_USER: ${{ github.actor }}
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          port: 22
-          script_stop: true
-          envs: GH_TOKEN,GH_USER
-          script: |
-            set -e
-            cd /opt/insight/landing
-            
-            # Rename compose file
-            mv -f docker-compose.prod.yml docker-compose.yml
-            
-            # Login to GHCR
-            echo "${GH_TOKEN}" | docker login ghcr.io -u "${GH_USER}" --password-stdin
-            
-            # Backup current image if exists
-            CURRENT=$(docker inspect --format='{{.Config.Image}}' landing-site 2>/dev/null || echo "none")
-            [ "$CURRENT" != "none" ] && docker tag "$CURRENT" ghcr.io/lethanhdatit/landing.site:backup 2>/dev/null || true
-            
-            # Pull and deploy with retry
-            for i in 1 2 3; do
-              docker compose pull && break
-              echo "Pull failed, retrying ($i/3)..."
-              docker system prune -f 2>/dev/null || true
-              sleep 5
-            done
-            
-            # Start/restart container
-            docker compose up -d
-            
-            # Show status
-            docker compose ps
-            
-            # Cleanup old images
-            docker image prune -f --filter "until=168h"
-
-      - name: Verify Deployment
-        run: |
-          sleep 20
-          for i in 1 2 3 4 5; do
-            curl -sf https://insight.ai.vn/ && echo "✅ Site is healthy" && exit 0
-            sleep 10
-          done
-          echo "⚠️ Health check timeout - please verify manually"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   notify:
     name: Notify Status
     runs-on: ubuntu-latest
-    needs: [build-and-push, deploy]
+    needs: [build, deploy]
     if: always()
     
     steps:
@@ -157,6 +90,6 @@ jobs:
           echo "## Deployment Summary" >> $GITHUB_STEP_SUMMARY
           echo "- **Site**: https://insight.ai.vn" >> $GITHUB_STEP_SUMMARY
           echo "- **Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Build Status**: ${{ needs.build-and-push.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Build Status**: ${{ needs.build.result }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Deploy Status**: ${{ needs.deploy.result }}" >> $GITHUB_STEP_SUMMARY
 
