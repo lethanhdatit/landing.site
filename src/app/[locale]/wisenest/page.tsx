@@ -107,7 +107,7 @@ export default async function WiseNestPage({ params }: Props) {
                     className="wn-btn-primary gap-2"
                   >
                     <Download className="h-5 w-5" /> 
-                    App Store
+                    {commonT('appStore')}
                   </a>
                 )}
                 {product.playStoreUrl && (
@@ -118,7 +118,7 @@ export default async function WiseNestPage({ params }: Props) {
                     className="wn-btn-secondary gap-2"
                   >
                     <Download className="h-5 w-5" /> 
-                    Google Play
+                    {commonT('playStore')}
                   </a>
                 )}
               </div>
@@ -240,7 +240,7 @@ export default async function WiseNestPage({ params }: Props) {
                     className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 font-semibold text-emerald-700 transition-all hover:scale-105 hover:shadow-lg"
                   >
                     <Download className="h-5 w-5" /> 
-                    Download on App Store
+                    {commonT('downloadOnAppStore')}
                   </a>
                 )}
                 {product.playStoreUrl && (
@@ -251,7 +251,7 @@ export default async function WiseNestPage({ params }: Props) {
                     className="inline-flex items-center gap-2 rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-all hover:scale-105 hover:bg-white/10"
                   >
                     <Download className="h-5 w-5" /> 
-                    Get it on Google Play
+                    {commonT('getOnPlayStore')}
                   </a>
                 )}
               </div>

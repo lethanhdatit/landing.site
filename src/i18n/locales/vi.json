@@ -6,14 +6,17 @@
     },
     "hero": {
       "title": "Về {{company.name}}",
-      "subtitle": "Chúng tôi là đội ngũ đam mê, cam kết xây dựng những ứng dụng sáng tạo giúp đơn giản hóa cuộc sống hàng ngày thông qua công nghệ thông minh."
+      "subtitle": "Chúng tôi là đội ngũ đam mê, cam kết xây dựng những ứng dụng sáng tạo giúp đơn giản hóa cuộc sống hàng ngày thông qua công nghệ thông minh.",
+      "badge": "Về Chúng Tôi"
     },
     "mission": {
       "title": "Sứ Mệnh",
+      "badge": "Sứ Mệnh",
       "content": "Tại {{company.name}}, chúng tôi tin rằng công nghệ nên làm cuộc sống dễ dàng hơn, không phức tạp hơn. Sứ mệnh của chúng tôi là tạo ra những ứng dụng đẹp, trực quan, tận dụng AI để giải quyết các vấn đề thực tế."
     },
     "values": {
       "title": "Giá Trị",
+      "badge": "Giá Trị",
       "items": {
         "passion": { "title": "Đam Mê", "description": "Chúng tôi yêu thích công việc và điều đó thể hiện trong từng chi tiết sản phẩm." },
         "users": { "title": "Người Dùng Đầu Tiên", "description": "Mọi quyết định đều bắt đầu từ nhu cầu của người dùng." },
@@ -23,7 +26,13 @@
     },
     "team": {
       "title": "Đội Ngũ",
-      "content": "Chúng tôi là đội ngũ nhỏ nhưng mạnh mẽ tại {{address.countryVi}}, kết hợp hiểu biết địa phương với tầm nhìn toàn cầu để xây dựng ứng dụng phù hợp với người dùng khắp nơi."
+      "badge": "Đội Ngũ",
+      "content": "Chúng tôi là đội ngũ nhỏ nhưng mạnh mẽ tại {{address.countryVi}}, kết hợp hiểu biết địa phương với tầm nhìn toàn cầu để xây dựng ứng dụng phù hợp với người dùng khắp nơi.",
+      "stats": {
+        "experience": "Năm KN",
+        "projects": "Dự Án",
+        "passion": "Đam Mê"
+      }
     }
   },
   "contact": {
@@ -33,7 +42,8 @@
     },
     "hero": { 
       "title": "Liên Hệ", 
-      "subtitle": "Có câu hỏi, phản hồi, hoặc chỉ muốn chào? Chúng tôi rất vui được nghe từ bạn." 
+      "subtitle": "Có câu hỏi, phản hồi, hoặc chỉ muốn chào? Chúng tôi rất vui được nghe từ bạn.",
+      "badge": "Liên Hệ"
     },
     "methods": {
       "email": { 
@@ -43,12 +53,35 @@
       "location": { 
         "title": "Địa Điểm", 
         "description": "Đội ngũ của chúng tôi có trụ sở tại {{address.fullVi}}." 
+      },
+      "hours": {
+        "title": "Giờ Làm Việc",
+        "description": "Thứ 2 - Thứ 6, 9AM - 6PM (GMT+7)"
       }
     },
     "support": { 
-      "title": "Hỗ Trợ", 
+      "title": "Hỗ Trợ 24/7", 
       "description": "Đối với câu hỏi liên quan đến ứng dụng và hỗ trợ kỹ thuật, vui lòng gửi email đến {{email.support}}.", 
       "hours": "Chúng tôi thường phản hồi trong vòng {{legal.supportResponseHours}} giờ vào các ngày làm việc." 
+    },
+    "form": {
+      "title": "Gửi tin nhắn cho chúng tôi",
+      "badge": "Liên Hệ Ngay",
+      "description": "Điền vào mẫu bên dưới và chúng tôi sẽ phản hồi sớm nhất có thể.",
+      "name": "Họ và tên",
+      "namePlaceholder": "Tên của bạn",
+      "email": "Email",
+      "emailPlaceholder": "email@cuaban.com",
+      "subject": "Chủ đề",
+      "subjectPlaceholder": "Bạn cần hỗ trợ gì?",
+      "message": "Tin nhắn",
+      "messagePlaceholder": "Nội dung chi tiết...",
+      "submit": "Gửi Tin Nhắn"
+    },
+    "quickLinks": {
+      "generalInquiries": "Hỏi Đáp Chung",
+      "technicalSupport": "Hỗ Trợ Kỹ Thuật",
+      "available247": "Hỗ trợ 24/7"
     }
   },
   "metadata": {
@@ -72,6 +105,8 @@
     "onThisPage": "Trên trang này",
     "appStore": "App Store",
     "playStore": "Google Play",
+    "downloadOnAppStore": "Tải từ App Store",
+    "getOnPlayStore": "Tải từ Google Play",
     "legalInfo": "Thông Tin Pháp Lý",
     "legalInfoDescription": "Xem chính sách và điều khoản sử dụng sản phẩm này.",
     "legalQuestions": "Có câu hỏi về chính sách của chúng tôi?",
@@ -114,15 +149,24 @@
       "title": "Ứng Dụng Thông Minh Cho Cuộc Sống Hiện Đại", 
       "subtitle": "Chúng tôi xây dựng những ứng dụng sáng tạo giúp đơn giản hóa công việc hàng ngày và giúp bạn sống thông minh hơn.", 
       "cta": "Khám Phá Ứng Dụng", 
-      "secondary": "Tìm Hiểu Thêm" 
+      "secondary": "Tìm Hiểu Thêm",
+      "badge": "Công Nghệ AI",
+      "scroll": "Cuộn"
+    },
+    "stats": {
+      "downloads": "Lượt Tải",
+      "rating": "Đánh Giá",
+      "uptime": "Hoạt Động"
     },
     "products": { 
       "title": "Sản Phẩm", 
+      "badge": "Sản Phẩm",
       "subtitle": "Khám phá những ứng dụng được thiết kế để làm cuộc sống dễ dàng hơn", 
       "learnMore": "Tìm hiểu thêm" 
     },
     "features": {
-      "title": "Tại Sao Chọn Chúng Tôi", 
+      "title": "Tại Sao Chọn Chúng Tôi",
+      "badge": "Tính Năng",
       "subtitle": "Xây dựng với tâm huyết, thiết kế cho bạn",
       "items": {
         "ai": { "title": "Tích Hợp AI", "description": "Tính năng thông minh được hỗ trợ bởi AI tiên tiến để nâng cao trải nghiệm." },

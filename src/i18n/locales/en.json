@@ -6,14 +6,17 @@
     },
     "hero": {
       "title": "About {{company.name}}",
-      "subtitle": "We're a passionate team dedicated to building innovative apps that simplify everyday life through intelligent technology."
+      "subtitle": "We're a passionate team dedicated to building innovative apps that simplify everyday life through intelligent technology.",
+      "badge": "About Us"
     },
     "mission": {
       "title": "Our Mission",
+      "badge": "Our Mission",
       "content": "At {{company.name}}, we believe technology should make life easier, not more complicated. Our mission is to create beautiful, intuitive applications that leverage AI to solve real-world problems."
     },
     "values": {
       "title": "Our Values",
+      "badge": "Values",
       "items": {
         "passion": { "title": "Passion", "description": "We love what we do and it shows in every detail of our products." },
         "users": { "title": "User First", "description": "Every decision we make starts with our users' needs." },
@@ -23,7 +26,13 @@
     },
     "team": {
       "title": "Our Team",
-      "content": "We're a small but mighty team based in {{address.country}}, combining local insights with global perspectives to build apps that resonate with users worldwide."
+      "badge": "Our Team",
+      "content": "We're a small but mighty team based in {{address.country}}, combining local insights with global perspectives to build apps that resonate with users worldwide.",
+      "stats": {
+        "experience": "Years Exp",
+        "projects": "Projects",
+        "passion": "Passion"
+      }
     }
   },
   "contact": {
@@ -33,7 +42,8 @@
     },
     "hero": { 
       "title": "Contact Us", 
-      "subtitle": "Have questions, feedback, or just want to say hello? We'd love to hear from you." 
+      "subtitle": "Have questions, feedback, or just want to say hello? We'd love to hear from you.",
+      "badge": "Contact"
     },
     "methods": {
       "email": { 
@@ -43,12 +53,35 @@
       "location": { 
         "title": "Location", 
         "description": "Our team is based in {{address.full}}." 
+      },
+      "hours": {
+        "title": "Business Hours",
+        "description": "Monday - Friday, 9AM - 6PM (GMT+7)"
       }
     },
     "support": { 
-      "title": "Support", 
+      "title": "24/7 Support", 
       "description": "For app-related questions and technical support, please email {{email.support}} with details about your issue.", 
       "hours": "We typically respond within {{legal.supportResponseHours}} hours on business days." 
+    },
+    "form": {
+      "title": "Send us a message",
+      "badge": "Get in Touch",
+      "description": "Fill out the form below and we'll get back to you as soon as possible.",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us more...",
+      "submit": "Send Message"
+    },
+    "quickLinks": {
+      "generalInquiries": "General Inquiries",
+      "technicalSupport": "Technical Support",
+      "available247": "24/7 Available"
     }
   },
   "metadata": {
@@ -72,6 +105,8 @@
     "onThisPage": "On this page",
     "appStore": "App Store",
     "playStore": "Google Play",
+    "downloadOnAppStore": "Download on App Store",
+    "getOnPlayStore": "Get it on Google Play",
     "legalInfo": "Legal Information",
     "legalInfoDescription": "Review our policies and terms for using this product.",
     "legalQuestions": "Have questions about our policies?",
@@ -114,15 +149,24 @@
       "title": "{{company.tagline}}", 
       "subtitle": "We build innovative applications that simplify your daily routines and help you live smarter.", 
       "cta": "Explore Our Apps", 
-      "secondary": "Learn More" 
+      "secondary": "Learn More",
+      "badge": "Powered by AI",
+      "scroll": "Scroll"
+    },
+    "stats": {
+      "downloads": "Downloads",
+      "rating": "Rating",
+      "uptime": "Uptime"
     },
     "products": { 
       "title": "Our Products", 
+      "badge": "Products",
       "subtitle": "Discover apps designed to make your life easier", 
       "learnMore": "Learn more" 
     },
     "features": {
-      "title": "Why Choose Us", 
+      "title": "Why Choose Us",
+      "badge": "Features",
       "subtitle": "Built with care, designed for you",
       "items": {
         "ai": { "title": "AI-Powered", "description": "Smart features powered by cutting-edge AI to enhance your experience." },

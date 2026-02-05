@@ -119,12 +119,12 @@ export default async function ProductPage({ params }: Props) {
               <div className="mt-10 flex flex-wrap gap-4">
                 {product.appStoreUrl && (
                   <a href={product.appStoreUrl} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
-                    <Download className="h-4 w-4" /> App Store
+                    <Download className="h-4 w-4" /> {commonT('appStore')}
                   </a>
                 )}
                 {product.playStoreUrl && (
                   <a href={product.playStoreUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center gap-2">
-                    <Download className="h-4 w-4" /> Google Play
+                    <Download className="h-4 w-4" /> {commonT('playStore')}
                   </a>
                 )}
               </div>
@@ -204,12 +204,12 @@ export default async function ProductPage({ params }: Props) {
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               {product.appStoreUrl && (
                 <a href={product.appStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 font-semibold text-brand-600 transition-transform hover:scale-105">
-                  <Download className="h-5 w-5" /> Download on App Store
+                  <Download className="h-5 w-5" /> {commonT('downloadOnAppStore')}
                 </a>
               )}
               {product.playStoreUrl && (
                 <a href={product.playStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-transform hover:scale-105">
-                  <Download className="h-5 w-5" /> Get it on Google Play
+                  <Download className="h-5 w-5" /> {commonT('getOnPlayStore')}
                 </a>
               )}
             </div>
