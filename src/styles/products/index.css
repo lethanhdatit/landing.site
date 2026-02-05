@@ -1,0 +1,25 @@
+/**
+ * Product Themes Index
+ * 
+ * Each product has its own theme file with:
+ * - CSS Variables for colors
+ * - Utility classes prefixed with product code (e.g., wn- for WiseNest)
+ * - Dark mode support
+ * 
+ * Usage in pages:
+ * 1. Add theme class to container: <div className="theme-wisenest">
+ * 2. Use product utility classes: <button className="wn-btn-primary">
+ * 
+ * Adding a new product:
+ * 1. Create new file: products/[product-name].css
+ * 2. Define CSS variables with prefix (e.g., --pn- for ProductName)
+ * 3. Create utility classes with prefix (e.g., pn-)
+ * 4. Import in this file
+ */
+
+@import './wisenest.css';
+
+/* Future products:
+@import './product-b.css';
+@import './product-c.css';
+*/

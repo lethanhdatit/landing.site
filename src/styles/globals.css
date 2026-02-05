@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Product-specific themes */
+@import './products/index.css';
+
 @layer base {
   :root {
     --background: 255 255 255;

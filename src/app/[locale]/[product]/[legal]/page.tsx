@@ -7,9 +7,14 @@ import { locales, type Locale, setRequestLocale } from '@/i18n/config';
 
 const legalPages: LegalPageSlug[] = ['privacy-policy', 'terms-of-service', 'permissions', 'subscription-terms', 'disclaimer'];
 
+// Products that have their own custom pages (exclude from this generic route)
+const PRODUCTS_WITH_CUSTOM_PAGES = ['wisenest'];
+
 export function generateStaticParams() {
-  const products = getActiveProducts();
+  const products = getActiveProducts().filter(p => !PRODUCTS_WITH_CUSTOM_PAGES.includes(p.id));
   const params: { locale: string; product: string; legal: string }[] = [];
+  
+  // Generate params for products without custom pages
   for (const locale of locales) {
     for (const product of products) {
       for (const legal of product.legalPages) {
@@ -17,6 +22,15 @@ export function generateStaticParams() {
       }
     }
   }
+  
+  // If no products remain, add a placeholder that will 404
+  // This is required for static export when all products have custom pages
+  if (params.length === 0) {
+    for (const locale of locales) {
+      params.push({ locale, product: '_placeholder', legal: '_placeholder' });
+    }
+  }
+  
   return params;
 }
 
@@ -65,6 +79,12 @@ export async function generateMetadata({ params }: Props) {
 export default async function LegalPage({ params }: Props) {
   const { locale, product: productId, legal } = await params;
   setRequestLocale(locale);
+  
+  // Products with custom pages should use their own routes
+  if (PRODUCTS_WITH_CUSTOM_PAGES.includes(productId)) {
+    notFound();
+  }
+  
   const product = getProduct(productId);
   const isValidLegal = legalPages.includes(legal as LegalPageSlug);
   if (!product || !isValidLegal || !product.legalPages.includes(legal as LegalPageSlug)) notFound();

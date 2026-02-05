@@ -62,6 +62,7 @@
     "downloadApp": "Download App",
     "viewAllProducts": "View All Products",
     "backToHome": "Back to Home",
+    "backTo": "Back to",
     "language": "Language",
     "menu": "Menu",
     "close": "Close",
@@ -146,10 +147,13 @@
         "subtitle": "Everything you need to manage your home smartly",
         "items": {
           "expiry": { "title": "Smart Expiry Tracking", "description": "Get timely notifications before your food expires." },
+          "shopping": { "title": "Smart Shopping Lists", "description": "Plan your shopping smartly, track prices and compare estimates with actual spending." },
+          "recipes": { "title": "Smart Recipes", "description": "AI-powered recipe suggestions based on ingredients available in your inventory." },
           "reduce": { "title": "Reduce Food Waste", "description": "Track consumption patterns and get insights to minimize waste." },
           "share": { "title": "Family Sharing", "description": "Share your inventory and shopping lists with family members." },
-          "privacy": { "title": "Privacy Protected", "description": "Your data is encrypted and secure." },
-          "smart": { "title": "Smart Suggestions", "description": "AI-powered recipe suggestions based on your ingredients." },
+          "notifications": { "title": "Smart Notifications", "description": "Get shopping reminders, expiry alerts, and customizable notifications." },
+          "privacy": { "title": "Privacy Protected", "description": "Your data is encrypted and fully secure." },
+          "smart": { "title": "Smart Suggestions", "description": "AI analyzes your habits to provide personalized recommendations." },
           "premium": { "title": "Premium Experience", "description": "Unlock unlimited tracking and advanced features." }
         }
       },

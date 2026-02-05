@@ -62,6 +62,7 @@
     "downloadApp": "Tải Ứng Dụng",
     "viewAllProducts": "Xem Tất Cả Sản Phẩm",
     "backToHome": "Về Trang Chủ",
+    "backTo": "Quay về",
     "language": "Ngôn Ngữ",
     "menu": "Menu",
     "close": "Đóng",
@@ -146,10 +147,13 @@
         "subtitle": "Mọi thứ bạn cần để quản lý gia đình thông minh",
         "items": {
           "expiry": { "title": "Theo Dõi Hạn Dùng", "description": "Nhận thông báo kịp thời trước khi thực phẩm hết hạn." },
+          "shopping": { "title": "Danh Sách Mua Sắm", "description": "Lập kế hoạch mua sắm thông minh, theo dõi giá cả và so sánh ước tính với thực tế." },
+          "recipes": { "title": "Công Thức Thông Minh", "description": "Gợi ý công thức nấu ăn bằng AI dựa trên nguyên liệu có sẵn trong kho." },
           "reduce": { "title": "Giảm Lãng Phí", "description": "Theo dõi mẫu tiêu thụ và nhận thông tin chi tiết để giảm thiểu lãng phí." },
-          "share": { "title": "Chia Sẻ Gia Đình", "description": "Chia sẻ kho thực phẩm và danh sách mua sắm với gia đình." },
-          "privacy": { "title": "Bảo Vệ Quyền Riêng Tư", "description": "Dữ liệu được mã hóa và bảo mật." },
-          "smart": { "title": "Gợi Ý Thông Minh", "description": "Gợi ý công thức nấu ăn bằng AI dựa trên nguyên liệu có sẵn." },
+          "share": { "title": "Chia Sẻ Gia Đình", "description": "Chia sẻ kho thực phẩm và danh sách mua sắm với các thành viên gia đình." },
+          "notifications": { "title": "Thông Báo Thông Minh", "description": "Nhận nhắc nhở mua sắm, cảnh báo hết hạn và thông báo tùy chỉnh." },
+          "privacy": { "title": "Bảo Vệ Quyền Riêng Tư", "description": "Dữ liệu được mã hóa và bảo mật tuyệt đối." },
+          "smart": { "title": "Gợi Ý Thông Minh", "description": "AI phân tích thói quen để đưa ra gợi ý phù hợp." },
           "premium": { "title": "Trải Nghiệm Premium", "description": "Mở khóa theo dõi không giới hạn và các tính năng nâng cao." }
         }
       },

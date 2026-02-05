@@ -45,3 +45,5 @@ next-env.d.ts
 
 # OS
 Thumbs.db
+scripts/optimize-images.js
+scripts/generate-product-favicons.js

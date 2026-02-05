@@ -6,14 +6,28 @@ import { ArrowRight, Download, Star, Shield, Zap, Clock, Users, Leaf } from 'luc
 import { getProduct, getActiveProducts } from '@/lib/products';
 import { locales, type Locale, setRequestLocale } from '@/i18n/config';
 
+// Products that have their own custom pages (exclude from this generic route)
+const PRODUCTS_WITH_CUSTOM_PAGES = ['wisenest'];
+
 export function generateStaticParams() {
-  const products = getActiveProducts();
+  const products = getActiveProducts().filter(p => !PRODUCTS_WITH_CUSTOM_PAGES.includes(p.id));
   const params: { locale: string; product: string }[] = [];
+  
+  // Generate params for products without custom pages
   for (const locale of locales) {
     for (const product of products) {
       params.push({ locale, product: product.id });
     }
   }
+  
+  // If no products remain, add a placeholder that will 404
+  // This is required for static export when all products have custom pages
+  if (params.length === 0) {
+    for (const locale of locales) {
+      params.push({ locale, product: '_placeholder' });
+    }
+  }
+  
   return params;
 }
 
@@ -53,6 +67,12 @@ export async function generateMetadata({ params }: Props) {
 export default async function ProductPage({ params }: Props) {
   const { locale, product: productId } = await params;
   setRequestLocale(locale);
+  
+  // Products with custom pages should use their own routes
+  if (PRODUCTS_WITH_CUSTOM_PAGES.includes(productId)) {
+    notFound();
+  }
+  
   const product = getProduct(productId);
   if (!product) notFound();
 

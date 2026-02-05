@@ -36,7 +36,7 @@ const products: Record<ProductId, Product> = {
     icon: '🏠',
     logo: '/images/logo-wise-nest.png',
     favicon: '/favicons/wisenest',
-    color: '#22c55e',
+    color: '#063B1F',
     appStoreUrl: 'https://apps.apple.com/app/wisenest/id6758124371',
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.wisenest.app',
     legalPages: [
