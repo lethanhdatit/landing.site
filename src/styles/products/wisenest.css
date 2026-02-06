@@ -1,256 +1,353 @@
 /**
  * WiseNest Product Theme
  * 
- * Brand colors: Emerald/Green (matching the mobile app)
- * Use these CSS variables with Tailwind's arbitrary values:
- * - bg-[rgb(var(--wn-primary))]
- * - text-[rgb(var(--wn-primary))]
+ * Design philosophy: Crystal Black base + Emerald signature accent
  * 
- * Or use the product-specific utility classes defined below.
+ * The platform uses a pure black glassmorphism theme. WiseNest differentiates
+ * itself with emerald/green accents — glows, borders, text highlights — while
+ * staying visually consistent with the overall Crystal Black aesthetic.
+ * 
+ * Use the .theme-wisenest wrapper to scope these styles.
  */
 
 /* WiseNest CSS Variables */
 .theme-wisenest {
-  /* Primary - Emerald */
-  --wn-primary-50: 236 253 245;
-  --wn-primary-100: 209 250 229;
-  --wn-primary-200: 167 243 208;
-  --wn-primary-300: 110 231 183;
-  --wn-primary-400: 52 211 153;
-  --wn-primary-500: 16 185 129;
-  --wn-primary-600: 5 150 105;
-  --wn-primary-700: 4 120 87;
-  --wn-primary-800: 6 95 70;
-  --wn-primary-900: 6 78 59;
-  --wn-primary-950: 2 44 34;
+  /* Emerald palette */
+  --wn-50: 236 253 245;
+  --wn-100: 209 250 229;
+  --wn-200: 167 243 208;
+  --wn-300: 110 231 183;
+  --wn-400: 52 211 153;
+  --wn-500: 16 185 129;
+  --wn-600: 5 150 105;
+  --wn-700: 4 120 87;
+  --wn-800: 6 95 70;
+  --wn-900: 6 78 59;
+  --wn-950: 2 44 34;
 
-  /* Secondary - Teal */
-  --wn-secondary-50: 240 253 250;
-  --wn-secondary-100: 204 251 241;
-  --wn-secondary-200: 153 246 228;
-  --wn-secondary-300: 94 234 212;
-  --wn-secondary-400: 45 212 191;
-  --wn-secondary-500: 20 184 166;
-  --wn-secondary-600: 13 148 136;
-  --wn-secondary-700: 15 118 110;
-  --wn-secondary-800: 17 94 89;
-  --wn-secondary-900: 19 78 74;
-  --wn-secondary-950: 4 47 46;
+  /* Emerald glow variants */
+  --wn-glow: rgba(16, 185, 129, 0.15);
+  --wn-glow-soft: rgba(16, 185, 129, 0.08);
+  --wn-glow-strong: rgba(16, 185, 129, 0.25);
+  --wn-glow-border: rgba(16, 185, 129, 0.2);
+  --wn-glow-border-hover: rgba(16, 185, 129, 0.35);
 
-  /* Accent - Amber (for warnings, expiry) */
-  --wn-accent-50: 255 251 235;
-  --wn-accent-100: 254 243 199;
-  --wn-accent-200: 253 230 138;
-  --wn-accent-300: 252 211 77;
-  --wn-accent-400: 251 191 36;
-  --wn-accent-500: 245 158 11;
-  --wn-accent-600: 217 119 6;
-  --wn-accent-700: 180 83 9;
-  --wn-accent-800: 146 64 14;
-  --wn-accent-900: 120 53 15;
-  --wn-accent-950: 69 26 3;
-
-  /* Status Colors */
-  --wn-success: 22 163 74;
-  --wn-warning: 245 158 11;
-  --wn-error: 220 38 38;
-  --wn-info: 37 99 235;
-
-  /* Gradients */
-  --wn-gradient-start: 6 95 70;
-  --wn-gradient-end: 16 185 129;
-}
-
-/* Dark mode overrides */
-.dark .theme-wisenest {
-  --wn-primary-50: 2 44 34;
-  --wn-primary-100: 6 78 59;
-  --wn-primary-200: 6 95 70;
-  --wn-primary-300: 4 120 87;
-  --wn-primary-400: 5 150 105;
-  --wn-primary-500: 16 185 129;
-  --wn-primary-600: 52 211 153;
-  --wn-primary-700: 110 231 183;
-  --wn-primary-800: 167 243 208;
-  --wn-primary-900: 209 250 229;
-  --wn-primary-950: 236 253 245;
+  /* Glass with emerald tint */
+  --wn-glass-bg: rgba(16, 185, 129, 0.03);
+  --wn-glass-bg-hover: rgba(16, 185, 129, 0.06);
+  --wn-glass-border: rgba(16, 185, 129, 0.1);
+  --wn-glass-border-hover: rgba(16, 185, 129, 0.2);
 }
 
 /* ========================================
    WiseNest Utility Classes
+   Crystal Black + Emerald Accent
    ======================================== */
 
-/* Backgrounds */
-.wn-bg-primary {
-  background-color: rgb(var(--wn-primary-600));
-}
+/* === BACKGROUNDS === */
 
-.wn-bg-primary-light {
-  background-color: rgb(var(--wn-primary-50));
-}
-
-.wn-bg-primary-dark {
-  background-color: rgb(var(--wn-primary-800));
-}
-
+/* Signature emerald gradient — use sparingly for hero/CTA blocks */
 .wn-bg-gradient {
   background: linear-gradient(
     135deg,
-    rgb(var(--wn-gradient-start)) 0%,
-    rgb(var(--wn-gradient-end)) 100%
+    rgb(var(--wn-800)) 0%,
+    rgb(var(--wn-600)) 50%,
+    rgb(var(--wn-500)) 100%
   );
 }
 
-.wn-bg-gradient-soft {
-  background: linear-gradient(
-    180deg,
-    rgb(var(--wn-primary-50)) 0%,
-    rgb(255 255 255) 100%
+/* Subtle dark emerald haze on black */
+.wn-bg-haze {
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(16, 185, 129, 0.08) 0%,
+    transparent 70%
   );
 }
 
-.dark .wn-bg-gradient-soft {
-  background: linear-gradient(
-    180deg,
-    rgb(var(--wn-primary-950)) 0%,
-    rgb(10 10 10) 100%
-  );
+/* Emerald gradient mesh — ambient depth like platform's blue mesh but in emerald */
+.wn-bg-mesh {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 30%, rgba(16, 185, 129, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 80% 20%, rgba(52, 211, 153, 0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 50% 80%, rgba(5, 150, 105, 0.05) 0%, transparent 70%);
 }
 
-/* Text Colors */
-.wn-text-primary {
-  color: rgb(var(--wn-primary-600));
+.wn-bg-mesh-alt {
+  background:
+    radial-gradient(ellipse 50% 50% at 70% 60%, rgba(16, 185, 129, 0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 20% 20%, rgba(110, 231, 183, 0.03) 0%, transparent 70%);
 }
 
-.wn-text-primary-dark {
-  color: rgb(var(--wn-primary-800));
+/* Emerald glow spot utility */
+.wn-glow-spot {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
 }
 
-.wn-text-primary-light {
-  color: rgb(var(--wn-primary-400));
+/* Section background — pure black with a subtle emerald grid */
+.wn-section-bg {
+  position: relative;
 }
 
-.dark .wn-text-primary {
-  color: rgb(var(--wn-primary-400));
+.wn-section-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(16, 185, 129, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
 }
 
-/* Borders */
-.wn-border-primary {
-  border-color: rgb(var(--wn-primary-200));
+/* === TEXT === */
+
+.wn-text-accent {
+  color: rgb(var(--wn-400));
 }
 
-.dark .wn-border-primary {
-  border-color: rgb(var(--wn-primary-800));
+.wn-text-accent-bright {
+  color: rgb(var(--wn-300));
 }
 
-/* Buttons */
-.wn-btn-primary {
-  @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-semibold text-white transition-all duration-200;
-  background-color: rgb(var(--wn-primary-600));
-}
-
-.wn-btn-primary:hover {
-  background-color: rgb(var(--wn-primary-700));
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(var(--wn-primary-600), 0.3);
-}
-
-.wn-btn-secondary {
-  @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-semibold transition-all duration-200;
-  background-color: rgb(var(--wn-primary-50));
-  color: rgb(var(--wn-primary-700));
-}
-
-.wn-btn-secondary:hover {
-  background-color: rgb(var(--wn-primary-100));
-}
-
-.dark .wn-btn-secondary {
-  background-color: rgb(var(--wn-primary-900) / 0.5);
-  color: rgb(var(--wn-primary-300));
-}
-
-.dark .wn-btn-secondary:hover {
-  background-color: rgb(var(--wn-primary-800) / 0.5);
-}
-
-/* Cards */
-.wn-card {
-  @apply rounded-2xl border bg-white p-6 shadow-sm transition-all duration-200;
-  border-color: rgb(var(--wn-primary-100));
-}
-
-.wn-card:hover {
-  border-color: rgb(var(--wn-primary-200));
-  box-shadow: 0 8px 24px rgba(var(--wn-primary-600), 0.08);
-}
-
-.dark .wn-card {
-  @apply bg-neutral-900;
-  border-color: rgb(var(--wn-primary-900));
-}
-
-.dark .wn-card:hover {
-  border-color: rgb(var(--wn-primary-800));
-}
-
-/* Feature Icon Container */
-.wn-icon-container {
-  @apply flex h-14 w-14 items-center justify-center rounded-xl transition-colors;
-  background-color: rgb(var(--wn-primary-100));
-  color: rgb(var(--wn-primary-600));
-}
-
-.wn-card:hover .wn-icon-container {
-  background-color: rgb(var(--wn-primary-600));
-  color: white;
-}
-
-.dark .wn-icon-container {
-  background-color: rgb(var(--wn-primary-900) / 0.5);
-  color: rgb(var(--wn-primary-400));
-}
-
-.dark .wn-card:hover .wn-icon-container {
-  background-color: rgb(var(--wn-primary-600));
-  color: white;
-}
-
-/* Badges */
-.wn-badge {
-  @apply inline-flex items-center rounded-full px-3 py-1 text-sm font-medium;
-  background-color: rgb(var(--wn-primary-100));
-  color: rgb(var(--wn-primary-700));
-}
-
-.dark .wn-badge {
-  background-color: rgb(var(--wn-primary-900) / 0.5);
-  color: rgb(var(--wn-primary-300));
-}
-
-/* Section Styles */
-.wn-section-hero {
-  @apply relative overflow-hidden py-20 md:py-32;
-}
-
-.wn-section-features {
-  @apply py-20 md:py-32;
-}
-
-/* Text Gradient */
 .wn-text-gradient {
-  background: linear-gradient(
-    135deg,
-    rgb(var(--wn-primary-600)) 0%,
-    rgb(var(--wn-secondary-500)) 100%
-  );
+  background: linear-gradient(135deg, rgb(var(--wn-400)) 0%, rgb(var(--wn-300)) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Ring/Focus */
+.wn-heading-glow {
+  text-shadow: 0 0 60px rgba(16, 185, 129, 0.2);
+}
+
+/* === GLASS CARDS WITH EMERALD ACCENT === */
+
+.wn-card {
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: rgba(16, 185, 129, 0.02);
+  border: 1px solid rgba(16, 185, 129, 0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 0 0 1px rgba(16, 185, 129, 0.03) inset,
+    0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Top highlight with emerald tint */
+.wn-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(16, 185, 129, 0.25) 50%,
+    transparent 100%
+  );
+  border-radius: inherit;
+}
+
+.wn-card:hover {
+  background: rgba(16, 185, 129, 0.05);
+  border-color: rgba(16, 185, 129, 0.2);
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(16, 185, 129, 0.05) inset,
+    0 8px 40px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(16, 185, 129, 0.06);
+}
+
+/* === BUTTONS === */
+
+.wn-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgb(var(--wn-600));
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
+}
+
+.wn-btn-primary:hover {
+  background: rgb(var(--wn-500));
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 30px rgba(16, 185, 129, 0.35),
+    0 0 60px rgba(16, 185, 129, 0.1);
+}
+
+.wn-btn-primary:active {
+  transform: translateY(0);
+}
+
+.wn-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(var(--wn-400));
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.wn-btn-secondary:hover {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.08);
+}
+
+/* === ICON CONTAINER === */
+
+.wn-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  color: rgb(var(--wn-400));
+  transition: all 0.3s ease;
+}
+
+.wn-card:hover .wn-icon-container,
+.wn-icon-container:hover {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.12);
+  transform: scale(1.05);
+}
+
+/* === BADGES === */
+
+.wn-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: rgb(var(--wn-300));
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+/* === SECTION SPACING === */
+
+.wn-section-hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .wn-section-hero {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.wn-section-features {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .wn-section-features {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* === EMERALD FLOATING ORBS === */
+
+.wn-orb-emerald-lg {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
+}
+
+.wn-orb-emerald-md {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  animation: float 10s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.wn-orb-emerald-sm {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+  animation: bubble-wobble 8s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+/* Emerald particle dots */
+.wn-particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* === DIVIDER === */
+
+.wn-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(16, 185, 129, 0.2) 50%,
+    transparent 100%
+  );
+}
+
+/* === LINK ACCENT === */
+
+.wn-link {
+  color: rgb(var(--wn-400));
+  transition: color 0.2s ease;
+}
+
+.wn-link:hover {
+  color: rgb(var(--wn-300));
+  text-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+}
+
+/* === FOCUS RING === */
+
 .wn-ring:focus-visible {
-  @apply outline-none ring-2 ring-offset-2;
-  --tw-ring-color: rgb(var(--wn-primary-500));
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(var(--wn-500)), 0 0 0 4px rgba(16, 185, 129, 0.2);
 }

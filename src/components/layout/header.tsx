@@ -8,6 +8,7 @@ import { Menu, X, ChevronDown, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { LanguageSwitcher } from './language-switcher';
 import { getActiveProducts } from '@/lib/products';
+import { company } from '@/lib/company';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -40,7 +41,7 @@ export function Header() {
       className={cn(
         'fixed top-0 z-50 w-full transition-all duration-500',
         isScrolled
-          ? 'border-b border-white/10 bg-black/80 backdrop-blur-xl shadow-lg shadow-black/50'
+          ? 'border-b border-white/10 bg-black/80 backdrop-blur-xl shadow-lg shadow-black/50 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gradient-to-r after:from-transparent after:via-blue-500/10 after:to-transparent'
           : 'border-b border-transparent bg-transparent'
       )}
     >
@@ -53,10 +54,10 @@ export function Header() {
           >
             {/* Glow effect behind logo */}
             <div className="relative">
-              <div className="absolute -inset-2 rounded-full bg-white/10 blur-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <div className="absolute -inset-2 rounded-full bg-blue-400/10 blur-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <Image
                 src="/images/logo-trans.png"
-                alt="Insight AI VN"
+                alt={company.name}
                 width={180}
                 height={45}
                 className="relative h-10 w-auto brightness-110 md:h-11"
@@ -98,7 +99,7 @@ export function Header() {
                     )}
                   >
                     {/* Top highlight */}
-                    <div className="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none" />
+                    <div className="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent pointer-events-none" />
                     
                     {products.map((product) => (
                       <Link

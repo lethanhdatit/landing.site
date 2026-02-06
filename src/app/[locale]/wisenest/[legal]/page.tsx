@@ -1,8 +1,8 @@
 /**
  * WiseNest Legal Pages
  * 
- * Uses the same legal page component as the generic [product] route,
- * but specifically for WiseNest with its theme applied.
+ * Crystal Black base + Emerald accent, consistent with the platform theme
+ * while keeping WiseNest's signature emerald identity.
  */
 
 import { notFound } from 'next/navigation';
@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { ArrowLeft, Shield, FileText, Key, CreditCard, AlertTriangle } from 'lucide-react';
 import { getProduct, type LegalPageSlug } from '@/lib/products';
 import { locales, type Locale, setRequestLocale } from '@/i18n/config';
+import { ScrollAnimationWrapper } from '@/components/ui/scroll-animation';
 
 const legalPages: LegalPageSlug[] = ['privacy-policy', 'terms-of-service', 'permissions', 'subscription-terms', 'disclaimer'];
 
@@ -80,64 +81,90 @@ export default async function WiseNestLegalPage({ params }: Props) {
   return (
     <div className="theme-wisenest flex flex-col">
       {/* Header */}
-      <section className="relative overflow-hidden border-b border-neutral-200 wn-bg-gradient-soft py-16 dark:border-neutral-800 md:py-24">
-        <div className="container-custom">
-          <Link 
-            href={`/${locale}/wisenest`} 
-            className="group mb-8 inline-flex items-center gap-2 text-sm font-medium text-neutral-600 transition-colors hover:text-emerald-600 dark:text-neutral-400 dark:hover:text-emerald-500"
-          >
-            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
-            {t('backToHome')} / {product.name}
-          </Link>
-          
-          <div className="flex items-start gap-4">
-            <div className="wn-icon-container shrink-0">
-              <Icon className="h-7 w-7" />
-            </div>
-            <div>
-              <h1 className="font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-white sm:text-4xl">
-                {t(`legal.${legal}`)}
-              </h1>
-              <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-neutral-500 dark:text-neutral-400">
-                <span>{product.name}</span>
-                <span className="hidden sm:inline">•</span>
-                <span>{t('lastUpdated')}: {lastUpdated}</span>
+      <section className="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-20">
+        <div className="absolute inset-0 bg-black" />
+        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+        
+        {/* Emerald haze at top */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="wn-orb-emerald-lg -left-40 top-1/4 h-96 w-96 opacity-20" />
+          <div className="wn-orb-emerald-md -right-20 top-1/3 h-72 w-72 opacity-15" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
+
+        <div className="container-custom relative z-10">
+          <ScrollAnimationWrapper animation="slide-up">
+            <Link 
+              href={`/${locale}/wisenest`} 
+              className="group mb-8 inline-flex items-center gap-2 text-sm font-medium text-white/50 transition-colors hover:text-emerald-400"
+            >
+              <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+              {t('backToHome')} / {product.name}
+            </Link>
+            
+            <div className="flex items-start gap-4">
+              <div className="wn-icon-container shrink-0">
+                <Icon className="h-7 w-7" />
+              </div>
+              <div>
+                <h1 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl wn-heading-glow">
+                  {t(`legal.${legal}`)}
+                </h1>
+                <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/40">
+                  <span className="wn-text-accent">{product.name}</span>
+                  <span className="hidden sm:inline text-white/20">•</span>
+                  <span>{t('lastUpdated')}: {lastUpdated}</span>
+                </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimationWrapper>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-12 md:py-16">
-        <div className="container-custom">
+      <section className="relative py-12 md:py-16">
+        <div className="absolute inset-0 bg-black" />
+
+        <div className="container-custom relative z-10">
           <div className="mx-auto max-w-4xl">
-            <div className="prose-legal">
+            <div className="space-y-10">
               {sections.map((section, index) => (
-                <div key={index} className="mb-8">
-                  <h2>{section.title}</h2>
-                  <p className="whitespace-pre-line">{section.content}</p>
-                  {section.items && section.items.length > 0 && (
-                    <ul>
-                      {section.items.map((item, itemIndex) => (
-                        <li key={itemIndex}>{item}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+                <ScrollAnimationWrapper key={index} animation="slide-up" delay={Math.min(index * 50, 300)}>
+                  <div className="wn-card p-6 md:p-8">
+                    <h2 className="font-display text-xl font-semibold text-white mb-4">
+                      {section.title}
+                    </h2>
+                    <div className="text-white/60 leading-relaxed whitespace-pre-line">
+                      {section.content}
+                    </div>
+                    {section.items && section.items.length > 0 && (
+                      <ul className="mt-4 space-y-2">
+                        {section.items.map((item, itemIndex) => (
+                          <li key={itemIndex} className="flex gap-3 text-white/60">
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500/50" />
+                            <span className="leading-relaxed">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </ScrollAnimationWrapper>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Back to Product */}
-      <section className="border-t border-neutral-200 py-8 dark:border-neutral-800">
-        <div className="container-custom">
+      {/* Footer Navigation */}
+      <section className="relative py-8">
+        <div className="absolute inset-0 bg-black" />
+        <div className="wn-divider" />
+
+        <div className="container-custom relative z-10 pt-8">
           <div className="flex items-center justify-between">
             <Link 
               href={`/${locale}/wisenest`} 
-              className="group inline-flex items-center gap-2 text-sm font-medium wn-text-primary transition-colors"
+              className="group inline-flex items-center gap-2 text-sm font-medium wn-text-accent transition-colors hover:text-emerald-300"
             >
               <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
               {t('backTo')} {product.name}
@@ -151,7 +178,7 @@ export default async function WiseNestLegalPage({ params }: Props) {
                   <Link
                     key={page}
                     href={`/${locale}/wisenest/${page}`}
-                    className="text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+                    className="text-sm text-white/40 hover:text-white transition-colors"
                   >
                     {t(`legal.${page}`)}
                   </Link>

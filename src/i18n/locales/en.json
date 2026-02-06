@@ -97,6 +97,7 @@
     "backToHome": "Back to Home",
     "backTo": "Back to",
     "language": "Language",
+    "switchLanguage": "Switch language",
     "menu": "Menu",
     "close": "Close",
     "lastUpdated": "Last updated",
@@ -127,7 +128,8 @@
     "legal": "Legal" 
   },
   "footer": {
-    "company": "Company", 
+    "company": "Company",
+    "team": "Team",
     "about": "About Us", 
     "contact": "Contact", 
     "careers": "Careers", 
@@ -138,47 +140,152 @@
     "cookiePolicy": "Cookie Policy",
     "social": "Follow Us", 
     "copyright": "© {year} {{company.name}}. All rights reserved.", 
-    "madeWith": "Made with ❤️ in {{address.country}}"
+    "madeWith": "Made by Thành Đạt in {{address.country}}"
   },
   "home": {
-    "meta": { 
-      "title": "{{company.name}} - {{company.tagline}}", 
-      "description": "Discover innovative apps that simplify your daily life with AI-powered solutions." 
+    "meta": {
+      "title": "Insight AI — Smart App Platform for Modern Living",
+      "description": "A diverse app ecosystem spanning home management, finance, entertainment, and education — all designed for Vietnamese users."
     },
-    "hero": { 
-      "title": "{{company.tagline}}", 
-      "subtitle": "We build innovative applications that simplify your daily routines and help you live smarter.", 
-      "cta": "Explore Our Apps", 
-      "secondary": "Learn More",
-      "badge": "Powered by AI",
+    "hero": {
+      "title": "Smart Solutions for Digital Life",
+      "subtitle": "Insight AI builds a diverse app ecosystem — from home management and finance to entertainment and education — all optimized for Vietnamese users.",
+      "cta": "Explore WiseNest",
+      "secondary": "View Roadmap",
+      "badge": "App Platform",
       "scroll": "Scroll"
     },
     "stats": {
-      "downloads": "Downloads",
-      "rating": "Rating",
-      "uptime": "Uptime"
+      "products": "Products",
+      "categories": "Categories",
+      "downloads": "Downloads"
     },
-    "products": { 
-      "title": "Our Products", 
-      "badge": "Products",
-      "subtitle": "Discover apps designed to make your life easier", 
-      "learnMore": "Learn more" 
+    "featured": {
+      "badge": "Available Now",
+      "title": "Our First Product",
+      "description": "Track your food inventory, plan shopping with a smart 3-phase flow, and discover AI-powered recipes — all in one app.",
+      "highlights": {
+        "expiry": "Expiry Tracking",
+        "shopping": "3-Phase Shopping",
+        "recipes": "AI Recipes",
+        "family": "Family Sharing"
+      },
+      "download": "Download Now",
+      "learnMore": "Learn More",
+      "version": "Version"
     },
-    "features": {
-      "title": "Why Choose Us",
-      "badge": "Features",
-      "subtitle": "Built with care, designed for you",
-      "items": {
-        "ai": { "title": "AI-Powered", "description": "Smart features powered by cutting-edge AI to enhance your experience." },
-        "privacy": { "title": "Privacy First", "description": "Your data belongs to you. We prioritize security and transparency." },
-        "fast": { "title": "Lightning Fast", "description": "Optimized performance for instant responses and smooth interactions." },
-        "multilingual": { "title": "Multilingual", "description": "Available in multiple languages to serve users worldwide." }
+    "ecosystem": {
+      "badge": "Ecosystem",
+      "title": "Product Categories",
+      "subtitle": "We're building a comprehensive app ecosystem serving diverse life needs",
+      "categories": {
+        "home-lifestyle": {
+          "title": "Home Management",
+          "description": "Smart apps for food tracking, inventory management, and daily household operations.",
+          "status": "1 app launched"
+        },
+        "mom-baby": {
+          "title": "Mom & Baby",
+          "description": "Utilities for childcare: health tracking, nutrition, and baby development milestones.",
+          "status": "Coming soon"
+        },
+        "finance": {
+          "title": "Personal Finance",
+          "description": "Smart tools for expense tracking, savings, and financial planning.",
+          "status": "In development"
+        },
+        "social": {
+          "title": "Share & Connect",
+          "description": "A platform for sharing stories, emotions, and local info — Vietnamese 'bulletin board' style.",
+          "status": "Planning"
+        },
+        "games-casual": {
+          "title": "Mini Games",
+          "description": "Casual offline games to kill time and online games to play with friends and colleagues.",
+          "status": "Planning"
+        },
+        "games-kids": {
+          "title": "Kids Educational Games",
+          "description": "Time-limited interactive games scientifically designed to support development for ages 0–3+.",
+          "status": "Planning"
+        }
+      },
+      "statusLabels": {
+        "active": "Launched",
+        "coming-soon": "Coming Soon",
+        "planned": "In Development"
       }
     },
-    "cta": { 
-      "title": "Ready to Get Started?", 
-      "subtitle": "Download our apps today and experience smarter living.", 
-      "button": "Explore Apps" 
+    "roadmap": {
+      "badge": "Roadmap",
+      "title": "Development Plan",
+      "subtitle": "Our journey to build a comprehensive app platform for Vietnamese users",
+      "milestones": {
+        "q1_2026": {
+          "period": "Q1 2026",
+          "title": "WiseNest Launch",
+          "description": "Our first smart home management app — available on App Store & Google Play."
+        },
+        "q2_2026": {
+          "period": "Q2–Q3 2026",
+          "title": "Mom & Baby App",
+          "description": "Comprehensive childcare utilities for tracking baby health and development."
+        },
+        "q4_2026": {
+          "period": "Q4 2026",
+          "title": "Finance Tools",
+          "description": "Smart expense tracking and savings tools for Vietnamese families."
+        },
+        "2027": {
+          "period": "2027+",
+          "title": "Ecosystem Expansion",
+          "description": "Social sharing platform, entertainment and educational games for all ages."
+        }
+      }
+    },
+    "news": {
+      "badge": "News",
+      "title": "News & Updates",
+      "subtitle": "Stay up to date with the latest from Insight AI",
+      "entries": {
+        "wisenest_launch": {
+          "date": "01/2026",
+          "title": "WiseNest Officially Launched",
+          "summary": "The first smart food and home management app from Insight AI is now available on both iOS and Android.",
+          "tag": "Launch"
+        },
+        "wisenest_premium": {
+          "date": "02/2026",
+          "title": "WiseNest Premium — Unlimited",
+          "summary": "Unlock all advanced features: cloud sync, AI recipe suggestions, family sharing, and more.",
+          "tag": "Update"
+        },
+        "mom_baby_preview": {
+          "date": "Coming soon",
+          "title": "Mom & Baby App — In Development",
+          "summary": "Insight AI is developing a comprehensive utility suite to help mothers track their baby's health and development.",
+          "tag": "Coming Soon"
+        }
+      },
+      "readMore": "Read more",
+      "viewAll": "All news"
+    },
+    "benefits": {
+      "badge": "Why Choose Us",
+      "title": "A Platform Built for Vietnamese Users",
+      "subtitle": "Every product is designed with Vietnamese users at the center",
+      "items": {
+        "vietnamese": { "title": "Designed for Vietnam", "description": "Language, habits, and unique needs of Vietnamese families are our top priority." },
+        "ai": { "title": "Smart AI", "description": "Artificial intelligence integrated throughout the ecosystem for personalized experiences." },
+        "privacy": { "title": "Absolute Security", "description": "Your data belongs to you. End-to-end encryption and we never sell your data." },
+        "quality": { "title": "High Quality", "description": "Every product is polished from design to performance — no compromises on quality." }
+      }
+    },
+    "cta": {
+      "title": "Start With WiseNest",
+      "subtitle": "Download our first app and experience smarter living. Follow us for updates on upcoming products.",
+      "download": "Download WiseNest",
+      "subscribe": "Follow Updates"
     }
   },
   "products": {
@@ -626,6 +733,255 @@
         "contact": { 
           "title": "12. Contact", 
           "content": "{{company.name}}\nEmail: {{email.legal}}\nSupport: {{email.support}}\n\nFor food safety emergencies, contact your local poison control center or emergency services." 
+        }
+      }
+    }
+  },
+  "platformLegal": {
+    "privacy-policy": {
+      "meta": {
+        "title": "Privacy Policy — {{company.name}}",
+        "description": "Learn how {{company.name}} collects, uses, stores, and protects your personal data across our platform and products."
+      },
+      "date": "February 2026",
+      "sections": {
+        "introduction": {
+          "title": "1. Introduction",
+          "content": "This Privacy Policy (\"Policy\") describes how {{company.name}} (\"Company\", \"we\", \"us\", \"our\") collects, uses, processes, stores, shares, and protects your personal information when you visit our website insight.ai.vn (\"Website\") and use any products, applications, or services provided by {{company.name}} (collectively, \"Services\").\n\nBy accessing the Website or using our Services, you acknowledge that you have read, understood, and agree to this Policy in its entirety. If you do not agree, please discontinue use of our Services.\n\nThis Policy complies with Vietnam's Personal Data Protection Decree (13/2023/ND-CP), the Cybersecurity Law 2018, the Electronic Transactions Law 2023, the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other applicable international data protection laws where relevant."
+        },
+        "dataController": {
+          "title": "2. Data Controller",
+          "content": "{{company.name}} is the data controller responsible for your personal data under applicable law.\n\nAddress: {{address.full}}\nPrivacy email: {{email.privacy}}\nLegal email: {{email.legal}}\nGeneral email: {{email.general}}"
+        },
+        "scope": {
+          "title": "3. Scope of Application",
+          "content": "This Policy applies to:",
+          "items": [
+            "The website insight.ai.vn and all its subpages",
+            "All mobile applications developed and distributed by {{company.name}} (including but not limited to: WiseNest, and future products)",
+            "All related online services, APIs, and tools",
+            "All forms of communication between you and {{company.name}} (email, contact forms, social media)",
+            "Individual products may have supplementary privacy policies specific to that product, which take precedence within the scope of the respective product"
+          ]
+        },
+        "informationWeCollect": {
+          "title": "4. Information We Collect",
+          "content": "We collect the following types of information:",
+          "items": [
+            "Personal Identification Information: Full name, email address, phone number (if provided), profile photo, and authentication data from social login providers (Google, Apple, Facebook).",
+            "Device Information: Device model, operating system, app version, unique device identifiers, system language, timezone.",
+            "Usage Data: Usage frequency, features accessed, session duration, in-app actions, preference settings.",
+            "User Content: Data you enter into our products (e.g., food items, shopping lists, personal notes).",
+            "Transaction Information: Subscription status, transaction IDs, purchase history. Credit card/payment details are NOT stored by us — they are processed entirely by Apple/Google.",
+            "Technical Data: IP address, browser type, internet service provider, referring/exit pages, timestamps.",
+            "Location Information: General country/region only for localization purposes. We do NOT collect precise GPS location.",
+            "Communication Data: Support email content, feedback, and attachments you voluntarily send to us."
+          ]
+        },
+        "howWeUse": {
+          "title": "5. Purposes of Information Use",
+          "content": "We use collected information for the following purposes:",
+          "items": [
+            "Service Provision: Operating, maintaining, and improving our products and features.",
+            "Personalization: Customizing user experience and suggesting relevant content.",
+            "Data Synchronization: Syncing data across devices for registered users.",
+            "Notifications: Sending service notifications, security alerts, and product information.",
+            "Customer Support: Responding to inquiries, handling complaints, providing technical support.",
+            "Analytics & Improvement: Analyzing usage trends, detecting bugs, improving products.",
+            "Security: Detecting and preventing fraud, abuse, and security threats.",
+            "Legal Compliance: Meeting legal, regulatory, and law enforcement requirements.",
+            "Marketing (only with consent): Sending information about new products, promotions — you may unsubscribe at any time."
+          ]
+        },
+        "legalBasis": {
+          "title": "6. Legal Basis for Data Processing",
+          "content": "We process personal data based on the following legal grounds:",
+          "items": [
+            "Consent: You have provided explicit consent for processing (Article 11, Decree 13/2023/ND-CP).",
+            "Contractual Performance: Processing necessary to provide services under the agreement between you and us.",
+            "Legitimate Interests: Improving services, ensuring security, preventing fraud — balanced against your rights.",
+            "Legal Obligation: Compliance with Vietnamese law and applicable international regulations.",
+            "Vital Interests: In emergency situations involving your safety."
+          ]
+        },
+        "dataStorage": {
+          "title": "7. Data Storage and Security",
+          "content": "We implement appropriate technical and organizational measures to protect your data:\n\n• Encryption: TLS 1.3 for data in transit, AES-256 for data at rest.\n• Access Control: Principle of least privilege — only authorized personnel may access personal data.\n• Storage: Data is stored on reputable cloud services (including but not limited to: Google Cloud Platform, Azure) in data centers meeting ISO 27001 standards.\n• Security Audits: Regular security assessments and vulnerability testing.\n• Monitoring: 24/7 monitoring systems to detect anomalous access.\n\nWhile we make every effort to protect your data, no method of internet transmission or electronic storage is 100% secure. We cannot guarantee absolute security."
+        },
+        "dataRetention": {
+          "title": "8. Data Retention Period",
+          "content": "We retain personal data for as long as necessary to fulfill the purposes outlined in this Policy:",
+          "items": [
+            "Active Accounts: Data is retained throughout the active life of the account.",
+            "After Account Deletion: Personal data is deleted within 30 days of an account deletion request.",
+            "Backups: Retained for up to 90 days for disaster recovery purposes.",
+            "Transaction Data: Retained as required by accounting and tax law (minimum 5 years under Vietnamese Accounting Law).",
+            "Legal Data: May be retained longer if required by law or to resolve disputes.",
+            "Anonymized Data: Fully anonymized data may be retained indefinitely for statistical analysis."
+          ]
+        },
+        "sharing": {
+          "title": "9. Data Sharing and Disclosure",
+          "content": "We do NOT sell, rent, or commercially trade your personal information. We may share data with:",
+          "items": [
+            "Service Providers: Third parties assisting in service operations (cloud hosting, analytics, payment processing) — bound by confidentiality and data processing agreements.",
+            "Analytics Partners: Anonymized data for usage analysis (Google Analytics, Firebase Analytics).",
+            "Law Enforcement: When required by legitimate requests from competent government authorities, court orders, or legal obligations.",
+            "Rights Protection: When necessary to protect the rights, property, or safety of {{company.name}}, our users, or the public.",
+            "Business Transfers: In the event of a merger, acquisition, or restructuring — you will be notified in advance.",
+            "With Consent: When you explicitly agree to specific sharing."
+          ]
+        },
+        "internationalTransfer": {
+          "title": "10. Cross-Border Data Transfers",
+          "content": "Your data may be transferred to and processed in countries outside Vietnam (including the United States, Singapore, EU). We ensure:\n\n• Compliance with Article 26, Decree 13/2023/ND-CP on cross-border personal data transfers.\n• Application of Standard Contractual Clauses (SCCs) with data recipients.\n• Technical and legal safeguards equivalent to or exceeding Vietnamese law requirements.\n• Data transfer impact assessments where necessary."
+        },
+        "yourRights": {
+          "title": "11. Data Subject Rights",
+          "content": "Under Vietnamese law (Decree 13/2023/ND-CP) and international regulations, you have the following rights:",
+          "items": [
+            "Right to Know: To be informed about the processing of your personal data, unless otherwise provided by law.",
+            "Right to Consent: To consent or decline consent for data processing, unless otherwise provided by law.",
+            "Right of Access: To request a copy of your personal data.",
+            "Right to Withdraw Consent: To withdraw previously given consent at any time.",
+            "Right to Erasure: To request deletion of your personal data, unless retention is required by law.",
+            "Right to Restrict Processing: To request limitation of data processing scope.",
+            "Right to Data Portability: To receive your data in a machine-readable format.",
+            "Right to Object: To object to data processing in certain circumstances.",
+            "Right to Complain: To file complaints with the Ministry of Public Security (the designated data protection authority in Vietnam) or the data protection authority in your jurisdiction.",
+            "Right to Compensation: To claim damages when data is processed in violation of regulations.",
+            "Right to Self-Protection: To self-protect according to legal provisions upon discovering data processing violations."
+          ]
+        },
+        "exercisingRights": {
+          "title": "12. Exercising Your Rights",
+          "content": "To exercise any of your rights, please contact {{email.privacy}}.\n\nWe will:\n• Verify your identity before processing requests\n• Respond within 72 hours of receiving the request\n• Complete processing within 30 days (may extend by an additional 30 days for complex requests, with notification)\n• Process the first request free of charge within each 12-month period\n\nYou may also:\n• Export your data through account settings in the app\n• Delete your account through app settings\n• Manage notification and privacy preferences within the app"
+        },
+        "children": {
+          "title": "13. Children's Protection",
+          "content": "Our Services are not intended for children under 13 years of age (or under 16 in the EU/EEA). We do not knowingly collect information from children below this age.\n\nFor users aged 13 to 16, parental or legal guardian consent is required.\n\nIn Vietnam, under Decree 13/2023/ND-CP, processing personal data of children (under 16) always requires parental or guardian consent.\n\nIf you discover that a child has provided personal information without appropriate consent, please contact {{email.privacy}} immediately."
+        },
+        "cookies": {
+          "title": "14. Cookies and Tracking Technologies",
+          "content": "The Website may use:\n\n• Essential Cookies: Required for basic functionality (login sessions, language preferences).\n• Analytics Cookies: To understand how you use the Website (Google Analytics — anonymized data).\n• Preference Cookies: To remember your display preferences.\n\nMobile apps may use:\n• Device Identifiers: For anonymous analytics.\n• Local Storage: Preferences and cached data.\n• Analytics SDKs: Firebase Analytics (anonymized data).\n\nYou may manage cookies through your browser settings. Disabling essential cookies may affect Website functionality."
+        },
+        "thirdPartyLinks": {
+          "title": "15. Third-Party Links and Services",
+          "content": "The Website and Apps may contain links to third-party services. We do not control and are not responsible for the privacy practices of third parties. We encourage you to review the privacy policies of all third-party services before providing personal information."
+        },
+        "dataBreach": {
+          "title": "16. Data Breach Response",
+          "content": "In the event of a personal data breach, we will:\n\n• Notify the competent authority (Ministry of Public Security) within 72 hours of discovery, in compliance with Article 23 of Decree 13/2023/ND-CP.\n• Notify affected data subjects without undue delay.\n• Document breach details, consequences, and remedial measures taken.\n• Implement technical measures to mitigate impact and prevent recurrence."
+        },
+        "changes": {
+          "title": "17. Policy Changes",
+          "content": "We may update this Policy from time to time. Any material changes will be communicated via:\n\n• Notices on the Website\n• Email (if you have subscribed)\n• In-app notifications\n\nThe \"Last updated\" date at the top of this page reflects the current version. Continued use of the Services after changes constitutes acceptance of the updated Policy. For material changes, we will seek explicit consent where required."
+        },
+        "contact": {
+          "title": "18. Contact",
+          "content": "If you have questions, comments, or requests regarding this Privacy Policy, please contact:\n\n{{company.name}}\nAddress: {{address.full}}\nPrivacy email: {{email.privacy}}\nLegal email: {{email.legal}}\nSupport email: {{email.support}}\n\nWe are committed to responding within 5 business days."
+        }
+      }
+    },
+    "terms-of-service": {
+      "meta": {
+        "title": "Terms of Service — {{company.name}}",
+        "description": "Terms and conditions for using the website and services of {{company.name}}."
+      },
+      "date": "February 2026",
+      "sections": {
+        "acceptance": {
+          "title": "1. Acceptance of Terms",
+          "content": "By accessing our website insight.ai.vn (\"Website\") or using any products, applications, or services provided by {{company.name}} (\"Company\", \"we\", \"us\", \"our\") (collectively, \"Services\"), you agree to be bound by these Terms of Service (\"Terms\"), our Privacy Policy, and any supplemental terms applicable to specific products.\n\nThese Terms constitute a legally binding agreement between you and {{company.name}} under Vietnamese law.\n\nIF YOU DO NOT AGREE WITH THESE TERMS, PLEASE DO NOT USE THE SERVICES.\n\nWe may modify these Terms at any time. The updated version takes effect upon posting, unless otherwise specified. Continued use constitutes acceptance of changes."
+        },
+        "eligibility": {
+          "title": "2. Eligibility",
+          "content": "To use the Services, you must:\n• Be at least 13 years old (or 16 in the EU/EEA; in Vietnam, persons under 16 require parental or guardian consent)\n• Have legal capacity to enter into binding agreements under the Civil Code 2015\n• Not be prohibited from using the Services under applicable law in your country of residence\n• Not have been previously suspended or terminated by {{company.name}}"
+        },
+        "accountRegistration": {
+          "title": "3. Account Registration",
+          "content": "By creating an account, you agree to:",
+          "items": [
+            "Provide accurate, complete, and current information",
+            "Maintain and update your information when changes occur",
+            "Keep your login credentials confidential and not share them with anyone",
+            "Use secure authentication methods",
+            "Immediately notify {{company.name}} upon discovering unauthorized access or security breaches",
+            "Accept full responsibility for all activity under your account",
+            "Not create multiple accounts for purposes of abuse or fraud"
+          ]
+        },
+        "serviceDescription": {
+          "title": "4. Service Description",
+          "content": "{{company.name}} provides a smart app platform including but not limited to:\n\n• Home management and lifestyle applications\n• Personal finance tools\n• Entertainment and educational applications\n• Related digital services\n\nServices may include a free tier with basic features and paid subscriptions (Premium) with advanced features. Feature details may change over time.\n\nServices are provided for personal, non-commercial use, unless otherwise agreed in writing."
+        },
+        "subscriptions": {
+          "title": "5. Paid Subscriptions and Payments",
+          "content": "Premium features are available through paid subscriptions:",
+          "items": [
+            "Payments are processed via the Apple App Store or Google Play Store",
+            "Subscriptions auto-renew unless canceled at least 24 hours before the renewal date",
+            "Prices are displayed in local currency and may vary by region",
+            "Prices may be adjusted with 30 days' advance notice",
+            "Refunds are handled under the policies of the respective app store",
+            "{{company.name}} does not directly collect or store payment information"
+          ]
+        },
+        "intellectualProperty": {
+          "title": "6. Intellectual Property",
+          "content": "All content, design, source code, logos, trademarks, trade names, and other intellectual property related to the Services are the exclusive property of {{company.name}} or its licensors, protected by the Intellectual Property Law 2005 (amended 2009, 2019, 2022) and international treaties to which Vietnam is a party.\n\nYou are granted a limited, non-exclusive, non-transferable, revocable license to use the Services for personal, non-commercial purposes.\n\nYou may NOT: copy, modify, distribute, resell, sublicense, rent, disassemble, reverse engineer, or create derivative works from any part of the Services without written consent."
+        },
+        "userContent": {
+          "title": "7. User Content",
+          "content": "You retain full ownership of content you create through the Services (\"User Content\"). You grant {{company.name}} a worldwide, non-exclusive, royalty-free, transferable license to:\n\n• Store, process, and display Content to provide the Services\n• Create backups for data protection\n• Analyze anonymized data to improve the Services\n\nThis license automatically terminates when you delete the Content or your account.\n\nYou warrant that your User Content does not violate applicable laws, third-party rights, or these Terms."
+        },
+        "prohibited": {
+          "title": "8. Prohibited Activities",
+          "content": "You agree NOT to:",
+          "items": [
+            "Use the Services for unlawful, fraudulent purposes or in violation of third-party rights",
+            "Transmit content that violates Vietnamese law: opposing the state, inciting violence, pornography, discrimination, or other harmful content (Article 16, Cybersecurity Law 2018)",
+            "Copy, modify, reverse engineer, decompile, or distribute any part of the Services",
+            "Disable, interfere with, or sabotage security features",
+            "Use bots, crawlers, scrapers, or other automated systems without permission",
+            "Transmit viruses, malware, or harmful software",
+            "Attempt unauthorized access to systems, data, or other users' accounts",
+            "Interfere with normal Services performance or functionality",
+            "Use the Services to collect personal information of other users without consent",
+            "Impersonate any person or organization"
+          ]
+        },
+        "disclaimers": {
+          "title": "9. Disclaimer of Warranties",
+          "content": "THE SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:\n\n• WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE\n• WARRANTIES OF ACCURACY, COMPLETENESS, OR RELIABILITY\n• WARRANTIES OF UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE OPERATION\n• WARRANTIES OF NON-INFRINGEMENT OF THIRD-PARTY RIGHTS\n\nNote: Under the Consumer Protection Law 2023, certain consumer rights in Vietnam cannot be waived."
+        },
+        "limitation": {
+          "title": "10. Limitation of Liability",
+          "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, {{company.name}} AND ITS DIRECTORS, EMPLOYEES, AND PARTNERS SHALL NOT BE LIABLE FOR:\n\n• ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES\n• LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS OPPORTUNITY\n• COST OF PROCURING SUBSTITUTE SERVICES\n• DECISIONS OR ACTIONS BASED ON INFORMATION FROM THE SERVICES\n\nTOTAL MAXIMUM LIABILITY OF {{company.name}} SHALL NOT EXCEED THE TOTAL AMOUNT YOU HAVE PAID FOR THE SERVICES IN THE 12 MONTHS PRECEDING THE CLAIM, OR $100 USD, WHICHEVER IS GREATER.\n\nThis limitation applies regardless of legal theory and even if {{company.name}} has been advised of the possibility of such damages.\n\nNote: Liability limitations may be subject to mandatory consumer protection regulations in Vietnam."
+        },
+        "indemnification": {
+          "title": "11. Indemnification",
+          "content": "You agree to defend, indemnify, and hold harmless {{company.name}} from all claims, losses, liabilities, and expenses (including reasonable attorney fees) arising from:\n\n• Your use of the Services\n• Your breach of these Terms\n• Your violation of law or third-party rights\n• User Content you submit"
+        },
+        "governingLaw": {
+          "title": "12. Governing Law and Dispute Resolution",
+          "content": "These Terms are governed by the laws of the {{legal.governingLaw}}.\n\nThe parties shall first attempt to resolve disputes through negotiation and mediation. If unresolved within 30 days, disputes shall be submitted to the competent People's Court in {{address.jurisdiction}}.\n\nFor EU/EEA users, you may use the European Commission's Online Dispute Resolution (ODR) platform at https://ec.europa.eu/consumers/odr.\n\nFor users in other jurisdictions, mandatory local consumer protection laws remain applicable."
+        },
+        "termination": {
+          "title": "13. Termination",
+          "content": "We reserve the right to suspend or terminate your account and access if:\n\n• You violate these Terms\n• Required by law or competent authorities\n• Fraudulent, abusive, or security-threatening behavior is detected\n• At our reasonable discretion to protect the Services and other users\n\nYou may terminate your account at any time through app settings or by contacting {{email.support}}.\n\nUpon termination:\n• Your license to use the Services ends immediately\n• Paid subscriptions will not auto-renew (you must cancel through the app store)\n• Data will be handled in accordance with our Privacy Policy"
+        },
+        "forceM": {
+          "title": "14. Force Majeure",
+          "content": "{{company.name}} shall not be liable for failure to perform or delay in performing the Services due to events beyond reasonable control, including but not limited to: natural disasters, war, terrorism, epidemics, strikes, internet outages, changes in law, or acts of third parties."
+        },
+        "severability": {
+          "title": "15. Severability and Entirety",
+          "content": "If any provision of these Terms is found by a court or competent authority to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision closest in meaning.\n\nThese Terms, together with the Privacy Policy and product-specific terms, constitute the entire agreement between you and {{company.name}}."
+        },
+        "contact": {
+          "title": "16. Contact",
+          "content": "If you have questions about these Terms, please contact:\n\n{{company.name}}\nAddress: {{address.full}}\nLegal email: {{email.legal}}\nSupport email: {{email.support}}\nGeneral email: {{email.general}}"
         }
       }
     }

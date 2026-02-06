@@ -19,16 +19,16 @@ export function Footer() {
       <div className="absolute inset-0 bg-black" />
       <div className="absolute inset-0 bg-grid-pattern opacity-10" />
       
-      {/* Subtle crystal glow effects */}
-      <div className="absolute -left-40 top-20 h-80 w-80 rounded-full bg-white/3 blur-3xl" />
-      <div className="absolute -right-40 bottom-20 h-80 w-80 rounded-full bg-white/3 blur-3xl" />
+      {/* Colored ambient glow effects */}
+      <div className="absolute -left-40 top-20 h-80 w-80 rounded-full bg-glow-blue opacity-30" />
+      <div className="absolute -right-40 bottom-20 h-80 w-80 rounded-full bg-glow-violet opacity-20" />
       
       <div className="container-custom relative py-16 md:py-20">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:gap-12">
           {/* Company */}
           <div>
             <h3 className="mb-6 text-xs font-semibold uppercase tracking-widest text-white/40">
-              {t('company')}
+              {t('team')}
             </h3>
             <ul className="space-y-4">
               <li>
@@ -90,7 +90,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link
-                  href={`/${locale}/wisenest/privacy-policy`}
+                  href={`/${locale}/privacy-policy`}
                   className="text-sm text-white/50 transition-all duration-300 hover:text-white"
                 >
                   {t('privacyPolicy')}
@@ -98,7 +98,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={`/${locale}/wisenest/terms-of-service`}
+                  href={`/${locale}/terms-of-service`}
                   className="text-sm text-white/50 transition-all duration-300 hover:text-white"
                 >
                   {t('termsOfService')}
@@ -111,7 +111,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href={`/${locale}`} className="group inline-block">
               <div className="relative">
-                <div className="absolute -inset-2 rounded-lg bg-white/10 blur-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="absolute -inset-2 rounded-lg bg-blue-400/10 blur-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 <Image
                   src="/images/logo-trans.png"
                   alt={company.name}
@@ -161,15 +161,9 @@ export function Footer() {
           {/* Gradient divider */}
           <div className="divider-gradient mb-8" />
           
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <p className="flex items-center gap-1 text-sm text-white/40">
               {t('copyright', { year: currentYear })}
-            </p>
-            <p className="flex items-center gap-1.5 text-sm text-white/30">
-              <span>Built with</span>
-              <Heart className="h-3.5 w-3.5 animate-pulse text-rose-400" />
-              <span>and</span>
-              <span className="text-white font-medium">AI</span>
             </p>
           </div>
         </div>

@@ -75,11 +75,11 @@ const config: Config = {
         pulseGlow: {
           '0%, 100%': { 
             opacity: '1',
-            boxShadow: '0 0 20px rgba(99, 102, 241, 0.4)',
+            boxShadow: '0 0 20px rgba(59, 130, 246, 0.15)',
           },
           '50%': { 
             opacity: '0.8',
-            boxShadow: '0 0 40px rgba(99, 102, 241, 0.6)',
+            boxShadow: '0 0 40px rgba(59, 130, 246, 0.25)',
           },
         },
         gradientShift: {
@@ -91,19 +91,21 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-mesh': `
-          radial-gradient(at 40% 20%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-          radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.1) 0px, transparent 50%),
-          radial-gradient(at 0% 50%, rgba(6, 182, 212, 0.1) 0px, transparent 50%),
-          radial-gradient(at 80% 50%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
-          radial-gradient(at 0% 100%, rgba(139, 92, 246, 0.1) 0px, transparent 50%)
+          radial-gradient(at 20% 20%, rgba(59, 130, 246, 0.07) 0px, transparent 50%),
+          radial-gradient(at 80% 10%, rgba(139, 92, 246, 0.05) 0px, transparent 50%),
+          radial-gradient(at 0% 50%, rgba(6, 182, 212, 0.04) 0px, transparent 50%),
+          radial-gradient(at 80% 60%, rgba(59, 130, 246, 0.04) 0px, transparent 50%),
+          radial-gradient(at 0% 100%, rgba(139, 92, 246, 0.03) 0px, transparent 50%)
         `,
       },
       boxShadow: {
-        'glow-sm': '0 0 15px rgba(99, 102, 241, 0.3)',
-        'glow': '0 0 30px rgba(99, 102, 241, 0.4)',
-        'glow-lg': '0 0 60px rgba(99, 102, 241, 0.5)',
-        'glow-accent': '0 0 30px rgba(6, 182, 212, 0.4)',
+        'glow-sm': '0 0 15px rgba(59, 130, 246, 0.15)',
+        'glow': '0 0 30px rgba(59, 130, 246, 0.2)',
+        'glow-lg': '0 0 60px rgba(59, 130, 246, 0.25)',
+        'glow-violet': '0 0 30px rgba(139, 92, 246, 0.2)',
+        'glow-cyan': '0 0 30px rgba(6, 182, 212, 0.2)',
         'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.36)',
+        'glass-hover': '0 12px 40px rgba(0, 0, 0, 0.5), 0 0 80px rgba(59, 130, 246, 0.05)',
       },
       backdropBlur: {
         xs: '2px',

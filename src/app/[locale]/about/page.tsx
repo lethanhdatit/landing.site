@@ -31,8 +31,8 @@ export default async function AboutPage({ params }: Props) {
 
   const values = [
     { icon: Heart, key: 'passion', glowColor: 'warm' as const },
-    { icon: Users, key: 'users', glowColor: 'silver' as const },
-    { icon: Lightbulb, key: 'innovation', glowColor: 'white' as const },
+    { icon: Users, key: 'users', glowColor: 'blue' as const },
+    { icon: Lightbulb, key: 'innovation', glowColor: 'violet' as const },
     { icon: Target, key: 'quality', glowColor: 'cool' as const },
   ];
 
@@ -41,7 +41,8 @@ export default async function AboutPage({ params }: Props) {
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32">
         {/* Background */}
-        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+        <div className="absolute inset-0 bg-gradient-mesh" />
+        <div className="absolute inset-0 bg-grid-pattern opacity-15" />
         <FloatingOrbs />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
         
@@ -63,7 +64,7 @@ export default async function AboutPage({ params }: Props) {
       {/* Mission Section */}
       <section className="relative py-20 md:py-32">
         <div className="absolute inset-0 bg-black" />
-        <div className="absolute left-0 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-white/3 blur-3xl" />
+        <div className="absolute left-0 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-glow-blue opacity-30" />
         
         <div className="container-custom relative z-10">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
@@ -106,7 +107,7 @@ export default async function AboutPage({ params }: Props) {
       <section className="relative py-20 md:py-32">
         <div className="absolute inset-0 bg-black" />
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-        <div className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-white/3 blur-3xl" />
+        <div className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-glow-violet opacity-25" />
         
         <div className="container-custom relative z-10">
           <ScrollAnimationWrapper animation="slide-up">
@@ -141,7 +142,7 @@ export default async function AboutPage({ params }: Props) {
       {/* Team Section */}
       <section className="relative py-20 md:py-32">
         <div className="absolute inset-0 bg-black" />
-        <div className="absolute left-1/4 bottom-0 h-80 w-80 rounded-full bg-white/3 blur-3xl" />
+        <div className="absolute left-1/4 bottom-0 h-80 w-80 rounded-full bg-glow-cyan opacity-20" />
         
         <div className="container-custom relative z-10">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">

@@ -97,6 +97,7 @@
     "backToHome": "Về Trang Chủ",
     "backTo": "Quay về",
     "language": "Ngôn Ngữ",
+    "switchLanguage": "Chuyển ngôn ngữ",
     "menu": "Menu",
     "close": "Đóng",
     "lastUpdated": "Cập nhật lần cuối",
@@ -128,6 +129,7 @@
   },
   "footer": {
     "company": "Công Ty", 
+    "team": "Đội Ngũ",
     "about": "Về Chúng Tôi", 
     "contact": "Liên Hệ", 
     "careers": "Tuyển Dụng", 
@@ -138,47 +140,152 @@
     "cookiePolicy": "Chính Sách Cookie",
     "social": "Theo Dõi", 
     "copyright": "© {year} {{company.name}}. Đã đăng ký bản quyền.", 
-    "madeWith": "Được tạo với ❤️ tại {{address.countryVi}}"
+    "madeWith": "Được tạo bởi Thành Đạt tại {{address.countryVi}}"
   },
   "home": {
-    "meta": { 
-      "title": "{{company.name}} - Ứng Dụng Thông Minh Cho Cuộc Sống Hiện Đại", 
-      "description": "Khám phá những ứng dụng sáng tạo giúp đơn giản hóa cuộc sống hàng ngày với giải pháp AI." 
+    "meta": {
+      "title": "Insight AI VN — Giải Pháp Thông Minh Cho Cuộc Sống Số",
+      "description": "Hệ sinh thái ứng dụng đa dạng từ quản lý gia đình, tài chính, đến giải trí và giáo dục — tất cả được thiết kế cho người Việt Nam."
     },
-    "hero": { 
-      "title": "Ứng Dụng Thông Minh Cho Cuộc Sống Hiện Đại", 
-      "subtitle": "Chúng tôi xây dựng những ứng dụng sáng tạo giúp đơn giản hóa công việc hàng ngày và giúp bạn sống thông minh hơn.", 
-      "cta": "Khám Phá Ứng Dụng", 
-      "secondary": "Tìm Hiểu Thêm",
-      "badge": "Công Nghệ AI",
+    "hero": {
+      "title": "Giải Pháp Thông Minh Cho Cuộc Sống Số",
+      "subtitle": "Insight AI VN xây dựng hệ sinh thái ứng dụng đa dạng — từ quản lý gia đình, tài chính, đến giải trí và giáo dục — tất cả được tối ưu cho người dùng Việt Nam.",
+      "cta": "Khám Phá WiseNest",
+      "secondary": "Xem Lộ Trình",
+      "badge": "Nền Tảng Ứng Dụng",
       "scroll": "Cuộn"
     },
     "stats": {
-      "downloads": "Lượt Tải",
-      "rating": "Đánh Giá",
-      "uptime": "Hoạt Động"
+      "products": "Sản Phẩm",
+      "categories": "Danh Mục",
+      "downloads": "Lượt Tải"
     },
-    "products": { 
-      "title": "Sản Phẩm", 
-      "badge": "Sản Phẩm",
-      "subtitle": "Khám phá những ứng dụng được thiết kế để làm cuộc sống dễ dàng hơn", 
-      "learnMore": "Tìm hiểu thêm" 
+    "featured": {
+      "badge": "Có Sẵn Ngay",
+      "title": "Sản Phẩm Đầu Tiên Của Chúng Tôi",
+      "description": "Quản lý kho thực phẩm, lập danh sách mua sắm thông minh 3 giai đoạn, và khám phá công thức nấu ăn bằng AI — tất cả trong một ứng dụng.",
+      "highlights": {
+        "expiry": "Theo dõi hạn sử dụng",
+        "shopping": "Mua sắm 3 giai đoạn",
+        "recipes": "Công thức AI",
+        "family": "Chia sẻ gia đình"
+      },
+      "download": "Tải Ngay",
+      "learnMore": "Tìm Hiểu Thêm",
+      "version": "Phiên bản"
     },
-    "features": {
-      "title": "Tại Sao Chọn Chúng Tôi",
-      "badge": "Tính Năng",
-      "subtitle": "Xây dựng với tâm huyết, thiết kế cho bạn",
-      "items": {
-        "ai": { "title": "Tích Hợp AI", "description": "Tính năng thông minh được hỗ trợ bởi AI tiên tiến để nâng cao trải nghiệm." },
-        "privacy": { "title": "Bảo Mật Đầu Tiên", "description": "Dữ liệu của bạn thuộc về bạn. Chúng tôi ưu tiên bảo mật và minh bạch." },
-        "fast": { "title": "Nhanh Như Chớp", "description": "Hiệu suất được tối ưu hóa cho phản hồi tức thì và tương tác mượt mà." },
-        "multilingual": { "title": "Đa Ngôn Ngữ", "description": "Có sẵn bằng nhiều ngôn ngữ để phục vụ người dùng toàn cầu." }
+    "ecosystem": {
+      "badge": "Hệ Sinh Thái",
+      "title": "Danh Mục Sản Phẩm",
+      "subtitle": "Chúng tôi đang xây dựng hệ sinh thái ứng dụng toàn diện phục vụ nhiều nhu cầu cuộc sống",
+      "categories": {
+        "home-lifestyle": {
+          "title": "Quản Lý Gia Đình",
+          "description": "Ứng dụng thông minh quản lý thực phẩm, kho đồ, và sinh hoạt gia đình hàng ngày.",
+          "status": "1 ứng dụng ra mắt"
+        },
+        "mom-baby": {
+          "title": "Mẹ & Bé",
+          "description": "Tiện ích hỗ trợ nuôi dạy con: theo dõi sức khỏe, dinh dưỡng, mốc phát triển của bé.",
+          "status": "Sắp ra mắt"
+        },
+        "finance": {
+          "title": "Tài Chính Cá Nhân",
+          "description": "Công cụ quản lý chi tiêu, tiết kiệm, và lập kế hoạch tài chính thông minh.",
+          "status": "Đang phát triển"
+        },
+        "social": {
+          "title": "Chia Sẻ & Kết Nối",
+          "description": "Nền tảng chia sẻ câu chuyện, cảm xúc, thông tin tìm kiếm — phong cách 'bức tường tờ rơi' Việt Nam.",
+          "status": "Đang lên kế hoạch"
+        },
+        "games-casual": {
+          "title": "Game Mini",
+          "description": "Trò chơi nhỏ offline giết thời gian và online chơi cùng bạn bè, đồng nghiệp.",
+          "status": "Đang lên kế hoạch"
+        },
+        "games-kids": {
+          "title": "Game Giáo Dục Trẻ Em",
+          "description": "Game tương tác có giới hạn thời gian, thiết kế khoa học phòng tránh tăng động giảm chú ý cho bé từ 0–3+ tuổi.",
+          "status": "Đang lên kế hoạch"
+        }
+      },
+      "statusLabels": {
+        "active": "Đã Ra Mắt",
+        "coming-soon": "Sắp Ra Mắt",
+        "planned": "Đang Phát Triển"
       }
     },
-    "cta": { 
-      "title": "Sẵn Sàng Bắt Đầu?", 
-      "subtitle": "Tải ứng dụng ngay hôm nay và trải nghiệm cuộc sống thông minh hơn.", 
-      "button": "Khám Phá Ứng Dụng" 
+    "roadmap": {
+      "badge": "Lộ Trình",
+      "title": "Kế Hoạch Phát Triển",
+      "subtitle": "Hành trình xây dựng nền tảng ứng dụng toàn diện cho người Việt",
+      "milestones": {
+        "q1_2026": {
+          "period": "Q1 2026",
+          "title": "Ra Mắt WiseNest",
+          "description": "Ứng dụng quản lý gia đình thông minh đầu tiên — có mặt trên App Store & Google Play."
+        },
+        "q2_2026": {
+          "period": "Q2–Q3 2026",
+          "title": "Ứng Dụng Mẹ & Bé",
+          "description": "Bộ tiện ích chăm sóc, theo dõi phát triển trẻ, và hỗ trợ các bà mẹ."
+        },
+        "q4_2026": {
+          "period": "Q4 2026",
+          "title": "Công Cụ Tài Chính",
+          "description": "Quản lý chi tiêu và tiết kiệm thông minh cho gia đình Việt."
+        },
+        "2027": {
+          "period": "2027+",
+          "title": "Mở Rộng Hệ Sinh Thái",
+          "description": "Nền tảng chia sẻ xã hội, game giải trí và giáo dục cho mọi lứa tuổi."
+        }
+      }
+    },
+    "news": {
+      "badge": "Tin Mới",
+      "title": "Tin Tức & Cập Nhật",
+      "subtitle": "Theo dõi những tin tức mới nhất từ Insight AI",
+      "entries": {
+        "wisenest_launch": {
+          "date": "01/2026",
+          "title": "WiseNest Chính Thức Ra Mắt",
+          "summary": "Ứng dụng quản lý thực phẩm và gia đình thông minh đầu tiên từ Insight AI đã có mặt trên cả iOS và Android.",
+          "tag": "Ra Mắt"
+        },
+        "wisenest_premium": {
+          "date": "02/2026",
+          "title": "WiseNest Premium — Không Giới Hạn",
+          "summary": "Mở khóa toàn bộ tính năng nâng cao: đồng bộ đám mây, gợi ý công thức AI, chia sẻ gia đình.",
+          "tag": "Cập Nhật"
+        },
+        "mom_baby_preview": {
+          "date": "Sắp tới",
+          "title": "Ứng Dụng Mẹ & Bé — Đang Phát Triển",
+          "summary": "Insight AI đang phát triển bộ tiện ích toàn diện hỗ trợ các bà mẹ theo dõi sức khỏe và phát triển của bé.",
+          "tag": "Sắp Ra Mắt"
+        }
+      },
+      "readMore": "Đọc thêm",
+      "viewAll": "Tất cả tin tức"
+    },
+    "benefits": {
+      "badge": "Tại Sao Chọn Chúng Tôi",
+      "title": "Nền Tảng Xây Dựng Cho Người Việt",
+      "subtitle": "Mỗi sản phẩm đều được thiết kế với người Việt Nam làm trung tâm",
+      "items": {
+        "vietnamese": { "title": "Thiết Kế Cho Người Việt", "description": "Ngôn ngữ, thói quen, và nhu cầu đặc thù của gia đình Việt Nam được ưu tiên hàng đầu." },
+        "ai": { "title": "AI Thông Minh", "description": "Trí tuệ nhân tạo tích hợp xuyên suốt hệ sinh thái, mang đến trải nghiệm cá nhân hóa." },
+        "privacy": { "title": "Bảo Mật Tuyệt Đối", "description": "Dữ liệu của bạn thuộc về bạn. Mã hóa end-to-end và không bao giờ bán dữ liệu." },
+        "quality": { "title": "Chất Lượng Cao", "description": "Mỗi sản phẩm được trau chuốt từ thiết kế đến hiệu suất, không thỏa hiệp chất lượng." }
+      }
+    },
+    "cta": {
+      "title": "Bắt Đầu Với WiseNest",
+      "subtitle": "Tải ứng dụng đầu tiên của chúng tôi và trải nghiệm cuộc sống thông minh hơn. Theo dõi chúng tôi để cập nhật các sản phẩm mới.",
+      "download": "Tải WiseNest",
+      "subscribe": "Theo Dõi Cập Nhật"
     }
   },
   "products": {
@@ -626,6 +733,255 @@
         "contact": { 
           "title": "12. Liên Hệ", 
           "content": "{{company.name}}\nEmail: {{email.legal}}\nHỗ trợ: {{email.support}}\n\nĐối với trường hợp khẩn cấp an toàn thực phẩm, liên hệ trung tâm kiểm soát ngộ độc địa phương hoặc dịch vụ cấp cứu." 
+        }
+      }
+    }
+  },
+  "platformLegal": {
+    "privacy-policy": {
+      "meta": {
+        "title": "Chính Sách Bảo Mật — {{company.name}}",
+        "description": "Tìm hiểu cách {{company.name}} thu thập, sử dụng, lưu trữ và bảo vệ dữ liệu cá nhân của bạn trên toàn bộ nền tảng và các sản phẩm."
+      },
+      "date": "Tháng 2, 2026",
+      "sections": {
+        "introduction": {
+          "title": "1. Giới Thiệu",
+          "content": "Chính Sách Bảo Mật này (\"Chính Sách\") mô tả cách {{company.name}} (\"Công ty\", \"chúng tôi\") thu thập, sử dụng, xử lý, lưu trữ, chia sẻ và bảo vệ thông tin cá nhân của bạn khi bạn truy cập trang web insight.ai.vn (\"Trang Web\") và sử dụng bất kỳ sản phẩm, ứng dụng, hoặc dịch vụ nào do {{company.name}} cung cấp (gọi chung là \"Dịch Vụ\").\n\nBằng việc truy cập Trang Web hoặc sử dụng Dịch Vụ, bạn xác nhận đã đọc, hiểu và đồng ý với toàn bộ Chính Sách này. Nếu không đồng ý, vui lòng ngừng sử dụng Dịch Vụ.\n\nChính Sách này tuân thủ Nghị định 13/2023/NĐ-CP về Bảo vệ Dữ liệu Cá nhân, Luật An ninh mạng 2018, Luật Giao dịch Điện tử 2023 của Việt Nam, Quy định Bảo vệ Dữ liệu Chung (GDPR) của Liên minh Châu Âu, Đạo luật Bảo mật Người tiêu dùng California (CCPA), và các luật bảo vệ dữ liệu quốc tế khác khi có liên quan."
+        },
+        "dataController": {
+          "title": "2. Đơn Vị Kiểm Soát Dữ Liệu",
+          "content": "{{company.name}} là đơn vị kiểm soát dữ liệu cá nhân chịu trách nhiệm về dữ liệu của bạn theo quy định pháp luật.\n\nĐịa chỉ: {{address.fullVi}}\nEmail bảo mật: {{email.privacy}}\nEmail pháp lý: {{email.legal}}\nEmail chung: {{email.general}}"
+        },
+        "scope": {
+          "title": "3. Phạm Vi Áp Dụng",
+          "content": "Chính Sách này áp dụng cho:",
+          "items": [
+            "Trang web insight.ai.vn và tất cả các trang con",
+            "Tất cả ứng dụng di động do {{company.name}} phát triển và phân phối (bao gồm nhưng không giới hạn: WiseNest, và các sản phẩm tương lai)",
+            "Mọi dịch vụ trực tuyến, API, và công cụ liên quan",
+            "Mọi hình thức giao tiếp giữa bạn và {{company.name}} (email, biểu mẫu liên hệ, mạng xã hội)",
+            "Các sản phẩm riêng lẻ có thể có chính sách bảo mật bổ sung cụ thể cho sản phẩm đó, được ưu tiên áp dụng trong phạm vi sản phẩm tương ứng"
+          ]
+        },
+        "informationWeCollect": {
+          "title": "4. Thông Tin Chúng Tôi Thu Thập",
+          "content": "Chúng tôi thu thập các loại thông tin sau:",
+          "items": [
+            "Thông Tin Định Danh Cá Nhân: Họ tên, địa chỉ email, số điện thoại (nếu cung cấp), ảnh đại diện, và thông tin xác thực từ nhà cung cấp đăng nhập xã hội (Google, Apple, Facebook).",
+            "Thông Tin Thiết Bị: Model thiết bị, hệ điều hành, phiên bản ứng dụng, mã định danh thiết bị duy nhất, ngôn ngữ hệ thống, múi giờ.",
+            "Dữ Liệu Sử Dụng: Tần suất sử dụng, tính năng được truy cập, thời gian phiên, hành động trong ứng dụng, sở thích cài đặt.",
+            "Nội Dung Người Dùng: Dữ liệu bạn nhập vào các sản phẩm của chúng tôi (ví dụ: danh sách thực phẩm, danh sách mua sắm, ghi chú cá nhân).",
+            "Thông Tin Giao Dịch: Trạng thái đăng ký, ID giao dịch, lịch sử mua hàng. Chi tiết thẻ tín dụng/thanh toán KHÔNG được chúng tôi lưu trữ — chúng được xử lý hoàn toàn bởi Apple/Google.",
+            "Dữ Liệu Kỹ Thuật: Địa chỉ IP, loại trình duyệt, nhà cung cấp dịch vụ internet, trang tham chiếu/thoát, dấu thời gian.",
+            "Thông Tin Vị Trí: Chỉ quốc gia/khu vực chung cho mục đích bản địa hóa. Chúng tôi KHÔNG thu thập vị trí GPS chính xác.",
+            "Thông Tin Liên Lạc: Nội dung email hỗ trợ, phản hồi, và tệp đính kèm bạn chủ động gửi cho chúng tôi."
+          ]
+        },
+        "howWeUse": {
+          "title": "5. Mục Đích Sử Dụng Thông Tin",
+          "content": "Chúng tôi sử dụng thông tin thu thập cho các mục đích sau:",
+          "items": [
+            "Cung Cấp Dịch Vụ: Vận hành, duy trì, và cải thiện các sản phẩm và tính năng.",
+            "Cá Nhân Hóa: Tùy chỉnh trải nghiệm người dùng, gợi ý nội dung phù hợp.",
+            "Đồng Bộ Dữ Liệu: Đồng bộ dữ liệu giữa các thiết bị cho người dùng đã đăng ký.",
+            "Thông Báo: Gửi thông báo dịch vụ, cảnh báo bảo mật, và thông tin sản phẩm.",
+            "Hỗ Trợ Khách Hàng: Phản hồi yêu cầu, xử lý khiếu nại, cung cấp hỗ trợ kỹ thuật.",
+            "Phân Tích & Cải Thiện: Phân tích xu hướng sử dụng, phát hiện lỗi, cải tiến sản phẩm.",
+            "Bảo Mật: Phát hiện, ngăn chặn gian lận, lạm dụng, và các mối đe dọa bảo mật.",
+            "Tuân Thủ Pháp Luật: Đáp ứng các yêu cầu pháp lý, quy định, và thực thi pháp luật.",
+            "Tiếp Thị (chỉ khi có đồng ý): Gửi thông tin về sản phẩm mới, khuyến mãi — bạn có thể hủy đăng ký bất cứ lúc nào."
+          ]
+        },
+        "legalBasis": {
+          "title": "6. Cơ Sở Pháp Lý Xử Lý Dữ Liệu",
+          "content": "Chúng tôi xử lý dữ liệu cá nhân dựa trên các cơ sở pháp lý sau:",
+          "items": [
+            "Sự Đồng Ý: Bạn đã cung cấp sự đồng ý rõ ràng cho việc xử lý (Điều 11, Nghị định 13/2023/NĐ-CP).",
+            "Thực Hiện Hợp Đồng: Xử lý cần thiết để cung cấp dịch vụ theo thỏa thuận giữa bạn và chúng tôi.",
+            "Lợi Ích Hợp Pháp: Cải thiện dịch vụ, đảm bảo bảo mật, ngăn chặn gian lận — cân nhắc với quyền lợi của bạn.",
+            "Nghĩa Vụ Pháp Lý: Tuân thủ luật pháp Việt Nam và các quy định quốc tế áp dụng.",
+            "Bảo Vệ Lợi Ích Thiết Yếu: Trong trường hợp khẩn cấp liên quan đến sự an toàn của bạn."
+          ]
+        },
+        "dataStorage": {
+          "title": "7. Lưu Trữ và Bảo Mật Dữ Liệu",
+          "content": "Chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức phù hợp để bảo vệ dữ liệu:\n\n• Mã Hóa: TLS 1.3 cho dữ liệu truyền tải, AES-256 cho dữ liệu lưu trữ.\n• Kiểm Soát Truy Cập: Nguyên tắc quyền tối thiểu — chỉ nhân viên được ủy quyền mới truy cập dữ liệu cá nhân.\n• Lưu Trữ: Dữ liệu được lưu trữ trên các dịch vụ đám mây uy tín (bao gồm nhưng không giới hạn: Google Cloud Platform, Azure) tại các trung tâm dữ liệu đạt chuẩn ISO 27001.\n• Kiểm Tra Bảo Mật: Đánh giá bảo mật và kiểm tra lỗ hổng định kỳ.\n• Giám Sát: Hệ thống giám sát 24/7 phát hiện truy cập bất thường.\n\nMặc dù chúng tôi nỗ lực hết sức để bảo vệ dữ liệu, không có phương thức truyền tải qua internet hoặc lưu trữ điện tử nào an toàn 100%. Chúng tôi không thể đảm bảo bảo mật tuyệt đối."
+        },
+        "dataRetention": {
+          "title": "8. Thời Gian Lưu Giữ Dữ Liệu",
+          "content": "Chúng tôi lưu giữ dữ liệu cá nhân trong thời gian cần thiết để thực hiện các mục đích nêu trong Chính Sách này:",
+          "items": [
+            "Tài Khoản Hoạt Động: Dữ liệu được lưu giữ suốt thời gian tài khoản hoạt động.",
+            "Sau Khi Xóa Tài Khoản: Dữ liệu cá nhân bị xóa trong vòng 30 ngày kể từ yêu cầu xóa tài khoản.",
+            "Bản Sao Lưu: Được lưu giữ tối đa 90 ngày cho mục đích khôi phục thảm họa.",
+            "Dữ Liệu Giao Dịch: Lưu giữ theo yêu cầu của pháp luật kế toán và thuế (tối thiểu 5 năm theo Luật Kế toán Việt Nam).",
+            "Dữ Liệu Pháp Lý: Có thể lưu giữ lâu hơn nếu pháp luật yêu cầu hoặc để giải quyết tranh chấp.",
+            "Dữ Liệu Ẩn Danh: Dữ liệu đã được ẩn danh hóa hoàn toàn có thể được lưu giữ vô thời hạn cho mục đích thống kê."
+          ]
+        },
+        "sharing": {
+          "title": "9. Chia Sẻ và Tiết Lộ Dữ Liệu",
+          "content": "Chúng tôi KHÔNG bán, cho thuê, hoặc trao đổi thương mại thông tin cá nhân của bạn. Chúng tôi có thể chia sẻ dữ liệu với:",
+          "items": [
+            "Nhà Cung Cấp Dịch Vụ: Các bên thứ ba hỗ trợ vận hành dịch vụ (lưu trữ đám mây, phân tích, xử lý thanh toán) — bị ràng buộc bởi thỏa thuận bảo mật và xử lý dữ liệu.",
+            "Đối Tác Phân Tích: Dữ liệu đã ẩn danh hóa cho phân tích sử dụng (Google Analytics, Firebase Analytics).",
+            "Cơ Quan Pháp Luật: Khi có yêu cầu hợp pháp từ cơ quan nhà nước có thẩm quyền, quyết định tòa án, hoặc nghĩa vụ pháp lý.",
+            "Bảo Vệ Quyền Lợi: Khi cần thiết để bảo vệ quyền lợi, tài sản, hoặc sự an toàn của {{company.name}}, người dùng, hoặc công chúng.",
+            "Chuyển Giao Kinh Doanh: Trong trường hợp sáp nhập, mua lại, hoặc tái cơ cấu — bạn sẽ được thông báo trước.",
+            "Với Sự Đồng Ý: Khi bạn đồng ý rõ ràng cho việc chia sẻ cụ thể."
+          ]
+        },
+        "internationalTransfer": {
+          "title": "10. Chuyển Dữ Liệu Xuyên Biên Giới",
+          "content": "Dữ liệu của bạn có thể được chuyển và xử lý tại các quốc gia ngoài Việt Nam (bao gồm Hoa Kỳ, Singapore, EU). Chúng tôi đảm bảo:\n\n• Tuân thủ Điều 26, Nghị định 13/2023/NĐ-CP về chuyển dữ liệu cá nhân ra nước ngoài.\n• Áp dụng Điều Khoản Hợp Đồng Tiêu Chuẩn (SCC) với các bên nhận dữ liệu.\n• Đảm bảo các biện pháp bảo vệ kỹ thuật và pháp lý tương đương hoặc cao hơn pháp luật Việt Nam.\n• Thực hiện đánh giá tác động chuyển dữ liệu khi cần thiết."
+        },
+        "yourRights": {
+          "title": "11. Quyền Của Chủ Thể Dữ Liệu",
+          "content": "Theo pháp luật Việt Nam (Nghị định 13/2023/NĐ-CP) và các quy định quốc tế, bạn có các quyền sau:",
+          "items": [
+            "Quyền Được Biết: Được biết về việc xử lý dữ liệu cá nhân của bạn, trừ trường hợp luật định.",
+            "Quyền Đồng Ý: Đồng ý hoặc không đồng ý cho việc xử lý dữ liệu, trừ trường hợp luật định.",
+            "Quyền Truy Cập: Yêu cầu bản sao dữ liệu cá nhân của bạn.",
+            "Quyền Rút Đồng Ý: Rút lại sự đồng ý đã cho trước đó bất cứ lúc nào.",
+            "Quyền Xóa: Yêu cầu xóa dữ liệu cá nhân, trừ trường hợp pháp luật yêu cầu lưu giữ.",
+            "Quyền Hạn Chế Xử Lý: Yêu cầu giới hạn phạm vi xử lý dữ liệu.",
+            "Quyền Cung Cấp Dữ Liệu: Nhận dữ liệu ở định dạng có thể đọc được bằng máy.",
+            "Quyền Phản Đối: Phản đối việc xử lý dữ liệu trong một số trường hợp nhất định.",
+            "Quyền Khiếu Nại: Nộp khiếu nại với Bộ Công an (cơ quan chuyên trách bảo vệ dữ liệu cá nhân tại Việt Nam) hoặc cơ quan bảo vệ dữ liệu tại khu vực pháp lý của bạn.",
+            "Quyền Yêu Cầu Bồi Thường: Yêu cầu bồi thường thiệt hại khi dữ liệu bị xử lý vi phạm quy định.",
+            "Quyền Tự Bảo Vệ: Tự bảo vệ theo quy định pháp luật khi phát hiện vi phạm xử lý dữ liệu."
+          ]
+        },
+        "exercisingRights": {
+          "title": "12. Thực Hiện Quyền",
+          "content": "Để thực hiện bất kỳ quyền nào, vui lòng liên hệ {{email.privacy}}.\n\nChúng tôi sẽ:\n• Xác minh danh tính của bạn trước khi xử lý yêu cầu\n• Phản hồi trong vòng 72 giờ kể từ khi nhận yêu cầu\n• Hoàn tất xử lý trong vòng 30 ngày (có thể gia hạn thêm 30 ngày cho yêu cầu phức tạp, với thông báo)\n• Miễn phí cho yêu cầu đầu tiên trong mỗi 12 tháng\n\nBạn cũng có thể:\n• Xuất dữ liệu qua cài đặt tài khoản trong ứng dụng\n• Xóa tài khoản qua cài đặt ứng dụng\n• Quản lý tùy chọn thông báo và quyền riêng tư trong ứng dụng"
+        },
+        "children": {
+          "title": "13. Bảo Vệ Trẻ Em",
+          "content": "Dịch Vụ của chúng tôi không dành cho trẻ em dưới 13 tuổi (hoặc dưới 16 tuổi tại khu vực EU/EEA). Chúng tôi không cố ý thu thập thông tin từ trẻ em dưới độ tuổi này.\n\nĐối với người dùng từ 13 đến 16 tuổi, cần có sự đồng ý của cha/mẹ hoặc người giám hộ hợp pháp.\n\nTại Việt Nam, theo Nghị định 13/2023/NĐ-CP, việc xử lý dữ liệu cá nhân của trẻ em (dưới 16 tuổi) luôn cần sự đồng ý của cha/mẹ hoặc người giám hộ.\n\nNếu bạn phát hiện trẻ em đã cung cấp thông tin cá nhân mà không có sự đồng ý phù hợp, vui lòng liên hệ {{email.privacy}} ngay lập tức."
+        },
+        "cookies": {
+          "title": "14. Cookie và Công Nghệ Theo Dõi",
+          "content": "Trang Web có thể sử dụng:\n\n• Cookie Thiết Yếu: Cần thiết cho chức năng cơ bản (phiên đăng nhập, ngôn ngữ).\n• Cookie Phân Tích: Để hiểu cách bạn sử dụng Trang Web (Google Analytics — dữ liệu ẩn danh).\n• Cookie Tùy Chọn: Lưu tùy chọn hiển thị của bạn.\n\nỨng dụng di động có thể sử dụng:\n• Mã Định Danh Thiết Bị: Cho phân tích ẩn danh.\n• Lưu Trữ Cục Bộ: Tùy chọn và dữ liệu đệm.\n• SDK Phân Tích: Firebase Analytics (dữ liệu ẩn danh).\n\nBạn có thể quản lý cookie qua cài đặt trình duyệt. Tắt cookie thiết yếu có thể ảnh hưởng đến chức năng Trang Web."
+        },
+        "thirdPartyLinks": {
+          "title": "15. Liên Kết và Dịch Vụ Bên Thứ Ba",
+          "content": "Trang Web và Ứng dụng có thể chứa liên kết đến dịch vụ bên thứ ba. Chúng tôi không kiểm soát và không chịu trách nhiệm về chính sách bảo mật hoặc thực hành của bên thứ ba. Chúng tôi khuyến khích bạn đọc chính sách bảo mật của mọi dịch vụ bên thứ ba trước khi cung cấp thông tin cá nhân."
+        },
+        "dataBreach": {
+          "title": "16. Xử Lý Vi Phạm Dữ Liệu",
+          "content": "Trong trường hợp xảy ra vi phạm dữ liệu cá nhân, chúng tôi sẽ:\n\n• Thông báo cho cơ quan chuyên trách (Bộ Công an) trong vòng 72 giờ kể từ khi phát hiện, theo Điều 23 Nghị định 13/2023/NĐ-CP.\n• Thông báo cho các chủ thể dữ liệu bị ảnh hưởng mà không chậm trễ quá mức.\n• Ghi nhận chi tiết vi phạm, hậu quả, và các biện pháp khắc phục đã thực hiện.\n• Áp dụng các biện pháp kỹ thuật để giảm thiểu tác động và ngăn ngừa tái phát."
+        },
+        "changes": {
+          "title": "17. Thay Đổi Chính Sách",
+          "content": "Chúng tôi có thể cập nhật Chính Sách này theo thời gian. Mọi thay đổi quan trọng sẽ được thông báo qua:\n\n• Thông báo trên Trang Web\n• Email (nếu bạn đã đăng ký)\n• Thông báo trong ứng dụng\n\nNgày \"Cập nhật lần cuối\" ở đầu trang phản ánh phiên bản hiện hành. Việc tiếp tục sử dụng Dịch Vụ sau khi thay đổi đồng nghĩa với việc bạn chấp nhận Chính Sách mới. Đối với thay đổi quan trọng, chúng tôi sẽ yêu cầu sự đồng ý rõ ràng khi cần thiết."
+        },
+        "contact": {
+          "title": "18. Liên Hệ",
+          "content": "Nếu bạn có câu hỏi, nhận xét, hoặc yêu cầu liên quan đến Chính Sách Bảo Mật này, vui lòng liên hệ:\n\n{{company.name}}\nĐịa chỉ: {{address.fullVi}}\nEmail bảo mật: {{email.privacy}}\nEmail pháp lý: {{email.legal}}\nEmail hỗ trợ: {{email.support}}\n\nChúng tôi cam kết phản hồi trong vòng 5 ngày làm việc."
+        }
+      }
+    },
+    "terms-of-service": {
+      "meta": {
+        "title": "Điều Khoản Dịch Vụ — {{company.name}}",
+        "description": "Điều khoản và điều kiện sử dụng trang web và các dịch vụ của {{company.name}}."
+      },
+      "date": "Tháng 2, 2026",
+      "sections": {
+        "acceptance": {
+          "title": "1. Chấp Nhận Điều Khoản",
+          "content": "Bằng việc truy cập trang web insight.ai.vn (\"Trang Web\") hoặc sử dụng bất kỳ sản phẩm, ứng dụng, hoặc dịch vụ nào do {{company.name}} (\"Công ty\", \"chúng tôi\") cung cấp (gọi chung là \"Dịch Vụ\"), bạn đồng ý bị ràng buộc bởi các Điều Khoản Dịch Vụ này (\"Điều Khoản\"), Chính Sách Bảo Mật, và mọi điều khoản bổ sung áp dụng cho sản phẩm cụ thể.\n\nCác Điều Khoản này tạo thành thỏa thuận pháp lý ràng buộc giữa bạn và {{company.name}} theo pháp luật Việt Nam.\n\nNẾU BẠN KHÔNG ĐỒNG Ý VỚI CÁC ĐIỀU KHOẢN NÀY, VUI LÒNG KHÔNG SỬ DỤNG DỊCH VỤ.\n\nChúng tôi có thể sửa đổi các Điều Khoản này bất cứ lúc nào. Phiên bản mới có hiệu lực ngay khi đăng tải, trừ khi có quy định khác. Việc tiếp tục sử dụng đồng nghĩa với việc chấp nhận thay đổi."
+        },
+        "eligibility": {
+          "title": "2. Điều Kiện Sử Dụng",
+          "content": "Để sử dụng Dịch Vụ, bạn phải:\n• Ít nhất 13 tuổi (hoặc 16 tuổi tại khu vực EU/EEA; tại Việt Nam, người dưới 16 tuổi cần có sự đồng ý của cha/mẹ hoặc người giám hộ)\n• Có năng lực hành vi dân sự để ký kết thỏa thuận ràng buộc pháp lý theo Bộ luật Dân sự 2015\n• Không bị cấm sử dụng Dịch Vụ theo luật pháp hiện hành tại quốc gia bạn cư trú\n• Không bị đình chỉ hoặc chấm dứt tài khoản trước đó bởi {{company.name}}"
+        },
+        "accountRegistration": {
+          "title": "3. Đăng Ký Tài Khoản",
+          "content": "Khi tạo tài khoản, bạn cam kết:",
+          "items": [
+            "Cung cấp thông tin chính xác, đầy đủ, và cập nhật",
+            "Duy trì và cập nhật thông tin khi có thay đổi",
+            "Giữ bí mật thông tin đăng nhập và không chia sẻ với bất kỳ ai",
+            "Sử dụng phương thức xác thực an toàn",
+            "Thông báo ngay cho {{company.name}} khi phát hiện truy cập trái phép hoặc vi phạm bảo mật",
+            "Chịu hoàn toàn trách nhiệm về mọi hoạt động diễn ra dưới tài khoản của bạn",
+            "Không tạo nhiều tài khoản cho mục đích lạm dụng hoặc gian lận"
+          ]
+        },
+        "serviceDescription": {
+          "title": "4. Mô Tả Dịch Vụ",
+          "content": "{{company.name}} cung cấp nền tảng ứng dụng thông minh bao gồm nhưng không giới hạn:\n\n• Ứng dụng quản lý gia đình và cuộc sống\n• Công cụ tài chính cá nhân\n• Ứng dụng giải trí và giáo dục\n• Các dịch vụ kỹ thuật số liên quan\n\nDịch Vụ có thể bao gồm gói miễn phí với tính năng cơ bản và gói trả phí (Premium) với tính năng nâng cao. Chi tiết tính năng có thể thay đổi theo thời gian.\n\nDịch Vụ được cung cấp cho mục đích sử dụng cá nhân, phi thương mại, trừ khi có thỏa thuận riêng bằng văn bản."
+        },
+        "subscriptions": {
+          "title": "5. Đăng Ký Trả Phí và Thanh Toán",
+          "content": "Các tính năng Premium được cung cấp thông qua đăng ký trả phí:",
+          "items": [
+            "Thanh toán được xử lý qua Apple App Store hoặc Google Play Store",
+            "Đăng ký tự động gia hạn trừ khi bạn hủy ít nhất 24 giờ trước ngày gia hạn",
+            "Giá hiển thị bằng đơn vị tiền tệ địa phương và có thể thay đổi theo khu vực",
+            "Giá có thể được điều chỉnh với thông báo trước 30 ngày",
+            "Hoàn tiền được xử lý theo chính sách của cửa hàng ứng dụng tương ứng",
+            "{{company.name}} không trực tiếp thu thập hoặc lưu trữ thông tin thanh toán"
+          ]
+        },
+        "intellectualProperty": {
+          "title": "6. Quyền Sở Hữu Trí Tuệ",
+          "content": "Tất cả nội dung, thiết kế, mã nguồn, logo, nhãn hiệu, tên thương mại, và tài sản trí tuệ khác liên quan đến Dịch Vụ thuộc sở hữu độc quyền của {{company.name}} hoặc các bên cấp phép, được bảo hộ bởi Luật Sở hữu Trí tuệ 2005 (sửa đổi 2009, 2019, 2022) và các điều ước quốc tế mà Việt Nam là thành viên.\n\nBạn được cấp giấy phép có giới hạn, không độc quyền, không thể chuyển nhượng, có thể thu hồi để sử dụng Dịch Vụ cho mục đích cá nhân, phi thương mại.\n\nBạn KHÔNG được: sao chép, sửa đổi, phân phối, bán lại, cho thuê, cấp phép lại, tách rời, đảo ngược kỹ thuật, hoặc tạo sản phẩm phái sinh từ bất kỳ phần nào của Dịch Vụ mà không có sự đồng ý bằng văn bản."
+        },
+        "userContent": {
+          "title": "7. Nội Dung Người Dùng",
+          "content": "Bạn sở hữu toàn bộ nội dung bạn tạo ra thông qua Dịch Vụ (\"Nội Dung Người Dùng\"). Bạn cấp cho {{company.name}} giấy phép toàn cầu, không độc quyền, miễn phí bản quyền, có thể chuyển nhượng để:\n\n• Lưu trữ, xử lý, và hiển thị Nội Dung nhằm cung cấp Dịch Vụ\n• Tạo bản sao lưu để bảo vệ dữ liệu\n• Phân tích dữ liệu đã ẩn danh hóa để cải thiện Dịch Vụ\n\nGiấy phép này tự động chấm dứt khi bạn xóa Nội Dung hoặc tài khoản.\n\nBạn cam kết Nội Dung Người Dùng không vi phạm pháp luật, quyền của bên thứ ba, hoặc các Điều Khoản này."
+        },
+        "prohibited": {
+          "title": "8. Hành Vi Bị Cấm",
+          "content": "Bạn đồng ý KHÔNG thực hiện các hành vi sau:",
+          "items": [
+            "Sử dụng Dịch Vụ cho mục đích bất hợp pháp, gian lận, hoặc vi phạm quyền của bên thứ ba",
+            "Truyền tải nội dung vi phạm pháp luật Việt Nam: chống phá nhà nước, kích động bạo lực, khiêu dâm, phân biệt đối xử, hoặc nội dung độc hại khác (Điều 16, Luật An ninh mạng 2018)",
+            "Sao chép, sửa đổi, đảo ngược kỹ thuật, dịch ngược, hoặc phân phối bất kỳ phần nào của Dịch Vụ",
+            "Vô hiệu hóa, can thiệp, hoặc phá hoại các tính năng bảo mật",
+            "Sử dụng bot, crawler, scraper, hoặc hệ thống tự động khác mà không có sự cho phép",
+            "Truyền tải virus, mã độc, hoặc phần mềm có hại",
+            "Cố gắng truy cập trái phép vào hệ thống, dữ liệu, hoặc tài khoản của người dùng khác",
+            "Can thiệp vào hiệu suất hoặc chức năng bình thường của Dịch Vụ",
+            "Sử dụng Dịch Vụ để thu thập thông tin cá nhân của người dùng khác mà không có sự đồng ý",
+            "Mạo danh bất kỳ cá nhân hoặc tổ chức nào"
+          ]
+        },
+        "disclaimers": {
+          "title": "9. Tuyên Bố Từ Chối Bảo Đảm",
+          "content": "DỊCH VỤ ĐƯỢC CUNG CẤP \"NGUYÊN TRẠNG\" VÀ \"CÓ SẴN\" KHÔNG CÓ BẤT KỲ BẢO ĐẢM NÀO, DÙ RÕ RÀNG HAY NGỤ Ý, BAO GỒM NHƯNG KHÔNG GIỚI HẠN:\n\n• BẢO ĐẢM VỀ KHẢ NĂNG THƯƠNG MẠI HOẶC PHÙ HỢP CHO MỤC ĐÍCH CỤ THỂ\n• BẢO ĐẢM VỀ TÍNH CHÍNH XÁC, ĐẦY ĐỦ, HOẶC ĐỘ TIN CẬY\n• BẢO ĐẢM VỀ HOẠT ĐỘNG KHÔNG GIÁN ĐOẠN, KỊP THỜI, AN TOÀN, HOẶC KHÔNG LỖI\n• BẢO ĐẢM VỀ KHÔNG VI PHẠM QUYỀN CỦA BÊN THỨ BA\n\nLưu ý: Theo Luật Bảo vệ Quyền lợi Người tiêu dùng 2023, một số quyền của người tiêu dùng tại Việt Nam không thể bị từ bỏ."
+        },
+        "limitation": {
+          "title": "10. Giới Hạn Trách Nhiệm",
+          "content": "TRONG PHẠM VI TỐI ĐA ĐƯỢC PHÁP LUẬT CHO PHÉP, {{company.name}} VÀ CÁC GIÁM ĐỐC, NHÂN VIÊN, ĐỐI TÁC KHÔNG CHỊU TRÁCH NHIỆM VỀ:\n\n• BẤT KỲ THIỆT HẠI GIÁN TIẾP, NGẪU NHIÊN, ĐẶC BIỆT, MANG TÍNH HẬU QUẢ HOẶC TRỪNG PHẠT\n• MẤT LỢI NHUẬN, DOANH THU, DỮ LIỆU, UY TÍN HOẶC CƠ HỘI KINH DOANH\n• CHI PHÍ MUA DỊCH VỤ THAY THẾ\n• QUYẾT ĐỊNH HOẶC HÀNH ĐỘNG DỰA TRÊN THÔNG TIN TỪ DỊCH VỤ\n\nTỔNG TRÁCH NHIỆM TỐI ĐA CỦA {{company.name}} KHÔNG VƯỢT QUÁ TỔNG SỐ TIỀN BẠN ĐÃ THANH TOÁN CHO DỊCH VỤ TRONG 12 THÁNG TRƯỚC KHI PHÁT SINH KHIẾU NẠI, HOẶC $100 USD, TÙY MỨC NÀO LỚN HƠN.\n\nGiới hạn này áp dụng bất kể lý thuyết pháp lý nào và ngay cả khi {{company.name}} đã được cảnh báo về khả năng xảy ra thiệt hại.\n\nLưu ý: Giới hạn trách nhiệm có thể bị điều chỉnh bởi các quy định bảo vệ người tiêu dùng bắt buộc tại Việt Nam."
+        },
+        "indemnification": {
+          "title": "11. Bồi Thường",
+          "content": "Bạn đồng ý bảo vệ, bồi thường, và giữ cho {{company.name}} không bị thiệt hại từ mọi khiếu nại, tổn thất, trách nhiệm, chi phí (bao gồm phí luật sư hợp lý) phát sinh từ:\n\n• Việc sử dụng Dịch Vụ của bạn\n• Vi phạm các Điều Khoản này\n• Vi phạm pháp luật hoặc quyền của bên thứ ba\n• Nội Dung Người Dùng bạn đăng tải"
+        },
+        "governingLaw": {
+          "title": "12. Luật Điều Chỉnh và Giải Quyết Tranh Chấp",
+          "content": "Các Điều Khoản này được điều chỉnh bởi pháp luật nước {{legal.governingLawVi}}.\n\nCác bên ưu tiên giải quyết tranh chấp bằng thương lượng và hòa giải. Nếu không giải quyết được trong vòng 30 ngày, tranh chấp sẽ được đưa ra giải quyết tại Tòa án nhân dân có thẩm quyền tại {{address.jurisdictionVi}}.\n\nĐối với người dùng tại EU/EEA, bạn có thể sử dụng nền tảng giải quyết tranh chấp trực tuyến (ODR) của Ủy ban Châu Âu tại https://ec.europa.eu/consumers/odr.\n\nĐối với người dùng tại các khu vực pháp lý khác, luật bảo vệ người tiêu dùng bắt buộc tại khu vực của bạn vẫn được áp dụng."
+        },
+        "termination": {
+          "title": "13. Chấm Dứt",
+          "content": "Chúng tôi có quyền đình chỉ hoặc chấm dứt tài khoản và quyền truy cập của bạn nếu:\n\n• Vi phạm các Điều Khoản này\n• Theo yêu cầu của pháp luật hoặc cơ quan có thẩm quyền\n• Phát hiện hành vi gian lận, lạm dụng, hoặc đe dọa bảo mật\n• Theo quyết định hợp lý của chúng tôi nhằm bảo vệ Dịch Vụ và người dùng khác\n\nBạn có quyền chấm dứt tài khoản bất cứ lúc nào qua cài đặt ứng dụng hoặc liên hệ {{email.support}}.\n\nKhi chấm dứt:\n• Giấy phép sử dụng kết thúc ngay lập tức\n• Đăng ký trả phí sẽ không tự động gia hạn (bạn cần hủy qua cửa hàng ứng dụng)\n• Dữ liệu sẽ được xử lý theo Chính Sách Bảo Mật"
+        },
+        "forceM": {
+          "title": "14. Bất Khả Kháng",
+          "content": "{{company.name}} không chịu trách nhiệm về việc không thực hiện hoặc chậm trễ thực hiện Dịch Vụ do các sự kiện ngoài tầm kiểm soát hợp lý, bao gồm nhưng không giới hạn: thiên tai, chiến tranh, khủng bố, dịch bệnh, đình công, sự cố mạng internet, thay đổi pháp luật, hoặc hành vi của bên thứ ba."
+        },
+        "severability": {
+          "title": "15. Khả Năng Tách Rời và Toàn Vẹn",
+          "content": "Nếu bất kỳ điều khoản nào trong Điều Khoản này bị tòa án hoặc cơ quan có thẩm quyền tuyên bố là vô hiệu, trái pháp luật, hoặc không thể thi hành, các điều khoản còn lại vẫn có đầy đủ hiệu lực. Điều khoản vô hiệu sẽ được thay thế bằng điều khoản hợp lệ gần nghĩa nhất.\n\nCác Điều Khoản này, cùng với Chính Sách Bảo Mật và các điều khoản sản phẩm cụ thể, tạo thành toàn bộ thỏa thuận giữa bạn và {{company.name}}."
+        },
+        "contact": {
+          "title": "16. Liên Hệ",
+          "content": "Nếu bạn có câu hỏi về các Điều Khoản này, vui lòng liên hệ:\n\n{{company.name}}\nĐịa chỉ: {{address.fullVi}}\nEmail pháp lý: {{email.legal}}\nEmail hỗ trợ: {{email.support}}\nEmail chung: {{email.general}}"
         }
       }
     }

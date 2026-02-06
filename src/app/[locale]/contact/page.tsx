@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+﻿import { getTranslations } from 'next-intl/server';
 import { Mail, MapPin, MessageCircle, Clock, Send, ArrowRight } from 'lucide-react';
 import { locales, type Locale, setRequestLocale } from '@/i18n/config';
 import { emails, getAddress } from '@/lib/content';
@@ -32,8 +32,8 @@ export default async function ContactPage({ params }: Props) {
   const addr = getAddress(locale as 'en' | 'vi');
 
   const contactMethods = [
-    { icon: Mail, key: 'email', value: emails.support, href: `mailto:${emails.support}`, glowColor: 'white' as const },
-    { icon: MapPin, key: 'location', value: addr.full, href: null, glowColor: 'silver' as const },
+    { icon: Mail, key: 'email', value: emails.support, href: `mailto:${emails.support}`, glowColor: 'blue' as const },
+    { icon: MapPin, key: 'location', value: addr.full, href: null, glowColor: 'violet' as const },
     { icon: Clock, key: 'hours', value: null, href: null, glowColor: 'cool' as const },
   ];
 
@@ -42,7 +42,8 @@ export default async function ContactPage({ params }: Props) {
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32">
         {/* Background */}
-        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+        <div className="absolute inset-0 bg-gradient-mesh" />
+        <div className="absolute inset-0 bg-grid-pattern opacity-15" />
         <FloatingOrbs />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
         
@@ -64,8 +65,8 @@ export default async function ContactPage({ params }: Props) {
       {/* Contact Methods Grid */}
       <section className="relative py-20 md:py-32">
         <div className="absolute inset-0 bg-black" />
-        <div className="absolute left-0 top-1/3 h-80 w-80 rounded-full bg-white/3 blur-3xl" />
-        <div className="absolute right-0 bottom-1/3 h-80 w-80 rounded-full bg-white/3 blur-3xl" />
+        <div className="absolute left-0 top-1/3 h-80 w-80 rounded-full bg-glow-blue opacity-30" />
+        <div className="absolute right-0 bottom-1/3 h-80 w-80 rounded-full bg-glow-violet opacity-25" />
         
         <div className="container-custom relative z-10">
           <div className="mx-auto max-w-4xl">
@@ -188,7 +189,7 @@ export default async function ContactPage({ params }: Props) {
                           type="text"
                           id="name"
                           name="name"
-                          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-white/30 focus:ring-2 focus:ring-white/10 focus:outline-none transition-all duration-300"
+                          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-blue-500/30 focus:ring-2 focus:ring-blue-500/10 focus:outline-none transition-all duration-300"
                           placeholder={t('form.namePlaceholder')}
                         />
                       </div>
@@ -200,7 +201,7 @@ export default async function ContactPage({ params }: Props) {
                           type="email"
                           id="email"
                           name="email"
-                          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-white/30 focus:ring-2 focus:ring-white/10 focus:outline-none transition-all duration-300"
+                          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-blue-500/30 focus:ring-2 focus:ring-blue-500/10 focus:outline-none transition-all duration-300"
                           placeholder={t('form.emailPlaceholder')}
                         />
                       </div>
@@ -214,7 +215,7 @@ export default async function ContactPage({ params }: Props) {
                         type="text"
                         id="subject"
                         name="subject"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-white/30 focus:ring-2 focus:ring-white/10 focus:outline-none transition-all duration-300"
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-blue-500/30 focus:ring-2 focus:ring-blue-500/10 focus:outline-none transition-all duration-300"
                         placeholder={t('form.subjectPlaceholder')}
                       />
                     </div>
@@ -227,7 +228,7 @@ export default async function ContactPage({ params }: Props) {
                         id="message"
                         name="message"
                         rows={5}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-white/30 focus:ring-2 focus:ring-white/10 focus:outline-none transition-all duration-300 resize-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-blue-500/30 focus:ring-2 focus:ring-blue-500/10 focus:outline-none transition-all duration-300 resize-none"
                         placeholder={t('form.messagePlaceholder')}
                       />
                     </div>
