@@ -152,7 +152,7 @@ export default async function HomePage({ params }: Props) {
                   <div className="absolute inset-0 flex items-center justify-center water-droplets">
                     <div className="text-center p-8">
                       <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center glass-bubble">
-                        <Image src="/images/logo-trans.png" alt="Insight AI" width={80} height={80} className="h-16 w-auto brightness-110" />
+                        <Image src="/images/logo-trans.png" alt="Insight AI VN" width={80} height={80} className="h-16 w-auto brightness-110" />
                       </div>
                       <p className="text-sm text-white/50 mb-2">PLACEHOLDER IMAGE</p>
                       <p className="text-xs text-white/30 max-w-xs mx-auto">

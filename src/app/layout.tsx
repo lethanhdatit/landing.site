@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Insight AI',
+  title: 'Insight AI VN',
   description: 'AI-powered solutions for everyday life',
 };
 

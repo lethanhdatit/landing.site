@@ -144,12 +144,12 @@
   },
   "home": {
     "meta": {
-      "title": "Insight AI — Smart App Platform for Modern Living",
+      "title": "Insight AI VN — Smart App Platform for Modern Living",
       "description": "A diverse app ecosystem spanning home management, finance, entertainment, and education — all designed for Vietnamese users."
     },
     "hero": {
       "title": "Smart Solutions for Digital Life",
-      "subtitle": "Insight AI builds a diverse app ecosystem — from home management and finance to entertainment and education — all optimized for Vietnamese users.",
+      "subtitle": "Insight AI VN builds a diverse app ecosystem — from home management and finance to entertainment and education — all optimized for Vietnamese users.",
       "cta": "Explore WiseNest",
       "secondary": "View Roadmap",
       "badge": "App Platform",
@@ -246,12 +246,12 @@
     "news": {
       "badge": "News",
       "title": "News & Updates",
-      "subtitle": "Stay up to date with the latest from Insight AI",
+      "subtitle": "Stay up to date with the latest from Insight AI VN",
       "entries": {
         "wisenest_launch": {
           "date": "01/2026",
           "title": "WiseNest Officially Launched",
-          "summary": "The first smart food and home management app from Insight AI is now available on both iOS and Android.",
+          "summary": "The first smart food and home management app from Insight AI VN is now available on both iOS and Android.",
           "tag": "Launch"
         },
         "wisenest_premium": {
@@ -263,7 +263,7 @@
         "mom_baby_preview": {
           "date": "Coming soon",
           "title": "Mom & Baby App — In Development",
-          "summary": "Insight AI is developing a comprehensive utility suite to help mothers track their baby's health and development.",
+          "summary": "Insight AI VN is developing a comprehensive utility suite to help mothers track their baby's health and development.",
           "tag": "Coming Soon"
         }
       },

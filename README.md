@@ -1,6 +1,6 @@
 # Insight AI Landing Site
 
-Landing site for Insight AI products at [insight.ai.vn](https://insight.ai.vn).
+Landing site for Insight AI VN products at [insight.ai.vn](https://insight.ai.vn).
 
 ## Features
 

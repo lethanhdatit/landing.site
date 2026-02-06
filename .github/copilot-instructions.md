@@ -1,7 +1,7 @@
-# Insight AI Landing Site
+# Insight AI VN Landing Site
 
 ## Project Overview
-Multi-product landing site for Insight AI (insight.ai.vn). Serves as the central hub for product information, legal documents, and marketing content.
+Multi-product landing site for Insight AI VN (insight.ai.vn). Serves as the central hub for product information, legal documents, and marketing content.
 
 ## Tech Stack
 - **Framework**: Next.js 14+ with App Router

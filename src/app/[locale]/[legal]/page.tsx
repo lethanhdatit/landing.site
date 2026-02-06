@@ -1,7 +1,7 @@
 /**
  * Platform-level Legal Pages (Privacy Policy & Terms of Service)
  * 
- * These are for the overall Insight AI platform, separate from
+ * These are for the overall Insight AI VN Platform, separate from
  * product-specific legal pages (e.g., /wisenest/privacy-policy).
  * 
  * Routes:

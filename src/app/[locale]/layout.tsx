@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   return {
     title: {
       default: t('title'),
-      template: '%s | Insight AI',
+      template: '%s | Insight AI VN',
     },
     description: t('description'),
     keywords: t('keywords'),
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
       title: t('title'),
       description: t('description'),
       url: getAbsoluteUrl(),
-      siteName: 'Insight AI',
+      siteName: 'Insight AI VN',
       locale: localeAlternates[locale],
       type: 'website',
     },

@@ -1,6 +1,6 @@
 /**
  * Product Configuration
- * Central registry for all Insight AI products
+ * Central registry for all Insight AI VN products
  */
 
 export type LegalPageSlug =

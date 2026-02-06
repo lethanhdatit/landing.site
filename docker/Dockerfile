@@ -1,5 +1,5 @@
 # =============================================================================
-# Insight AI Landing Site - Multi-stage Dockerfile
+# Insight AI VN Landing Site - Multi-stage Dockerfile
 # =============================================================================
 # Build: docker build -t landing-site -f docker/Dockerfile .
 # Run:   docker run -p 3000:3000 landing-site

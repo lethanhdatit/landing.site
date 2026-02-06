@@ -246,12 +246,12 @@
     "news": {
       "badge": "Tin Mới",
       "title": "Tin Tức & Cập Nhật",
-      "subtitle": "Theo dõi những tin tức mới nhất từ Insight AI",
+      "subtitle": "Theo dõi những tin tức mới nhất từ Insight AI VN",
       "entries": {
         "wisenest_launch": {
           "date": "01/2026",
           "title": "WiseNest Chính Thức Ra Mắt",
-          "summary": "Ứng dụng quản lý thực phẩm và gia đình thông minh đầu tiên từ Insight AI đã có mặt trên cả iOS và Android.",
+          "summary": "Ứng dụng quản lý thực phẩm và gia đình thông minh đầu tiên từ Insight AI VN đã có mặt trên cả iOS và Android.",
           "tag": "Ra Mắt"
         },
         "wisenest_premium": {
@@ -263,7 +263,7 @@
         "mom_baby_preview": {
           "date": "Sắp tới",
           "title": "Ứng Dụng Mẹ & Bé — Đang Phát Triển",
-          "summary": "Insight AI đang phát triển bộ tiện ích toàn diện hỗ trợ các bà mẹ theo dõi sức khỏe và phát triển của bé.",
+          "summary": "Insight AI VN đang phát triển bộ tiện ích toàn diện hỗ trợ các bà mẹ theo dõi sức khỏe và phát triển của bé.",
           "tag": "Sắp Ra Mắt"
         }
       },

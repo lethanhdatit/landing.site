@@ -1,5 +1,5 @@
 # =============================================================================
-# Insight AI Landing Site - GitHub Pages Deployment
+# Insight AI VN Landing Site - GitHub Pages Deployment
 # =============================================================================
 # Trigger: Push to master branch
 # Flow: Build static site → Deploy to GitHub Pages
