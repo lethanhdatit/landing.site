@@ -47,16 +47,16 @@ export const emails = {
   privacy: 'privacy@insight.ai.vn',
   
   /** Legal matters */
-  legal: 'legal@insight.ai.vn',
+  legal: 'privacy@insight.ai.vn',
   
   /** Billing & payments */
-  billing: 'billing@insight.ai.vn',
+  billing: 'support@insight.ai.vn',
   
   /** Press & media */
-  press: 'press@insight.ai.vn',
+  press: 'contact@insight.ai.vn',
   
   /** Careers & recruitment */
-  careers: 'careers@insight.ai.vn',
+  careers: 'contact@insight.ai.vn',
 } as const;
 
 // ============================================
