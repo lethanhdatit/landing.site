@@ -18,6 +18,7 @@ import { ArrowLeft, Shield, FileText } from 'lucide-react';
 import { locales, type Locale, setRequestLocale } from '@/i18n/config';
 import { ScrollAnimationWrapper } from '@/components/ui/scroll-animation';
 import { FloatingOrbs } from '@/components/ui/floating-orbs';
+import { LegalContent, LegalItemContent } from '@/components/ui/legal-content';
 
 type PlatformLegalSlug = 'privacy-policy' | 'terms-of-service';
 
@@ -122,15 +123,13 @@ export default async function PlatformLegalPage({ params }: Props) {
                     <h2 className="font-display text-xl font-semibold text-white mb-4">
                       {section.title}
                     </h2>
-                    <div className="text-white/60 leading-relaxed whitespace-pre-line">
-                      {section.content}
-                    </div>
+                    <LegalContent content={section.content} className="text-white/60 leading-relaxed whitespace-pre-line" />
                     {section.items && section.items.length > 0 && (
                       <ul className="mt-4 space-y-2">
                         {section.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex gap-3 text-white/60">
                             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/30" />
-                            <span className="leading-relaxed">{item}</span>
+                            <LegalItemContent text={item} />
                           </li>
                         ))}
                       </ul>

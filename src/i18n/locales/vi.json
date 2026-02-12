@@ -324,7 +324,7 @@
       "sections": {
         "introduction": { 
           "title": "1. Giới Thiệu", 
-          "content": "Quyền riêng tư của bạn rất quan trọng với chúng tôi. Chính Sách Bảo Mật này giải thích cách {{company.name}} (\"Công ty\", \"chúng tôi\") thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn khi sử dụng ứng dụng WiseNest.\n\nBằng cách sử dụng WiseNest, bạn đồng ý với việc thu thập và sử dụng thông tin theo chính sách này. Chính sách này tuân thủ {{legal.dataProtectionLawVi}} và các tiêu chuẩn quốc tế như GDPR khi áp dụng." 
+          "content": "Quyền riêng tư của bạn rất quan trọng với chúng tôi. Chính Sách Bảo Mật này giải thích cách {{company.name}} (\"Công ty\", \"chúng tôi\") thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn khi sử dụng ứng dụng WiseNest.\n\nBằng cách sử dụng WiseNest, bạn đồng ý với việc thu thập và sử dụng thông tin theo chính sách này. Chính sách này tuân thủ {{legal.dataProtectionLawVi}} và các tiêu chuẩn quốc tế như GDPR khi áp dụng.\n\nChính sách này là một phần của [Điều Khoản Dịch Vụ](/vi/wisenest/terms-of-service). Để biết chi tiết về quyền thiết bị, vui lòng xem [Quyền Ứng Dụng](/vi/wisenest/permissions)." 
         },
         "dataController": { 
           "title": "2. Đơn Vị Kiểm Soát Dữ Liệu", 
@@ -442,7 +442,7 @@
       "sections": {
         "acceptance": { 
           "title": "1. Chấp Nhận Điều Khoản", 
-          "content": "Bằng cách sử dụng WiseNest (\"Ứng dụng\"), bạn đồng ý với các Điều Khoản Dịch Vụ này, Chính Sách Bảo Mật, và các điều khoản bổ sung. Các Điều Khoản này tạo thành thỏa thuận ràng buộc pháp lý giữa bạn và {{company.name}}.\n\nNẾU KHÔNG ĐỒNG Ý, KHÔNG SỬ DỤNG ỨNG DỤNG.\n\nChúng tôi có thể sửa đổi các Điều Khoản này bất cứ lúc nào. Tiếp tục sử dụng đồng nghĩa với việc chấp nhận." 
+          "content": "Bằng cách sử dụng WiseNest (\"Ứng dụng\"), bạn đồng ý với các Điều Khoản Dịch Vụ này và các văn bản pháp lý bổ sung sau đây (gọi chung là \"Thỏa Thuận\"):\n• [Chính Sách Bảo Mật](/vi/wisenest/privacy-policy)\n• [Điều Khoản Đăng Ký](/vi/wisenest/subscription-terms)\n• [Quyền Ứng Dụng](/vi/wisenest/permissions)\n• [Tuyên Bố Miễn Trừ](/vi/wisenest/disclaimer)\n\nCác Điều Khoản này tạo thành thỏa thuận ràng buộc pháp lý giữa bạn và {{company.name}}.\n\nNẾU KHÔNG ĐỒNG Ý, KHÔNG SỬ DỤNG ỨNG DỤNG.\n\nChúng tôi có thể sửa đổi các Điều Khoản này bất cứ lúc nào. Tiếp tục sử dụng đồng nghĩa với việc chấp nhận." 
         },
         "eligibility": { 
           "title": "2. Điều Kiện Sử Dụng", 
@@ -516,7 +516,7 @@
         },
         "severability": { 
           "title": "15. Khả Năng Tách Rời", 
-          "content": "Nếu bất kỳ điều khoản nào bị coi là vô hiệu, các điều khoản còn lại vẫn có hiệu lực." 
+          "content": "Nếu bất kỳ điều khoản nào bị coi là vô hiệu, các điều khoản còn lại vẫn có hiệu lực.\n\nCác Điều Khoản này, cùng với [Chính Sách Bảo Mật](/vi/wisenest/privacy-policy), [Điều Khoản Đăng Ký](/vi/wisenest/subscription-terms), [Quyền Ứng Dụng](/vi/wisenest/permissions), và [Tuyên Bố Miễn Trừ](/vi/wisenest/disclaimer), tạo thành toàn bộ thỏa thuận giữa bạn và {{company.name}}." 
         },
         "contact": { 
           "title": "16. Liên Hệ", 
@@ -533,7 +533,7 @@
       "sections": {
         "introduction": { 
           "title": "1. Về Quyền Ứng Dụng", 
-          "content": "Trang này giải thích các quyền thiết bị mà WiseNest có thể yêu cầu, lý do cần thiết và cách chúng tôi sử dụng.\n\nChúng tôi tuân theo nguyên tắc quyền tối thiểu - chỉ yêu cầu quyền cần thiết cho các tính năng cụ thể. Bạn có thể cấp, từ chối hoặc thu hồi quyền bất cứ lúc nào qua cài đặt thiết bị." 
+          "content": "Trang này giải thích các quyền thiết bị mà WiseNest có thể yêu cầu, lý do cần thiết và cách chúng tôi sử dụng.\n\nChúng tôi tuân theo nguyên tắc quyền tối thiểu - chỉ yêu cầu quyền cần thiết cho các tính năng cụ thể. Bạn có thể cấp, từ chối hoặc thu hồi quyền bất cứ lúc nào qua cài đặt thiết bị.\n\nĐể biết chi tiết về cách chúng tôi xử lý dữ liệu liên quan đến các quyền này, vui lòng xem [Chính Sách Bảo Mật](/vi/wisenest/privacy-policy)." 
         },
         "camera": { 
           "title": "2. Quyền Camera (Tùy Chọn)", 
@@ -614,7 +614,7 @@
       "sections": {
         "introduction": { 
           "title": "1. Về WiseNest Premium", 
-          "content": "WiseNest Premium mở khóa các tính năng nâng cao:\n• Theo dõi không giới hạn\n• Đồng bộ đám mây trên các thiết bị\n• Thông báo hết hạn nâng cao\n• Gợi ý công thức bằng AI\n• Chia sẻ gia đình\n• Hỗ trợ ưu tiên\n• Trải nghiệm không quảng cáo" 
+          "content": "WiseNest Premium mở khóa các tính năng nâng cao:\n• Theo dõi không giới hạn\n• Đồng bộ đám mây trên các thiết bị\n• Thông báo hết hạn nâng cao\n• Gợi ý công thức bằng AI\n• Chia sẻ gia đình\n• Hỗ trợ ưu tiên\n• Trải nghiệm không quảng cáo\n\nBằng việc đăng ký Premium, bạn đồng ý với các điều khoản trong tài liệu này, cùng với [Điều Khoản Dịch Vụ](/vi/wisenest/terms-of-service) và [Chính Sách Bảo Mật](/vi/wisenest/privacy-policy)." 
         },
         "plans": { 
           "title": "2. Các Gói Đăng Ký", 
@@ -663,7 +663,7 @@
         },
         "termination": { 
           "title": "10. Chấm Dứt", 
-          "content": "Premium có thể bị chấm dứt:\n• Bởi Bạn: Hủy như mô tả trong Mục 6\n• Bởi Chúng Tôi: Vì vi phạm Điều Khoản\n\nKhi chấm dứt, các tính năng Premium không còn khả dụng nhưng dữ liệu vẫn có thể truy cập." 
+          "content": "Premium có thể bị chấm dứt:\n• Bởi Bạn: Hủy như mô tả trong Mục 6\n• Bởi Chúng Tôi: Vì vi phạm [Điều Khoản Dịch Vụ](/vi/wisenest/terms-of-service)\n\nKhi chấm dứt, các tính năng Premium không còn khả dụng nhưng dữ liệu vẫn có thể truy cập." 
         },
         "contact": { 
           "title": "11. Liên Hệ", 
@@ -680,7 +680,7 @@
       "sections": {
         "general": { 
           "title": "1. Tuyên Bố Miễn Trừ Chung", 
-          "content": "VUI LÒNG ĐỌC KỸ.\n\nWiseNest được cung cấp chỉ cho mục đích thông tin chung và tiện lợi. Mặc dù {{company.name}} cố gắng đảm bảo độ chính xác và tin cậy, chúng tôi không đưa ra bất kỳ đại diện hoặc bảo đảm nào về tính đầy đủ, chính xác, tin cậy hoặc phù hợp của thông tin.\n\nBất kỳ sự tin tưởng nào bạn đặt vào thông tin đó hoàn toàn là rủi ro của riêng bạn." 
+          "content": "VUI LÒNG ĐỌC KĨ.\n\nWiseNest được cung cấp chỉ cho mục đích thông tin chung và tiện lợi. Mặc dù {{company.name}} cố gắng đảm bảo độ chính xác và tin cậy, chúng tôi không đưa ra bất kỳ đại diện hoặc bảo đảm nào về tính đầy đủ, chính xác, tin cậy hoặc phù hợp của thông tin.\n\nBất kỳ sự tin tưởng nào bạn đặt vào thông tin đó hoàn toàn là rủi ro của riêng bạn.\n\nTuyên bố này là một phần của [Điều Khoản Dịch Vụ](/vi/wisenest/terms-of-service). Vui lòng đọc kèm [Chính Sách Bảo Mật](/vi/wisenest/privacy-policy)." 
         },
         "noWarranty": { 
           "title": "2. Không Bảo Hành", 
@@ -761,7 +761,7 @@
             "Tất cả ứng dụng di động do {{company.name}} phát triển và phân phối (bao gồm nhưng không giới hạn: WiseNest, và các sản phẩm tương lai)",
             "Mọi dịch vụ trực tuyến, API, và công cụ liên quan",
             "Mọi hình thức giao tiếp giữa bạn và {{company.name}} (email, biểu mẫu liên hệ, mạng xã hội)",
-            "Các sản phẩm riêng lẻ có thể có chính sách bảo mật bổ sung cụ thể cho sản phẩm đó, được ưu tiên áp dụng trong phạm vi sản phẩm tương ứng"
+            "Các sản phẩm riêng lẻ có thể có chính sách bảo mật bổ sung cụ thể cho sản phẩm đó, được ưu tiên áp dụng trong phạm vi sản phẩm tương ứng. Xem [Chính Sách Bảo Mật WiseNest](/vi/wisenest/privacy-policy)"
           ]
         },
         "informationWeCollect": {
@@ -892,7 +892,7 @@
       "sections": {
         "acceptance": {
           "title": "1. Chấp Nhận Điều Khoản",
-          "content": "Bằng việc truy cập trang web insight.ai.vn (\"Trang Web\") hoặc sử dụng bất kỳ sản phẩm, ứng dụng, hoặc dịch vụ nào do {{company.name}} (\"Công ty\", \"chúng tôi\") cung cấp (gọi chung là \"Dịch Vụ\"), bạn đồng ý bị ràng buộc bởi các Điều Khoản Dịch Vụ này (\"Điều Khoản\"), Chính Sách Bảo Mật, và mọi điều khoản bổ sung áp dụng cho sản phẩm cụ thể.\n\nCác Điều Khoản này tạo thành thỏa thuận pháp lý ràng buộc giữa bạn và {{company.name}} theo pháp luật Việt Nam.\n\nNẾU BẠN KHÔNG ĐỒNG Ý VỚI CÁC ĐIỀU KHOẢN NÀY, VUI LÒNG KHÔNG SỬ DỤNG DỊCH VỤ.\n\nChúng tôi có thể sửa đổi các Điều Khoản này bất cứ lúc nào. Phiên bản mới có hiệu lực ngay khi đăng tải, trừ khi có quy định khác. Việc tiếp tục sử dụng đồng nghĩa với việc chấp nhận thay đổi."
+          "content": "Bằng việc truy cập trang web insight.ai.vn (\"Trang Web\") hoặc sử dụng bất kỳ sản phẩm, ứng dụng, hoặc dịch vụ nào do {{company.name}} (\"Công ty\", \"chúng tôi\") cung cấp (gọi chung là \"Dịch Vụ\"), bạn đồng ý bị ràng buộc bởi các Điều Khoản Dịch Vụ này (\"\u0110iều Khoản\"), [Chính Sách Bảo Mật](/vi/privacy-policy), và mọi điều khoản bổ sung áp dụng cho sản phẩm cụ thể (ví dụ: [Điều Khoản WiseNest](/vi/wisenest/terms-of-service)).\n\nCác Điều Khoản này tạo thành thỏa thuận pháp lý ràng buộc giữa bạn và {{company.name}} theo pháp luật Việt Nam.\n\nNẾU BẠN KHÔNG ĐỒNG Ý VỚI CÁC ĐIỀU KHOẢN NÀY, VUI LÒNG KHÔNG SỬ DỤNG DỊCH VỤ.\n\nChúng tôi có thể sửa đổi các Điều Khoản này bất cứ lúc nào. Phiên bản mới có hiệu lực ngay khi đăng tải, trừ khi có quy định khác. Việc tiếp tục sử dụng đồng nghĩa với việc chấp nhận thay đổi."
         },
         "eligibility": {
           "title": "2. Điều Kiện Sử Dụng",
@@ -977,7 +977,7 @@
         },
         "severability": {
           "title": "15. Khả Năng Tách Rời và Toàn Vẹn",
-          "content": "Nếu bất kỳ điều khoản nào trong Điều Khoản này bị tòa án hoặc cơ quan có thẩm quyền tuyên bố là vô hiệu, trái pháp luật, hoặc không thể thi hành, các điều khoản còn lại vẫn có đầy đủ hiệu lực. Điều khoản vô hiệu sẽ được thay thế bằng điều khoản hợp lệ gần nghĩa nhất.\n\nCác Điều Khoản này, cùng với Chính Sách Bảo Mật và các điều khoản sản phẩm cụ thể, tạo thành toàn bộ thỏa thuận giữa bạn và {{company.name}}."
+          "content": "Nếu bất kỳ điều khoản nào trong Điều Khoản này bị tòa án hoặc cơ quan có thẩm quyền tuyên bố là vô hiệu, trái pháp luật, hoặc không thể thi hành, các điều khoản còn lại vẫn có đầy đủ hiệu lực. Điều khoản vô hiệu sẽ được thay thế bằng điều khoản hợp lệ gần nghĩa nhất.\n\nCác Điều Khoản này, cùng với [Chính Sách Bảo Mật](/vi/privacy-policy) và các điều khoản sản phẩm cụ thể (như [Điều Khoản WiseNest](/vi/wisenest/terms-of-service)), tạo thành toàn bộ thỏa thuận giữa bạn và {{company.name}}."
         },
         "contact": {
           "title": "16. Liên Hệ",

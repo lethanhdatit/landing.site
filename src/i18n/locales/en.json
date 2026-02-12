@@ -324,7 +324,7 @@
       "sections": {
         "introduction": { 
           "title": "1. Introduction", 
-          "content": "Your privacy is critically important to us. This Privacy Policy explains how {{company.name}} (\"Company\", \"we\", \"our\", or \"us\") collects, uses, discloses, and safeguards your information when you use WiseNest mobile application.\n\nBy using WiseNest, you agree to the collection and use of information in accordance with this policy. This policy complies with {{legal.dataProtectionLaw}} and international standards such as GDPR where applicable." 
+          "content": "Your privacy is critically important to us. This Privacy Policy explains how {{company.name}} (\"Company\", \"we\", \"our\", or \"us\") collects, uses, discloses, and safeguards your information when you use WiseNest mobile application.\n\nBy using WiseNest, you agree to the collection and use of information in accordance with this policy. This policy complies with {{legal.dataProtectionLaw}} and international standards such as GDPR where applicable.\n\nThis policy is part of the [Terms of Service](/en/wisenest/terms-of-service). For details on device permissions, see [App Permissions](/en/wisenest/permissions)." 
         },
         "dataController": { 
           "title": "2. Data Controller", 
@@ -442,7 +442,7 @@
       "sections": {
         "acceptance": { 
           "title": "1. Acceptance of Terms", 
-          "content": "By using WiseNest (\"the App\"), you agree to these Terms of Service, our Privacy Policy, and additional applicable terms. These Terms constitute a legally binding agreement between you and {{company.name}}.\n\nIF YOU DO NOT AGREE, DO NOT USE THE APP.\n\nWe may modify these Terms at any time. Continued use constitutes acceptance." 
+          "content": "By using WiseNest (\"the App\"), you agree to these Terms of Service and the following supplementary legal documents (collectively, the \"Agreement\"):\n• [Privacy Policy](/en/wisenest/privacy-policy)\n• [Subscription Terms](/en/wisenest/subscription-terms)\n• [App Permissions](/en/wisenest/permissions)\n• [Disclaimer](/en/wisenest/disclaimer)\n\nThese Terms constitute a legally binding agreement between you and {{company.name}}.\n\nIF YOU DO NOT AGREE, DO NOT USE THE APP.\n\nWe may modify these Terms at any time. Continued use constitutes acceptance." 
         },
         "eligibility": { 
           "title": "2. Eligibility", 
@@ -516,7 +516,7 @@
         },
         "severability": { 
           "title": "15. Severability", 
-          "content": "If any provision is found invalid, the remaining provisions remain in effect." 
+          "content": "If any provision is found invalid, the remaining provisions remain in effect.\n\nThese Terms, together with the [Privacy Policy](/en/wisenest/privacy-policy), [Subscription Terms](/en/wisenest/subscription-terms), [App Permissions](/en/wisenest/permissions), and [Disclaimer](/en/wisenest/disclaimer), constitute the entire agreement between you and {{company.name}}." 
         },
         "contact": { 
           "title": "16. Contact", 
@@ -533,7 +533,7 @@
       "sections": {
         "introduction": { 
           "title": "1. About App Permissions", 
-          "content": "This page explains the device permissions WiseNest may request, why they are needed, and how we use them.\n\nWe follow the principle of minimal permissions - we only request access necessary for specific features. You can grant, deny, or revoke permissions at any time through your device settings." 
+          "content": "This page explains the device permissions WiseNest may request, why they are needed, and how we use them.\n\nWe follow the principle of minimal permissions - we only request access necessary for specific features. You can grant, deny, or revoke permissions at any time through your device settings.\n\nFor details on how we handle data related to these permissions, see our [Privacy Policy](/en/wisenest/privacy-policy)." 
         },
         "camera": { 
           "title": "2. Camera Permission (Optional)", 
@@ -614,7 +614,7 @@
       "sections": {
         "introduction": { 
           "title": "1. About WiseNest Premium", 
-          "content": "WiseNest Premium unlocks advanced features:\n• Unlimited item tracking\n• Cloud sync across devices\n• Advanced expiry notifications\n• AI-powered recipe suggestions\n• Family sharing\n• Priority support\n• Ad-free experience" 
+          "content": "WiseNest Premium unlocks advanced features:\n• Unlimited item tracking\n• Cloud sync across devices\n• Advanced expiry notifications\n• AI-powered recipe suggestions\n• Family sharing\n• Priority support\n• Ad-free experience\n\nBy subscribing to Premium, you agree to the terms in this document, along with the [Terms of Service](/en/wisenest/terms-of-service) and [Privacy Policy](/en/wisenest/privacy-policy)." 
         },
         "plans": { 
           "title": "2. Subscription Plans", 
@@ -663,7 +663,7 @@
         },
         "termination": { 
           "title": "10. Termination", 
-          "content": "Premium may be terminated:\n• By You: Cancel as described in Section 6\n• By Us: For Terms violations\n\nUpon termination, Premium features become unavailable but data remains accessible." 
+          "content": "Premium may be terminated:\n• By You: Cancel as described in Section 6\n• By Us: For [Terms of Service](/en/wisenest/terms-of-service) violations\n\nUpon termination, Premium features become unavailable but data remains accessible." 
         },
         "contact": { 
           "title": "11. Contact", 
@@ -680,7 +680,7 @@
       "sections": {
         "general": { 
           "title": "1. General Disclaimer", 
-          "content": "PLEASE READ CAREFULLY.\n\nWiseNest is provided for general informational and convenience purposes only. While {{company.name}} strives for accuracy and reliability, we make no representations or warranties about completeness, accuracy, reliability, or suitability of information.\n\nAny reliance you place on such information is strictly at your own risk." 
+          "content": "PLEASE READ CAREFULLY.\n\nWiseNest is provided for general informational and convenience purposes only. While {{company.name}} strives for accuracy and reliability, we make no representations or warranties about completeness, accuracy, reliability, or suitability of information.\n\nAny reliance you place on such information is strictly at your own risk.\n\nThis disclaimer is part of the [Terms of Service](/en/wisenest/terms-of-service). Please also read our [Privacy Policy](/en/wisenest/privacy-policy)." 
         },
         "noWarranty": { 
           "title": "2. No Warranty", 
@@ -761,7 +761,7 @@
             "All mobile applications developed and distributed by {{company.name}} (including but not limited to: WiseNest, and future products)",
             "All related online services, APIs, and tools",
             "All forms of communication between you and {{company.name}} (email, contact forms, social media)",
-            "Individual products may have supplementary privacy policies specific to that product, which take precedence within the scope of the respective product"
+            "Individual products may have supplementary privacy policies specific to that product, which take precedence within the scope of the respective product. See [WiseNest Privacy Policy](/en/wisenest/privacy-policy)"
           ]
         },
         "informationWeCollect": {
@@ -892,7 +892,7 @@
       "sections": {
         "acceptance": {
           "title": "1. Acceptance of Terms",
-          "content": "By accessing our website insight.ai.vn (\"Website\") or using any products, applications, or services provided by {{company.name}} (\"Company\", \"we\", \"us\", \"our\") (collectively, \"Services\"), you agree to be bound by these Terms of Service (\"Terms\"), our Privacy Policy, and any supplemental terms applicable to specific products.\n\nThese Terms constitute a legally binding agreement between you and {{company.name}} under Vietnamese law.\n\nIF YOU DO NOT AGREE WITH THESE TERMS, PLEASE DO NOT USE THE SERVICES.\n\nWe may modify these Terms at any time. The updated version takes effect upon posting, unless otherwise specified. Continued use constitutes acceptance of changes."
+          "content": "By accessing our website insight.ai.vn (\"Website\") or using any products, applications, or services provided by {{company.name}} (\"Company\", \"we\", \"us\", \"our\") (collectively, \"Services\"), you agree to be bound by these Terms of Service (\"Terms\"), our [Privacy Policy](/en/privacy-policy), and any supplemental terms applicable to specific products (e.g., [WiseNest Terms](/en/wisenest/terms-of-service)).\n\nThese Terms constitute a legally binding agreement between you and {{company.name}} under Vietnamese law.\n\nIF YOU DO NOT AGREE WITH THESE TERMS, PLEASE DO NOT USE THE SERVICES.\n\nWe may modify these Terms at any time. The updated version takes effect upon posting, unless otherwise specified. Continued use constitutes acceptance of changes."
         },
         "eligibility": {
           "title": "2. Eligibility",
@@ -977,7 +977,7 @@
         },
         "severability": {
           "title": "15. Severability and Entirety",
-          "content": "If any provision of these Terms is found by a court or competent authority to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision closest in meaning.\n\nThese Terms, together with the Privacy Policy and product-specific terms, constitute the entire agreement between you and {{company.name}}."
+          "content": "If any provision of these Terms is found by a court or competent authority to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision closest in meaning.\n\nThese Terms, together with the [Privacy Policy](/en/privacy-policy) and product-specific terms (such as [WiseNest Terms](/en/wisenest/terms-of-service)), constitute the entire agreement between you and {{company.name}}."
         },
         "contact": {
           "title": "16. Contact",

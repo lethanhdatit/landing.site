@@ -12,6 +12,7 @@ import { ArrowLeft, Shield, FileText, Key, CreditCard, AlertTriangle } from 'luc
 import { getProduct, type LegalPageSlug } from '@/lib/products';
 import { locales, type Locale, setRequestLocale } from '@/i18n/config';
 import { ScrollAnimationWrapper } from '@/components/ui/scroll-animation';
+import { LegalContent, LegalItemContent } from '@/components/ui/legal-content';
 
 const legalPages: LegalPageSlug[] = ['privacy-policy', 'terms-of-service', 'permissions', 'subscription-terms', 'disclaimer'];
 
@@ -134,15 +135,13 @@ export default async function WiseNestLegalPage({ params }: Props) {
                     <h2 className="font-display text-xl font-semibold text-white mb-4">
                       {section.title}
                     </h2>
-                    <div className="text-white/60 leading-relaxed whitespace-pre-line">
-                      {section.content}
-                    </div>
+                    <LegalContent content={section.content} className="text-white/60 leading-relaxed whitespace-pre-line" />
                     {section.items && section.items.length > 0 && (
                       <ul className="mt-4 space-y-2">
                         {section.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex gap-3 text-white/60">
                             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500/50" />
-                            <span className="leading-relaxed">{item}</span>
+                            <LegalItemContent text={item} />
                           </li>
                         ))}
                       </ul>
@@ -170,10 +169,9 @@ export default async function WiseNestLegalPage({ params }: Props) {
               {t('backTo')} {product.name}
             </Link>
             
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {product.legalPages
                 .filter(page => page !== legal)
-                .slice(0, 3)
                 .map(page => (
                   <Link
                     key={page}
