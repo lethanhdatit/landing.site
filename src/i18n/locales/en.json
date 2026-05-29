@@ -140,7 +140,7 @@
     "cookiePolicy": "Cookie Policy",
     "social": "Follow Us", 
     "copyright": "© {year} {{company.name}}. All rights reserved.", 
-    "madeWith": "Made by Thành Đạt in {{address.country}}"
+    "madeWith": "Made by Edric Lee in {{address.country}}"
   },
   "home": {
     "meta": {

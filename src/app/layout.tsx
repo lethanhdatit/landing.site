@@ -24,7 +24,16 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={inter.variable}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <script
+          src="https://chatbot-api.insight.ai.vn/widget.js"
+          data-tenant-key="cb_EvW_r8gz_zSZ94Zzw3ISz_cmmQMZn59nw"
+          data-api-url="https://chatbot-api.insight.ai.vn"
+          data-locale="en"
+          defer
+        ></script>
+      </body>
     </html>
   );
 }

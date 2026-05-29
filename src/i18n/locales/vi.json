@@ -140,7 +140,7 @@
     "cookiePolicy": "Chính Sách Cookie",
     "social": "Theo Dõi", 
     "copyright": "© {year} {{company.name}}. Đã đăng ký bản quyền.", 
-    "madeWith": "Được tạo bởi Thành Đạt tại {{address.countryVi}}"
+    "madeWith": "Được tạo bởi Edric Lee tại {{address.countryVi}}"
   },
   "home": {
     "meta": {
