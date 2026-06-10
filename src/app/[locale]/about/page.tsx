@@ -4,7 +4,7 @@ import { locales, type Locale, setRequestLocale } from '@/i18n/config';
 import { ScrollAnimationWrapper } from '@/components/ui/scroll-animation';
 import { GlowingCard } from '@/components/ui/glowing-card';
 import { FloatingOrbs } from '@/components/ui/floating-orbs';
-import GrabButton from '@/components/ui/grab-button';
+import GrabDeepLinkTest from '@/components/ui/grab-button';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -74,9 +74,9 @@ export default async function AboutPage({ params }: Props) {
               <div>
                 <span className="badge-accent mb-4">{t('mission.badge')}</span>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl">
-                  {t('mission.title')}
-                  <GrabButton />
+                  {t('mission.title')}                  
                 </h2>
+                <GrabDeepLinkTest />
                 <p className="mt-6 text-lg text-white/60 leading-relaxed">
                   {t('mission.content')}
                 </p>
