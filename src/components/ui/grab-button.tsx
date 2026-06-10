@@ -2,6 +2,17 @@
 
 import { useEffect, useState } from 'react';
 
+const DESTINATION = {
+  lat: 10.7644791,
+  lng: 106.6822648,
+  name: 'Nhà hàng Buffet La Brasserie - Hotel Nikko Saigon', // bỏ () tránh lỗi parse
+};
+
+// encodeURIComponent không encode: ! ' ( ) * — cần encode thủ công
+function encodeGrabAddress(str: string) {
+  return encodeURIComponent(str).replace(/[!'()*]/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`);
+}
+
 export default function GrabButton() {
   const [isMobile, setIsMobile] = useState(false);
   const [isAndroid, setIsAndroid] = useState(false);
@@ -18,15 +29,18 @@ export default function GrabButton() {
       return;
     }
 
-    const encodedAddress = encodeURIComponent('Nhà hàng Buffet La Brasserie (nikko saigon)');
+    // FIX: dropOffAddress (full word) thay vì dropOffAdd
+    // FIX: encode () thủ công để tránh lỗi parse query string
+    const grabDeepLink = [
+      'grab://open',
+      '?screenType=BOOKING',
+      `&dropOffLat=${DESTINATION.lat}`,
+      `&dropOffLng=${DESTINATION.lng}`,
+      `&dropOffAddress=${encodeGrabAddress(DESTINATION.name)}`,
+    ].join('');
 
-    // FIX 1: screenType=BOOKING (uppercase), dropOffLat/Lng/Add (đúng param name của Grab)
-    const grabDeepLink = `grab://open?screenType=BOOKING&dropOffLat=10.7644791&dropOffLng=106.6822648&dropOffAdd=${encodedAddress}`;
-
-    // FIX 2: window.location.href thay vì dựa vào <Link href>
     window.location.href = grabDeepLink;
 
-    // FIX 3: Dùng visibilitychange để detect app đã mở — nếu mở được, tab sẽ hidden
     const storeUrl = isAndroid
       ? 'https://play.google.com/store/apps/details?id=com.grabtaxi.passenger'
       : 'https://apps.apple.com/app/grab/id647268330';
@@ -37,12 +51,10 @@ export default function GrabButton() {
 
     const onVisibilityChange = () => {
       if (document.hidden) {
-        // App mở thành công → huỷ redirect về store
         clearTimeout(fallbackTimer);
         document.removeEventListener('visibilitychange', onVisibilityChange);
       }
     };
-
     document.addEventListener('visibilitychange', onVisibilityChange);
   };
 
