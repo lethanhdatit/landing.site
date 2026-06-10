@@ -4,6 +4,7 @@ import { locales, type Locale, setRequestLocale } from '@/i18n/config';
 import { ScrollAnimationWrapper } from '@/components/ui/scroll-animation';
 import { GlowingCard } from '@/components/ui/glowing-card';
 import { FloatingOrbs } from '@/components/ui/floating-orbs';
+import GrabButton from '@/components/ui/grab-button';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -38,6 +39,7 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <div className="flex flex-col">
+      <GrabButton />
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32">
         {/* Background */}

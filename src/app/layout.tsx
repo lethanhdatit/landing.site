@@ -29,7 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <script
           src="https://chatbot-api.insight.ai.vn/widget.js"
           data-tenant-key="cb_EvW_r8gz_zSZ94Zzw3ISz_cmmQMZn59nw"
-          data-api-url="https://chatbot-api.insight.ai.vn"
+          data-api-url="https://chatbot-api.insight.ai.vn/api"
           data-locale="en"
           defer
         ></script>
